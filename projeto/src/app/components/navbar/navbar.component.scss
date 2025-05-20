@@ -1,0 +1,13 @@
+.nav-bar{
+    border: 1px dashed blue; 
+    width: 1320px;
+    height: 72px;
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-between;
+    .card{
+        border: 2px solid;
+    }
+
+}
+
