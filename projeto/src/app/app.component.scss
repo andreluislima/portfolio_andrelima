@@ -4,14 +4,14 @@
 }
 
 .container{
-    border: 1px dashed red;
+    // border: 1px dashed red;
     max-width: 100%; 
     display: flex;
     align-items: center;
     flex-direction: column;
 
     .header{
-        border: 1px dashed blue;
+        // border: 1px dashed blue;
         width: 100%; 
         display: flex;
         align-items: center;
@@ -19,8 +19,8 @@
         
     }
     .main{
-        border: 1px dashed;
+        // border: 1px dashed;
         width: 1320px;
-        height: 807px; 
+        height: 707px; 
     }
 }

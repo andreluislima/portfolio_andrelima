@@ -1,0 +1,55 @@
+@use "../../styles/variables.scss" as *;
+
+.hero-section{
+    // border: 2px solid;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    background-color: $five-color;
+
+    .hero{
+        // border: 2px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+        text-align: center;
+
+        &-title{
+            // border: 2px solid blue;
+            width: 50%;
+            background: linear-gradient(90deg, rgb(4, 0, 255), orange, rgb(230, 230, 230));
+            -webkit-background-clip: text; /* Para navegadores baseados em WebKit */
+            -webkit-text-fill-color: transparent; /* Torna o texto transparente para mostrar o fundo */
+        }
+
+        &-description{
+            // border: 2px solid green;
+            width: 50%;
+            color: #6c757d;
+
+            .pre-desc{
+                font-weight: 600;
+            }
+            .description{
+                
+            }
+        }
+
+        &-social-media{
+            // border: 2px solid;
+            width: 50%;
+
+            .social-media-btn{
+                 span{
+                    img{
+                        
+                        width: 40px;
+                    }
+                 }
+            }
+        }
+    }
+}
