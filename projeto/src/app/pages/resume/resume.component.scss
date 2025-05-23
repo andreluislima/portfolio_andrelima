@@ -1,0 +1,126 @@
+@use "../../styles/variables.scss" as *;
+
+.main{
+    // border: 2px solid;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $five-color;
+
+  .content{
+      // border: 2px solid blue;
+      width: 1320px;
+      display: flex;
+      justify-content: center;
+
+
+      .area-resume{
+        border: 2px solid green;
+        width: 50%;
+        height: 100vh;
+
+        display: flex;
+        flex-direction: column;
+
+        .title{
+          border: 2px solid;
+          width: 100%;
+          height: 5%;
+
+          font-size: 35px;
+          text-align: center;
+          font-weight: bold;
+          background: linear-gradient(90deg, rgb(4, 0, 255), rgb(230, 230, 230));
+          -webkit-background-clip: text; /* Para navegadores baseados em WebKit */
+          -webkit-text-fill-color: transparent; /* Torna o texto transparente para mostrar o fundo */
+        }
+
+        .section-history{
+          // border: 2px solid;
+          width: 100%;
+          .sub-title{
+            border: 2px solid red;
+            display: flex;
+            justify-content: space-between;
+
+            h2{
+              font-size: 30px;
+              background: linear-gradient(45deg, rgb(4, 0, 255), rgb(230, 230, 230));
+              -webkit-background-clip: text; /* Para navegadores baseados em WebKit */
+              -webkit-text-fill-color: transparent; /* Torna o texto transparente para mostrar o fundo */
+            }
+
+            .btn{
+
+            }
+          }
+
+          .card{
+            border: 2px solid blue;
+            height: 190px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: row;
+            padding: 25px;
+
+            .information{
+              // border: 2px solid green;
+              width: 35%;
+              // height: 5vh;
+              display: flex;
+              justify-content: space-evenly;
+              flex-direction: column;
+              background-color: $five-color;
+              padding: 20px;
+              border-radius: 11px;
+
+              .year{
+                // border: 2px solid blue;
+                font-size: 0.8rem;
+                font-weight: bold;
+              }
+
+              .function{
+                // border: 2px solid gray;
+                font-size: 0.7rem;
+                font-weight: bold;
+
+              }
+
+              .company,.city{
+                // border: 2px solid yellow;
+                font-size: 0.8rem;
+              }
+
+            }
+            .description{
+              //  border: 2px solid red;
+               width: 65%;
+               display: flex;
+               align-items: center;
+               margin-left: 3%;
+               text-align: justify;
+               
+               p{
+                font-size: 14px;
+               }
+
+              
+
+            }
+          }
+        }
+
+        .section-skills{
+          border: 2px solid;
+          width: 100%;
+          height: 50%;
+        }
+       
+    }
+
+  }
+ 
+}
+
