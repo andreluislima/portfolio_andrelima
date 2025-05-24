@@ -11,15 +11,15 @@
                     <!-- <button class="btn btn-primary">{{btn | titlecase}}</button> -->
                 </div>
 
-                <div class="card">
+                <div class="card mb-4" *ngFor="let exp of experience">
                     <div class="information">
-                        <div class="year">2015 - 2017</div>
-                        <div class="function">Barnett College</div>
-                        <div class="company">Harvard</div>
-                        <div class="city">Rio de Janeiro - RJ</div>
+                        <div class="year">{{exp.period}}</div>
+                        <div class="function">{{exp.role}}</div>
+                        <div class="company">{{exp.company}}</div>
+                        <div class="city">{{exp.city}}</div>
                     </div>
                     <div class="description">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero sit accusamus eligendi sed. Quam perspiciatis libero officia minus quod quidem sunt eveniet exercitationem nesciunt possimus itaque dolorem, accusamus neque!</p>
+                        <p>{{exp.description}}</p>
                     </div>
                 </div>
 
