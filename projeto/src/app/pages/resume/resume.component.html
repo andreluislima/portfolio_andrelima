@@ -30,25 +30,25 @@
                     <h2>{{subtitle[1] | titlecase }}</h2>
                 </div>
 
-                <div class="card">
+                <div class="card mb-4" *ngFor="let edu of education">
                     <div class="information">
                         <div class="year">
-                            <span class="date-start">2018</span> - 
-                            <span class="date-end">2021</span>
+                            <span class="date-start">{{edu.start}}</span> - 
+                            <span class="date-end">{{edu.end}}</span>
                         </div>                
                     </div>
 
                     <div class="description">
                         <div class="course">
-                            <span class="fw-bold">Curso de Programação Full Stack</span>
+                            <span class="fw-bold">{{edu.course}}</span>
                             <span>
-                                <p>Especialização</p>
+                                <p>{{edu.degree}}</p>
                             </span>
                         </div>
                         <div class="company">
-                            <span class="fw-bold">Step Computer Academy</span>
+                            <span class="fw-bold">{{edu.instituition}}</span>
                             <span>
-                                <p>Rio de Janeiro - RJ</p>
+                                <p>{{edu.city}}</p>
                             </span>
                         </div>   
                     </div>
@@ -58,25 +58,25 @@
 
 
             <div class="section-skills">
+                <div class="sub-title">
+                    <h2>{{subtitle[2] | titlecase }}</h2>
+                </div>
 
                 <div class="card">
-                    <div class="sub-title">
-                        <h2>{{subtitle[2] | titlecase }}</h2>
-                    </div>
-
-                    <div class="skills">
+             
+                    <div class="skills" *ngFor="let lang of languages">
                         <div class="skill">
-                            <span>2018</span>
+                            <p>{{lang.name}}</p>
+                            <p>{{lang.level}}</p>
                         </div>                
                     </div>
 
                 </div>
 
-                <div class="card">
-                    <div class="sub-title">
+                 <div class="sub-title">
                         <h2>{{subtitle[3] | titlecase }}</h2>
-                    </div>
-
+                </div>
+                <div class="card">
                     <div class="skills">
                         <div class="skill">
                             <span>2018</span>
@@ -85,11 +85,10 @@
 
                 </div>
 
-                <div class="card">
-                    <div class="sub-title">
+                <div class="sub-title">
                         <h2>{{subtitle[4] | titlecase }}</h2>
-                    </div>
-
+                </div>
+                <div class="card">
                     <div class="skills">
                         <div class="skill">
                             <span>2018</span>
