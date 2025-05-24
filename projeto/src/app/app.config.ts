@@ -4,6 +4,7 @@ import { providePrimeNG } from 'primeng/config';
 import Lara from '@primeng/themes/lara';
 import { routes } from './app.routes';
 import { provideRouter } from '@angular/router';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 export const appConfig: ApplicationConfig = {
     providers: [
@@ -18,6 +19,7 @@ export const appConfig: ApplicationConfig = {
                 } 
             }
         }),
-        provideRouter(routes)
+        provideRouter(routes),
+        { provide: LocationStrategy, useClass: HashLocationStrategy }
     ]
 };
