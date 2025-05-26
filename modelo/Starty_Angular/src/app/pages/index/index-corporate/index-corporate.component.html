@@ -1,0 +1,191 @@
+<div class="tagline bg-white">
+    <div class="container">                
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex align-items-center justify-content-between">
+                    <ul class="list-unstyled mb-0">
+                        <li class="list-inline-item mb-0"><a [routerLink]="[]" class="text-muted fw-normal"><i data-feather="mail" class="fea icon-sm text-primary"></i> support&#64;starty.com</a></li>
+                        <li class="list-inline-item mb-0 ms-3"><a [routerLink]="[]" class="text-muted fw-normal"><i data-feather="map-pin" class="fea icon-sm text-primary"></i> 4432 Pick Street Denver, CO 80203</a></li>
+                    </ul>
+
+                    <ul class="list-unstyled social-icon tagline-social mb-0">
+                        <li *ngFor="let item of taglineSocial" class="list-inline-item mb-0" style="margin: 0 2px;"><a [routerLink]="[]"><i class="h6 mb-0" [ngClass]="item"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-navbar [tagline]="true" [navRight]="true"/>
+
+<section class="bg-half-170 bg-light pb-0 d-table w-100" style="background: url('assets/images/bg/corporate01.png') center center;">
+    <div class="container">
+        <div class="row mt-5 align-items-center">
+            <div class="col-lg-7 col-md-6">
+                <div class="title-heading">
+                    <h4 class="display-3 mb-4 fw-bold title-dark"> Insuring Your Future <br> From Today </h4>
+                    <p class="para-desc text-muted">From banking to wealth management and securities distribution, we dedicated financial services the teams serve all major sectors.</p>
+                    <div class="mt-4 pt-2">
+                        <a [routerLink]="[]" class="btn btn-lg btn-pills btn-primary">Work with us</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-md-6 mt-5 mt-sm-0">
+                <img [src]="'assets/images/corporate01.png'" class="img-fluid" alt="" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center mb-4">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h4 class="title fw-semibold mb-3">Explore Solutions</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div *ngFor="let item of solutions" class="col-lg-4">
+                <div class="features feature-primary feature-bg border-0 p-4 rounded shadow">
+                    <div class="fea-icon rounded text-white title-dark">
+                        <i [ngClass]="item.icon"></i>
+                    </div>
+                    <div class="content mt-3">
+                        <a [routerLink]="'/page-single-service'" class="title h5 text-dark">{{item.title}}</a>
+                        <p class="text-muted para mt-2 mb-0">{{item.desc}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-100 mt-60">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6">
+                <img [src]="'assets/images/about02.jpg'" class="img-fluid rounded shadow" alt="" loading="lazy">
+            </div>
+
+            <div class="col-lg-7 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <div class="section-title ms-lg-5">
+                    <h4 class="title fw-semibold mb-3">Crafted For Digital Agency.</h4>
+                    <p class="text-muted para-desc mb-0">The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewer's attention from the layout.</p>
+                    <div class="row mt-4">
+                        <div *ngFor="let item of about" class="col-lg-6 col-12">
+                            <ul class="mb-0 list-unstyled">
+                                <li  class="mb-0"><span class="text-primary h4 me-2"><i class="uil uil-check-circle align-middle"></i></span> {{item}}</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <a [routerLink]="[]" class="btn btn-primary">Read More <i class="uil uil-arrow-right align-middle"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section bg-light">
+    <div class="container mb-4">
+        <div class="row justify-content-center">
+            <div class="col-12 mb-4 pb-2">
+                <div class="section-title text-center">
+                    <h4 class="title fw-semibold mb-3">Meet Our Team Expert</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <app-team-one/>
+
+    <div class="container mt-100 mt-60">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6">
+                <div class="section-title mb-4 pb-2 mb-md-0 pb-md-0 me-lg-5">
+                    <h4 class="title fw-semibold mb-3">Our Skills & Expertise</h4>
+                    <p class="text-muted para-desc mb-0">Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!</p>
+                </div>
+            </div>
+
+            <div class="col-lg-7 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                <div class="ms-lg-5">
+                    <div *ngFor="let item of skill" class="progress-box pt-4">
+                        <h6 class="text-muted fw-normal">{{item.title}}</h6>
+                        <div class="progress position-relative">
+                            <div class="progress-bar position-relative bg-primary" [ngStyle]="{'width':item.width}"></div>
+                            <div class="progress-value d-block text-muted h6 fw-normal">{{item.width}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-cta" style="background: url('/assets/images/cta03.jpg') center;">
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="card py-5 px-4 border-0 rounded bg-white">
+                    <div class="tiny-single-item">
+                        <div *ngFor="let item of clientData" class="tiny-slide">
+                            <div class="card client-testi text-center">
+                                <img [src]="item.image" class="avatar avatar-small rounded-pill mx-auto" alt="" loading="lazy">
+
+                                <div class="card-body pb-0 content">
+                                    <p class="h6 fw-normal text-muted fst-italic">{{item.desc}}</p>
+
+                                    <div class="name mt-4">
+                                        <small class="text-uppercase fw-semibold d-block">{{item.name}}</small>
+                                        <small class="text-muted">{{item.position}}</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h6 class="text-primary">Blogs</h6>
+                    <h4 class="title fw-semibold mt-2 mb-3">Latest Blog & News</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!</p>
+                </div>
+            </div>
+        </div>
+        <app-blog-one/>
+    </div>
+</section>
+
+<div class="container-fluid px-0">
+    <div class="py-5 position-relative" style="background: url('/assets/images/cta02.jpg') center;">
+        <div class="bg-overlay bg-gradient-overlay"></div>
+        <div class="container my-5">
+            <div class="row align-items-center">
+                <div class="col-lg-8 col-md-7">
+                    <h4 class="display-6 h4 mb-0 text-white title-dark fw-medium">Make your website unforgettable <br> Join the Starty community.</h4>
+                </div>
+
+                <div class="col-lg-4 col-md-5 text-md-end mt-4 mt-sm-0">
+                    <a [routerLink]="[]" class="btn btn-light">Join us Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer-one [top]="false"/>

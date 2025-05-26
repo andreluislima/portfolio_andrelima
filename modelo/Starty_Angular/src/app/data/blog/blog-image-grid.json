@@ -1,0 +1,83 @@
+[
+    {
+        "id":1,
+        "image":"assets/images/blog/img01.jpg",
+        "category":"Finance",
+        "title":"How to Get a Successful Ad for Your Business",
+        "client":"assets/images/client/01.jpg",
+        "name":"Cristino Murphy",
+        "date":"13th Sept 2024"
+    },
+    {
+        "id":2,
+        "image":"assets/images/blog/img02.jpg",
+        "category":"Branding",
+        "title":"The Dark Side of Overnight Success",
+        "client":"assets/images/client/02.jpg",
+        "name":"Florine Jackson",
+        "date":"29th Nov 2024"
+    },
+    {
+        "id":3,
+        "image":"assets/images/blog/img03.jpg",
+        "category":"Technology",
+        "title":"The Right Hand of Business IT World",
+        "client":"assets/images/client/03.jpg",
+        "name":"Ida Wild",
+        "date":"29th Dec 2024"
+    },
+    {
+        "id":4,
+        "image":"assets/images/blog/img04.jpg",
+        "category":"Personal",
+        "title":"How to Create Your Own Viral Moments",
+        "client":"assets/images/client/04.jpg",
+        "name":"Cristino Murphy",
+        "date":"13th March 2024"
+    },
+    {
+        "id":5,
+        "image":"assets/images/blog/img05.jpg",
+        "category":"Business",
+        "title":"How to Write a Business Plan For Any Business",
+        "client":"assets/images/client/01.jpg",
+        "name":"Cristino Murphy",
+        "date":"5th May 2024"
+    },
+    {
+        "id":6,
+        "image":"assets/images/blog/img06.jpg",
+        "category":"Marketing",
+        "title":"Seeing the Customer Journey More Clearly",
+        "client":"assets/images/client/02.jpg",
+        "name":"Florine Jackson",
+        "date":"19th June 2024"
+    },
+    {
+        "id":7,
+        "image":"assets/images/blog/img07.jpg",
+        "category":"Production",
+        "title":"The Signs of a Highly Giftable Product",
+        "client":"assets/images/client/03.jpg",
+        "name":"Ida Wild",
+        "date":"20th June 2024"
+    },
+    {
+        "id":8,
+        "image":"assets/images/blog/img08.jpg",
+        "category":"Business",
+        "title":"Defining Your Business Target Audience",
+        "client":"assets/images/client/04.jpg",
+        "name":"Calvin Carlo",
+        "date":"31st Aug 2024"
+    },
+    {
+        "id":9,
+        "image":"assets/images/blog/img09.jpg",
+        "category":"Corporate",
+        "title":"Running Out of Time & Ideas? Visit Our Blog",
+        "client":"assets/images/client/01.jpg",
+        "name":"Cristino Murphy",
+        "date":"1st Sept 2024"
+    }
+]

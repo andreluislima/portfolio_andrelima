@@ -1,0 +1,50 @@
+/* Template Name: Starty - Multipurpose HTML Template
+   Author: Shreethemes
+   Version: v1.2.0
+   Created: August 2021
+   File Description: Main Css file of the template
+*/
+
+/*********************************/
+/*         INDEX                 */
+/*================================
+ *     01.  Variables            *
+ *     02.  Bootstrap Custom     *
+ *     03.  Components           *
+ *     04.  General              *
+ *     05.  Helper               *
+ *     06.  Menu                 *
+ *     07.  Home / Landing       *
+ *     08.  Features / Services  *
+ *     09.  C.T.A                *
+ *     10.  Team                 *
+ *     11.  Testimonial          *
+ *     12.  Portfolio            *
+ *     13.  Blog                 *
+ *     14.  Pricing              *
+ *     15.  Countdown            *
+ *     16.  Contact              *
+ *     17.  Footer               *
+ ================================*/
+
+@import "variables";
+@import "bootstrap-custom";
+@import "components";
+@import "general";
+@import "helper";
+@import "menu";
+@import "home";
+@import "features";
+@import "cta";
+@import "team";
+@import "testi";
+@import "portfolio";
+@import "blog";
+@import "pricing";
+@import "countdown";
+@import "contact";
+@import "footer";
+//Demos
+@import "cafe";
+@import "restaurant";
+ @import "masonary"

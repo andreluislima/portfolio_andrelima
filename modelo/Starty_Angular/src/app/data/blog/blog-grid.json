@@ -1,0 +1,74 @@
+[
+    {
+        "id":1,
+        "image":"assets/images/blog/01.jpg",
+        "category":"Corporate",
+        "title":"Building Your Corporate Identity from Starty",
+        "desc":"The most well-known dummy text Starty is the 'Lorem Ipsum', in the 16th century.",
+        "date":"13th Sept 2024"
+    },
+    {
+        "id":2,
+        "image":"assets/images/blog/02.jpg",
+        "category":"Branding",
+        "title":"The Dark Side of Overnight Success",
+        "desc":"The most well-known dummy text Starty is the 'Lorem Ipsum', in the 16th century.",
+         "date":"29th Nov 2024"
+    },
+    {
+        "id":3,
+        "image":"assets/images/blog/03.jpg",
+        "category":"Technology",
+        "title":"The Right Hand of Business IT World",
+        "desc":"The most well-known dummy text Starty is the 'Lorem Ipsum', in the 16th century.",
+         "date":"29th Dec 2024"
+    },
+    {
+        "id":4,
+        "image":"assets/images/blog/04.jpg",
+        "category":"Personal",
+        "title":"How to Create Your Own Viral Moments",
+        "desc":"The most well-known dummy text Starty is the 'Lorem Ipsum', in the 16th century.",
+         "date":"13th March 2024"
+    },
+    {
+        "id":5,
+        "image":"assets/images/blog/05.jpg",
+        "category":"Business",
+        "title":"How to Write a Business Plan For Any Business",
+        "desc":"The most well-known dummy text Starty is the 'Lorem Ipsum', in the 16th century.",
+         "date":"5th May 2024"
+    },
+    {
+        "id":6,
+        "image":"assets/images/blog/06.jpg",
+        "category":"Marketing",
+        "title":"Seeing the Customer Journey More Clearly",
+        "desc":"The most well-known dummy text Starty is the 'Lorem Ipsum', in the 16th century.",
+        "date":"19th June 2024"
+    },
+    {
+        "id":7,
+        "image":"assets/images/blog/07.jpg",
+        "category":"Production",
+        "title":"The Signs of a Highly Giftable Product",
+        "desc":"The most well-known dummy text Starty is the 'Lorem Ipsum', in the 16th century.",
+        "date":"20th June 2024"
+    },
+    {
+        "id":8,
+        "image":"assets/images/blog/08.jpg",
+        "category":"Business",
+        "title":"Defining Your Business Target Audience",
+        "desc":"The most well-known dummy text Starty is the 'Lorem Ipsum', in the 16th century.",
+        "date":"31st Aug 2024"
+    },
+    {
+        "id":9,
+        "image":"assets/images/blog/09.jpg",
+        "category":"Corporate",
+        "title":"Running Out of Time & Ideas? Visit Our Blog",
+        "desc":"The most well-known dummy text Starty is the 'Lorem Ipsum', in the 16th century.",
+        "date":"1st Sept 2024"
+    }
+]

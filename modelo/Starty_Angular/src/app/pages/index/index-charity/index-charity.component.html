@@ -1,0 +1,237 @@
+<app-navbar [navLight]="true" [navRight]="true"/>
+
+ <section class="bg-half-260 d-table w-100" style="background: url('/assets/images/bg/charity.jpg') center;">
+    <div class="bg-overlay"></div>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="title-heading">
+                    <h4 class="heading fw-bold text-white title-dark mb-4">More Charity <br>More Better Life</h4>
+                    <p class="text-white-50 para-desc mb-0">Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!</p>
+
+                    <div class="mt-4 pt-2">
+                        <a [routerLink]="[]" class="btn btn-primary m-1">Become a volunteer</a>
+                        <a [routerLink]="[]" (click)="togggleModal($event)" class="btn btn-icon btn-pills btn-primary m-1 lightbox"><i data-feather="video" class="icons"></i></a><span class="text-light title-dark small align-middle ms-1">Watch Now</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="features-absolute rounded shadow p-md-5 p-4 bg-white">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="section-title">
+                                <span class="badge bg-soft-primary rounded-lg">Charity Donation</span>
+                                <h6 class="mb-0 mt-3">We are near to our</h6>
+                                <h4 class="title fw-semibold mb-3">CAMPAIGN</h4>
+                                <p class="text-muted para-desc mb-0">Our design projects are fresh and simple and will benefit your business greatly.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 mt-4 pt-2 mt-md-0 pt-md-0">
+                            <div class="progress-box mt-4">
+                                <div class="progress rounded-md" style="height: 10px;">
+                                    <div class="progress-bar position-relative bg-primary rounded-md" style="width:60%;">
+                                        <div class="progress-value d-block text-muted h6">Raised 60% = $ 600000</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between mt-2">
+                                    <h6 class="title text-muted text-start mb-0">$ 1000</h6>
+                                    <h6 class="title text-muted text-end mb-0">Goal: $ 1000000</h6>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 text-lg-end">
+                                <a [routerLink]="[]" class="btn btn-primary">Donate Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-100 mt-60">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h4 class="title fw-semibold mb-4">Popular Causes</h4>
+                    <p class="para-desc text-muted mx-auto mb-0">Explore and learn more about everything from machine learning and global payments to  scaling your team.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 mt-4">
+                <div  class="tiny-three-item">
+                    <div *ngFor="let item of causes" class="tiny-slide">
+                        <div class="blog blog-primary causes position-relative overflow-hidden p-2">
+                            <div>
+                                <img [src]="item.image" class="img-fluid rounded" alt="" loading="lazy">
+                            </div>
+
+                            <div class="causes-content bg-white p-4 shadow rounded">
+                                <a [routerLink]="'blog-detail-three'" class="h5 title text-dark d-block mb-0">{{item.title}}</a>
+                                <p class="text-muted mt-2 mb-4">{{item.desc}}</p>
+
+                                <div class="progress-box pt-4">
+                                    <div class="progress rounded-md" style="height: 6px;">
+                                        <div class="progress-bar position-relative bg-primary rounded-md" style="width:60%;">
+                                            <div class="progress-value d-block text-muted h6">Rais: ${{item.rais}}</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <span class="title text-muted text-start mb-0">$ {{item.value}}</span>
+                                        <span class="title text-muted text-end mb-0">Goal: $ {{item.goal}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-100 mt-60">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h4 class="title fw-semibold mb-4">What We Do?</h4>
+                    <p class="para-desc text-muted mx-auto mb-0">Explore and learn more about everything from machine learning and global payments to  scaling your team.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div *ngFor="let item of aboutData" class="col-xl-3 col-lg-4 col-md-6 mt-4 pt-2">
+                <div class="card features feature-primary features-classic p-4 text-center rounded-md shadow border-0">
+                    <div class="fea-icon bg-soft rounded-md mx-auto">
+                        <i [ngClass]="item.icon"></i>
+                    </div>
+
+                    <div class="content mt-4">
+                        <h5 class="mb-3">{{item.title}}</h5>
+                        <p class="text-muted">{{item.desc}}</p>
+                        <a [routerLink]="'/page-single-service'" class="title text-dark">Read More <i class="uil uil-arrow-right align-middle"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-cta" id="volunteer" style="background: url('/assets/images/bg/charity2.jpg') center;">
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="col-lg-5 col-md-6 col-12">
+                <div class="card p-4 border-0 rounded bg-white">
+                    <h4>Become a volunteer to help helpless</h4>
+
+                    <form class="mt-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Your Name <span class="text-danger">*</span></label>
+                                    <input name="name" id="name" type="text" class="form-control" placeholder="Name :">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Your Email <span class="text-danger">*</span></label>
+                                    <input name="email" id="email" type="email" class="form-control" placeholder="Email :">
+                                </div> 
+                            </div>
+
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label class="form-label">Why you join us?</label>
+                                    <input name="subject" id="subject" class="form-control" placeholder="subject :">
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label class="form-label">Comments <span class="text-danger">*</span></label>
+                                    <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Message :"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="submit" id="submit" name="send" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h4 class="title fw-semibold mb-3">Volunteers</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!</p>
+                </div>
+            </div>
+        </div>
+        <app-team-two/>
+    </div>
+
+    <div class="container mt-100 mt-60">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h6 class="text-primary">Blogs</h6>
+                    <h4 class="title fw-semibold mt-2 mb-3">Latest Blog & News</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div *ngFor="let item of blogData" class="col-lg-4 col-md-6 mt-4 pt-2">
+                <div class="card blog blog-primary shadow rounded overflow-hidden">
+                    <div class="image position-relative overflow-hidden">
+                        <img [src]="item.image" class="img-fluid" alt="">
+
+                        <div class="blog-tag">
+                            <a [routerLink]="[]" class="badge text-bg-light">{{item.tag}}</a>
+                        </div>
+                    </div>
+
+                    <div class="card-body content">
+                        <a [routerLink]="'/blog-detail-three'" class="h5 title text-dark d-block mb-0">{{item.title}}</a>
+                        <p class="text-muted mt-2 mb-2">{{item.desc}}</p>
+                        <a [routerLink]="'/blog-detail-three'" class="link text-dark">Read More <i class="uil uil-arrow-right align-middle"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-charity-footer/>
+
+<div class="modal" [ngClass]="isOpen ? 'd-block' : '' " style="background: #00000096;">
+    <div class="d-flex align-items-center justify-content-center h-100">                    
+        <div class="position-relative">
+            <div class="position-absolute top-0  translate-middle z-index-1" style="right:-30px">
+                <button type="button" class=" btn-pills btn-sm btn-light btn-close opacity-10" style="width: 20px; height: 20px;" (click)="togggleModal($event)" ></button>
+            </div>
+            <iframe
+                src="https://www.youtube.com/embed/S_CGed6E610"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,122 @@
+//
+// masonary.scss
+//
+.column-2{
+    column-width: auto;
+    column-count: 2;
+}
+@media (max-width: 991px) {
+    .column-2{
+        column-width: auto;
+        column-count: 2;
+    }
+}
+@media (max-width: 640px) {
+    .column-2{
+        column-width: auto;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 425px) {
+     .column-2{
+        column-width: auto;
+        column-count: 1;
+    }
+}
+
+.column-3{
+    column-width: auto;
+    column-count: 3;
+}
+@media (max-width: 991px) {
+    .column-3{
+        column-width: auto;
+        column-count: 3;
+    }
+}
+@media (max-width: 640px) {
+    .column-3{
+        column-width: auto;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 425px) {
+     .column-3{
+        column-width: auto;
+        column-count: 1;
+    }
+}
+
+.column-4{
+    column-width: auto;
+    column-count: 4;
+}
+@media (max-width: 991px) {
+    .column-4{
+        column-width: auto;
+        column-count: 3;
+    }
+}
+@media (max-width: 640px) {
+    .column-4{
+        column-width: auto;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 425px) {
+     .column-4{
+        column-width: auto;
+        column-count: 1;
+    }
+}
+
+.column-5{
+    column-width: auto;
+    column-count: 5;
+}
+@media (max-width: 991px) {
+    .column-5{
+        column-width: auto;
+        column-count: 3;
+    }
+}
+@media (max-width: 640px) {
+    .column-5{
+        column-width: auto;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 425px) {
+     .column-5{
+        column-width: auto;
+        column-count: 1;
+    }
+}
+
+.column-6{
+    column-width: auto;
+    column-count: 6;
+}
+@media (max-width: 991px) {
+    .column-6{
+        column-width: auto;
+        column-count: 3;
+    }
+}
+@media (max-width: 640px) {
+    .column-6{
+        column-width: auto;
+        column-count: 2;
+    }
+}
+
+@media (max-width: 425px) {
+     .column-6{
+        column-width: auto;
+        column-count: 1;
+    }
+}

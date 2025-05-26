@@ -1,0 +1,171 @@
+<app-navbar [navLight]="true" [navRight]="true"/>
+ <section class="bg-half-170 pb-lg-0 pb-md-4 d-table w-100" style="background: url('/assets/images/bg/apps.jpg') no-repeat center;">
+    <div class="bg-overlay bg-gradient-primary opacity-9"></div>
+    <div class="container">
+        <div class="row position-relative" style="z-index: 1;">
+            <div class="col-md-7 col-12 mt-lg-5">
+                <div class="title-heading">
+                    <h1 class="heading text-white title-dark mb-4">Essential Mobile App <br> for Workspaces</h1>
+                    <p class="para-desc text-white-50">Explore and learn Starty more about everything from machine learning and global payments to scaling your team.</p>
+                    <div class="mt-4 pt-2">
+                        <a [routerLink]="" (click)="$event.preventDefault()"  class="btn btn-primary">Start Free Trial</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                <div class="shape-before">
+                    <div class="carousel-cell"><img [src]="'/assets/images/app/hero.png'" class="img-fluid" alt="Starty" loading="lazy"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="position-relative">
+    <div class="shape overflow-hidden text-white">
+        <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M720 125L2160 0H2880V250H0V125H720Z" fill="currentColor"></path>
+        </svg>
+    </div>
+</div>
+
+ <section class="pt-4">
+    <div class="container">
+        <app-partners/>
+    </div>
+</section>
+
+ <section class="section overflow-hidden pb-0">
+    <div class="container">
+        <div class="row justify-content-center g-4">
+            <div *ngFor="let item of services" class="col-lg-4 col-md-6">
+                <div class="card p-4 rounded features features-classic feature-primary">
+                    <div class="fea-icon rounded bg-light shadow icon">
+                        <i class="mb-0 text-primary" [ngClass]="item.icon"></i>
+                    </div>
+                    <div class="content mt-4">
+                        <a [routerLink]="'/page-single-service'" class="title h5 text-dark">{{item.title}}</a>
+
+                        <p class="text-muted mt-3">{{item.desc}}</p>
+                    </div>
+
+                    <a [routerLink]="'/page-single-service'">
+                        <span class="text-dark">Read More <i class="uil uil-arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-100 mt-60">
+        <div class="row align-items-center">
+            <div class="col-lg-5 col-md-6 order-md-1 order-2 mt-4 mt-am-0 pt-2 pt-sm-0">
+                <div class="app-feature-shape position-relative">
+                    <div class="tiny-single-item">
+                        <div *ngFor="let item of sliderImg" class="tiny-slide">
+                            <img [src]="item" class="img-fluid" alt="Starty" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 col-md-6 order-md-2 order-1">
+                <div class="ms-lg-5">
+                    <div class="section-title">
+                        <h6 class="text-primary">Analytics</h6>
+                        <h4 class="title mb-4">Organize your work <br> anywhere</h4>
+                        <p class="text-muted para-desc mb-0">Explore and learn more about Starty everything from machine learning and global payments to  scaling your team.</p>
+                    
+                        <ul class="list-unstyled text-muted mt-3">
+                            <li *ngFor="let item of analytics" class="mb-0"><span class="text-primary h5 me-2"><i class="uil uil-check-circle align-middle"></i></span>{{item}}</li>
+                        </ul>
+
+                        <div class="mt-4">
+                            <a [routerLink]="" (click)="$event.preventDefault()" class="btn btn-soft-primary">Try for free <i data-feather="arrow-right" class="fea icon-sm"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-100 mt-60">
+        <div class="row align-items-lg-center align-items-end">
+            <div class="col-md-6">
+                <div class="section-title mb-4 pb-2">
+                    <h4 class="title mb-4">Designed & Built by the <br> latest code integration</h4>
+                    <p class="text-muted para-desc mb-0">Explore and learn more about everything from machine learning and global payments to  scaling your team.</p>
+
+                    <ul class="list-unstyled mb-0">
+                        <li *ngFor="let item of about" class="d-flex mt-4">
+                            <i class="uil uil-check-circle h4 text-primary"></i>
+
+                            <div class="flex-1 ms-3">
+                                <h6 class="mb-0">{{item.title}}</h6>
+                                <p class="text-muted mt-2 mb-0">{{item.desc}}</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="mt-4">
+                        <a [routerLink]="" (click)="$event.preventDefault()" class="btn btn-primary">Download Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="app-feature-shape position-relative">
+                    <img [src]="'assets/images/crypto/hand-with-mobile.png'" class="img-fluid" alt="" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section" style="background: url('/assets/images/bg/app-counter.jpg') center;">
+    <div class="bg-overlay bg-gradient-primary opacity-9"></div>
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let item of counter" class="col-md-3 col-6">
+                <div class="counter-box position-relative text-center">
+                    <h2 class="mb-0 display-1 fw-bold title-dark text-white mt-2 opacity-3"><span class="counter-value" [countUp]="item.target">3</span></h2>
+                    <span class="counter-head fw-semibold title-dark text-white position-absolute top-50 start-50 translate-middle">{{item.title}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <div class="section-title mb-4 pb-2">
+                    <h4 class="title mb-4">App Reviews</h4>
+                    <p class="text-muted para-desc mb-0 mx-auto">Explore and learn more about everything from machine learning and global payments to scaling your team.</p>
+                </div>
+            </div>
+        </div>
+
+        <app-client-one/>
+    </div>
+
+    <div class="container mt-100 mt-60">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title mb-0 pb-2 text-center">
+                    <h4 class="title mb-3">Frequently Asked Questions</h4>
+                    <p class="text-muted mx-auto para-desc mb-0">Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!</p>
+                </div>
+            </div>
+        </div>
+
+        <app-faq-one/>
+    </div>
+
+    <div class="container mt-100 mt-60">
+        <app-mobile-app/>
+    </div>
+</section>
+
+<app-footer-one [top]="true"/>

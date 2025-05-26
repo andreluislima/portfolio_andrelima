@@ -1,0 +1,173 @@
+<app-navbar [navLight]="true" [navRight]="true"/>
+
+ <section class="bg-half-260 bg-animation-left d-table w-100" style="background: url('/assets/images/bg/events.jpg') center;">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="title-heading position-relative" style="z-index: 2;">
+                    <h4 class="heading fw-semibold text-white title-dark mb-4">Advancing <br> Research 2021</h4>
+                    <p class="text-white-50 para-desc">Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!</p>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="event-sale">
+                                <ul class="count-down list-unstyled m-0">
+                                    <li id="days" class="count-number fw-semibold mb-0 list-inline-item px-3">{{days}}<p class='count-head'>Days</p></li>
+                                    <li id="hours" class="count-number fw-semibold mb-0 list-inline-item px-3">{{hours}}<p class='count-head'>Hours</p></li>
+                                    <li id="mins" class="count-number fw-semibold mb-0 list-inline-item px-3">{{minutes}}<p class='count-head'>Mins</p></li>
+                                    <li id="secs" class="count-number fw-semibold mb-0 list-inline-item px-3">{{seconds}}<p class='count-head'>Secs</p></li>
+                                    <li id="end" class="h1"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <section class="section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h4 class="title fw-semibold mb-3">Host Your Event</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div *ngFor="let item of eventProcess" class="col-md-4 mt-4 pt-2">
+                <div class="features feature-primary text-center border-0 px-lg-4 position-relative" [ngClass]="item.bar ? 'process-bar' : ''">
+                    <div class="fea-icon bg-soft rounded-circle shadow icon h5 mb-0 mx-auto"><i [class]="item.icon"></i></div>
+
+                    <div class="content mt-4 pt-2">
+                        <h4>{{item.title}}</h4>
+                        <p class="text-muted mb-0 mt-3">{{item.desc}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-100 mt-60">
+        <div class="row align-items-center">
+            <div class="col-lg-7 col-md-8">
+                <div class="section-title text-md-start text-center mb-4 pb-2">
+                    <h4 class="title fw-semibold mb-3">Keynote Speakers</h4>
+                    <p class="para-desc title-dark text-muted mb-0">Explore and learn more about everything from machine learning and global payments to  scaling your team.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-md-4 d-none d-md-block">
+                <div class="text-md-end text-center">
+                    <a [routerLink]="[]" class="btn btn-primary">All Speakers</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-100 mt-60">
+        <app-team-one/>
+    </div>
+
+    <div class="container mt-100 mt-60">
+        <div class="row align-items-center">
+            <div class="col-lg-4 col-md-6">
+                <img [src]="'assets/images/events/about.jpg'" class="img-fluid rounded shadow" alt="" loading="lazy">
+            </div>
+
+            <div class="col-lg-6 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0 order-lg-3">
+                <div class="section-title">
+                    <h4 class="title fw-semibold mb-3">Starty Event management</h4>
+                    <p class="text-muted para-desc">The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewer's attention from the layout.</p>
+                
+                    <blockquote class="mx-auto blockquote h6 p-0 px-4 text-muted"><i class="mdi mdi-format-quote-open mdi-48px text-muted opacity-2 d-block"></i> The man who comes back through the door in the wall will never be quite the same as the man who went out. <small class="d-block text-primary mt-3">- Starty Event</small></blockquote>
+                </div>
+            </div>
+
+            <div class="col-lg-2 order-lg-2">
+                <div class="row justify-content-center g-4">
+                    <div *ngFor="let item of counterData" class="col-lg-12 col-md-4 col-6">
+                        <div class="counter-box position-relative text-center">
+                            <h2 class="mb-0 display-6 fw-semibold title-dark mt-2"><span class="counter-value" [countUp]="item.target">3</span><span class="h4">+</span></h2>
+                            <small class="counter-head text-muted">{{item.title}}</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <section class="section bg-light">
+    <app-event-tab/>
+</section>
+
+<section class="bg-half-170" style="background: url('/assets/images/bg/busi04.jpg') center;">
+    <div class="bg-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title play-icon">
+                    <a [routerLink]="[]" (click)="togggleModal($event)" class="play-btn lightbox">
+                        <i class="mdi mdi-play text-primary rounded-circle bg-white shadow"></i>
+                    </a>
+
+                    <div class="mt-4">
+                        <h4 class="title text-white title-dark">Let’s Make Something Together</h4>
+                        <p class="text-white-50 mb-0">The Biggest Event Ever</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="pricing">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12">
+                <div class="section-title mb-4 pb-2">
+                    <h6 class="text-primary">Pricing Plan</h6>
+                    <h4 class="title fw-semibold mt-2 mb-3">Select a Plan Now To Get Tickets</h4>
+                    <p class="text-muted para-desc mb-0">Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!</p>
+                </div>
+            </div>
+        </div>
+
+        <app-pricing-two/>
+    </div>
+
+    <div class="container mt-100 mt-60">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h4 class="title fw-semibold mb-3">Latest Blog & News</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!</p>
+                </div>
+            </div>
+        </div>
+
+        <app-blog-one/>
+    </div>
+</section>
+
+<app-footer-two/>
+
+<div class="modal" [ngClass]="isOpen ? 'd-block' : '' " style="background: #00000096;">
+    <div class="d-flex align-items-center justify-content-center h-100">                    
+        <div class="position-relative">
+            <div class="position-absolute top-0  translate-middle z-index-1" style="right:-30px">
+                <button type="button" class=" btn-pills btn-sm btn-light btn-close opacity-10" style="width: 20px; height: 20px;" (click)="togggleModal($event)" ></button>
+            </div>
+            <iframe
+                src="https://www.youtube.com/embed/S_CGed6E610"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+        </div>
+    </div>
+</div>

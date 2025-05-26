@@ -1,0 +1,84 @@
+<app-navbar [navRight]="true"/>
+
+  <section class="bg-half-170 bg-light bg-gradient">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="title-heading">
+                    <h4 class="heading fw-semibold">{{data?.title ? data?.title : 'These striking photos capture the future of human flight'}}</h4>
+
+                    <div class="d-flex mt-4 pb-4 align-items-center justify-content-between">
+                        <div class="d-flex author align-items-center">
+                            <img [src]="data?.client ? data?.client : 'assets/images/client/01.jpg'" class="avatar avatar-md-sm rounded-pill" alt="">
+                            <div class="ms-2">
+                                <h6 class="user d-block mb-0"><a [routerLink]="[]" class="text-dark">{{data?.name ? data?.name : 'Cristino Murphy'}}</a></h6>
+                                <small class="date text-muted mb-0">Content Writer</small>
+                            </div>
+                        </div>
+
+                        <div>
+                            <a [routerLink]="[]" class="btn btn-primary">Follow</a>
+                        </div>
+                    </div>
+
+                    <ul class="list-inline d-flex pt-4 mb-0 border-top justify-content-between">
+                        <li class="list-inline-item text-muted h6"><i class="uil uil-calender h5 text-dark"></i> {{data?.date ? data?.date : '19th June 2024'}}</li>
+                        <li class="list-inline-item text-muted h6"><i class="uil uil-clock h5 text-dark"></i> 10 min read</li>
+                    </ul>
+                </div>
+
+                <div class="mt-5">
+                    <img [src]="data?.image ? data?.image : 'assets/images/blog/single03.jpg'" class="w-100 rounded shadow object-fit-cover" alt="" style="height: 534px;">
+                </div>
+
+                <div class="mt-5">
+                    <p class="text-muted">It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. One may speculate that over the course of time certain letters were added or deleted at various positions within the text. This might also explain why one can now find slightly different versions. Due to the age of the Lorem Ipsum text there are no copyright issues to contend with.</p>
+                    <p class="text-muted">In the 1960s, the text suddenly became known beyond the professional circle of typesetters and layout designers when it was used for Letraset sheets (adhesive letters on transparent film, popular until the 1980s) Versions of the text were subsequently included in DTP programmes such as PageMaker etc.</p>
+                    <p class="text-muted">The phrasal sequence of the Lorem Ipsum text is now so widespread and commonplace that many DTP programmes can generate dummy text using the starting sequence "Lorem ipsum".</p>
+                    <p class="text-muted">Fortunately, the phrase 'Lorem Ipsum' is now recognized by electronic pre-press systems and, when found, an alarm can be raised. This avoids a publication going to print with overlooked dummy text.</p>
+                
+                    <blockquote class="text-center mx-auto blockquote"><i class="mdi mdi-format-quote-open mdi-48px text-muted opacity-2 d-block"></i> The man who comes back through the door in the wall will never be quite the same as the man who went out. <small class="d-block text-muted mt-2">- Starty Template</small></blockquote>
+                </div>
+
+                <div class="row align-items-center mt-5">
+                    <div class="col-md-5">
+                        <div class="position-relative">
+                            <img [src]="'assets/images/blog/img04.jpg'" class="img-fluid rounded shadow" alt="">
+                            <div class="play-icon">
+                                <a [routerLink]="[]" (click)="togggleModal($event)" class="play-btn lightbox">
+                                    <i class="mdi mdi-play text-primary rounded-circle bg-white shadow"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-7 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="ms-lg-4">
+                            <p class="text-muted"><span class="dropcaps display-4 text-primary me-2">T</span>he most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words. This ancient dummy text is also incomprehensible, but it imitates the rhythm of most European languages in Latin script. The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewer's attention from the layout.</p>
+                            <p class="text-muted mb-0">Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts. If the fill text is intended to illustrate the characteristics of different typefaces, it sometimes makes sense to select texts containing the various letters and symbols specific to the output language.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <app-blog-comments/>
+            </div>
+        </div>
+    </div>
+</section>
+<app-footer-five/>
+
+<div class="modal" [ngClass]="isOpen ? 'd-block' : '' " style="background: #00000096;">
+    <div class="d-flex align-items-center justify-content-center h-100">                    
+        <div class="position-relative">
+            <div class="position-absolute top-0  translate-middle z-index-1" style="right:-30px">
+                <button type="button" class=" btn-pills btn-sm btn-light btn-close opacity-10" style="width: 20px; height: 20px;" (click)="togggleModal($event)" ></button>
+            </div>
+            <iframe
+                src="https://www.youtube.com/embed/S_CGed6E610"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+        </div>
+    </div>
+</div>

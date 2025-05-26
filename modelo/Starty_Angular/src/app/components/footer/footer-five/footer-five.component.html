@@ -1,0 +1,58 @@
+ <footer class="footer bg-footer">            
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="footer-py-60">
+                    <div class="row">
+                        <div class="col-lg-4 col-12">
+                            <a [routerLink]="'/'" class="logo-footer">
+                                <img [src]="'assets/images/logo-light.png'" height="26" alt="">
+                            </a>
+                            <p class="mt-4">Start working with Starty that can provide everything you.</p>
+                            <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
+                                <li *ngFor="let item of social" class="list-inline-item" style="margin: 0 2px !important;"><a [href]="item.link" target="_blank" class="rounded"><i [ngClass]="item.icon" title="Buy Now"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-8 col-12">
+                            <div class="row">
+                                <div class="col-md-4 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
+                                    <h6 class="footer-head">Company</h6>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li *ngFor="let item of linkOne"><a [routerLink]="item.link" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> {{item.title}}</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="col-md-4 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
+                                    <h6 class="footer-head">Usefull Links</h6>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li *ngFor="let item of linkTwo"><a [routerLink]="item.link" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> {{item.title}}</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-4 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
+                                    <h6 class="footer-head">Resources</h6>
+                                    <ul class="list-unstyled footer-list mt-4">
+                                        <li *ngFor="let item of linkThree"><a [routerLink]="item.link" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> {{item.title}}</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-py-30 footer-bar bg-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <p class="mb-0 text-muted">{{year}} © Starty. Design & Develop with <i class="mdi mdi-heart text-danger"></i> by <a href="https://shreethemes.in/" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

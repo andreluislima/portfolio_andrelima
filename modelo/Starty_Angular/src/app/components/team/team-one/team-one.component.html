@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-12 px-0">
+        <div class="tiny-six-item">
+            <div *ngFor="let item of clientData" class="tiny-slide">
+                <div class="card team team-primary">
+                    <div class="card-img">
+                        <img [src]="item.image" class="img-fluid" alt="" loading="lazy">
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="team-content">
+                        <a [routerLink]="[]" (click)="$event.preventDefault()" class="h6 name text-uppercase d-block mb-0 text-white title-dark">{{item.name}}</a>
+                        <small class="text-white title-dark">{{item.position}}</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

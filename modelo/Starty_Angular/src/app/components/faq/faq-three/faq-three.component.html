@@ -1,0 +1,14 @@
+<div class="accordion" id="buyingquestion">
+    <div *ngFor="let item of faqData" class="accordion-item rounded border-0 shadow mt-3">
+        <h2 class="accordion-header">
+            <button class="accordion-button border-0 bg-white" [ngClass]="item.id === activeTab ? '' :'collapsed'" type="button" (click)="onTabClick(item.id)">
+                {{item.title}}
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse border-0 collapse" [ngClass]="item.id === activeTab ? 'show' :''">
+            <div class="accordion-body text-muted bg-white">
+                {{item.desc}}
+            </div>
+        </div>
+    </div>
+</div>

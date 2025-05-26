@@ -1,0 +1,36 @@
+<div class="row justify-content-center">
+    <div class="col-12">
+        <div class="filters-group-wrap text-center">
+            <div class="filters-group">
+                <ul class="container-filter mb-0 categories-filter list-unstyled filter-options">
+                    <li class="list-inline-item categories position-relative" [ngClass]="selectedCategory === null ? 'active' : ''" (click)="filterItems(null)">All</li>
+                    <li class="list-inline-item categories position-relative" [ngClass]="selectedCategory === 'branding' ? 'active' : ''" (click)="filterItems('branding')">Branding</li>
+                    <li class="list-inline-item categories position-relative" [ngClass]="selectedCategory === 'designing' ? 'active' : ''" (click)="filterItems('designing')">Designing</li>
+                    <li class="list-inline-item categories position-relative" [ngClass]="selectedCategory === 'photography' ? 'active' : ''" (click)="filterItems('photography')">Photography</li>
+                    <li class="list-inline-item categories position-relative" [ngClass]="selectedCategory === 'development' ? 'active' : ''" (click)="filterItems('development')">Development</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div [ngClass]="col">
+        <div id="grid" [ngClass]="row">
+            <div *ngFor="let item of filteredData" class="">
+
+                <div class="card portfolio portfolio-modern portfolio-primary rounded overflow-hidden">
+                    <lightgallery>
+                        <a [href]="item.image" class="lightbox">
+                            <img [src]="item.image" class="img-fluid" alt="">
+                        </a>
+                    </lightgallery>
+                    <div class="content text-center p-3">
+                        <a [routerLink]="['/portfolio-detail-three',item.id]" class="text-dark h6 mb-0 d-block title">{{item.name}}</a>
+                        <small class="text-muted fw-normal mb-0">{{item.title}}</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

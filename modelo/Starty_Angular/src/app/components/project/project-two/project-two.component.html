@@ -1,0 +1,37 @@
+
+<div class="row justify-content-center">
+    <div class="col-12">
+        <div class="filters-group-wrap text-center">
+            <div class="filters-group">
+                <ul class="container-filter mb-0 categories-filter list-unstyled filter-options">
+                    <li class="list-inline-item categories position-relative" [ngClass]="selectedCategory === null ? 'active' : ''" (click)="filterItems(null)"data-group="all">All</li>
+                    <li class="list-inline-item categories position-relative" [ngClass]="selectedCategory === 'branding' ? 'active' : ''" (click)="filterItems('branding')">Branding</li>
+                    <li class="list-inline-item categories position-relative" [ngClass]="selectedCategory === 'designing' ? 'active' : ''" (click)="filterItems('designing')">Designing</li>
+                    <li class="list-inline-item categories position-relative" [ngClass]="selectedCategory === 'photography' ? 'active' : ''" (click)="filterItems('photography')">Photography</li>
+                    <li class="list-inline-item categories position-relative" [ngClass]="selectedCategory === 'development' ? 'active' : ''" (click)="filterItems('development')">Development</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="grid" class="row row-cols-md-2 row-cols-lg-5 mt-4 pt-2">
+    <div *ngFor="let item of filteredData" class="col spacing picture-item">
+        <div class="card portfolio portfolio-creative portfolio-primary shadow rounded overflow-hidden">
+            <div class="position-relative">
+                <img [src]="item.image" class="img-fluid" alt="" loading="lazy">
+                <div class="overlay"></div>
+
+                <div class="lightbox-icon">
+                    <lightgallery>
+                        <a [href]="item.image" class="lightbox text-dark"><i class="mdi mdi-plus"></i></a>
+                    </lightgallery>
+                </div>
+            </div>
+            <div class="content p-3">
+                <a [routerLink]="['/portfolio-detail-one', item.id]" class="text-dark h6 mb-0 d-block title">{{item.title}}</a>
+                <small class="text-muted fw-normal mb-0">{{item.subTitle}}</small>
+            </div>
+        </div>
+    </div>
+</div>

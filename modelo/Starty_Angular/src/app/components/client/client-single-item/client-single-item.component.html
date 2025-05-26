@@ -1,0 +1,16 @@
+<div class="tiny-single-item">
+    <div *ngFor="let item of clientData" class="tiny-slide px-md-5">
+        <div class="card client-testi text-center">
+            <img [src]="item.image" class="avatar avatar-small rounded-pill mx-auto" alt="">
+
+            <div class="card-body pb-0 content">
+                <p class="h5 fw-normal text-muted fst-italic">{{item.desc}}</p>
+
+                <div class="name mt-4">
+                    <small class="text-uppercase fw-semibold d-block">{{item.name}}</small>
+                    <small class="text-muted">{{item.position}}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

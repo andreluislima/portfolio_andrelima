@@ -1,0 +1,128 @@
+[
+    {
+        "id":1,
+        "tag":"Featured",
+        "image1":"assets/images/shop/items/f1.png",
+        "image2":"assets/images/shop/items/b1.png",
+        "name":"T-Shirt",
+        "price":"$16.00",
+        "rate":["mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star"]
+    },
+    {
+        "id":2,
+        "tag":"",
+        "image1":"assets/images/shop/items/f2.png",
+        "image2":"assets/images/shop/items/b2.png",
+        "name":"Hoodie",
+        "price":"$16.00",
+        "rate":["mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star"]
+    },
+    {
+        "id":3,
+        "tag":"Sale",
+        "image1":"assets/images/shop/items/f3.png",
+        "image2":"assets/images/shop/items/b3.png",
+        "name":"Red Cap",
+        "price":"$16.00",
+        "rate":["mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star"]
+    },
+    {
+        "id":4,
+        "tag":"New",
+        "image1":"assets/images/shop/items/f4.png",
+        "image2":"assets/images/shop/items/b4.png",
+        "name":"White T-Shirt",
+        "price":"$16.00",
+        "rate":["mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star"]
+    },
+    {
+        "id":5,
+        "tag":"",
+        "image1":"assets/images/shop/items/f5.png",
+        "image2":"assets/images/shop/items/b5.png",
+        "name":"Blue T-Shirt",
+        "price":"$16.00",
+        "rate":["mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star"]
+    },
+    {
+        "id":6,
+        "tag":"",
+        "image1":"assets/images/shop/items/f6.png",
+        "image2":"assets/images/shop/items/b6.png",
+        "name":"Green T-Shirt",
+        "price":"$16.00",
+        "rate":["mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star"]
+    },
+    {
+        "id":7,
+        "tag":"",
+        "image1":"assets/images/shop/items/f7.png",
+        "image2":"assets/images/shop/items/b7.png",
+        "name":"Full Sleeve T-Shirt",
+        "price":"$16.00",
+        "rate":["mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star"]
+    },
+    {
+        "id":8,
+        "tag":"",
+        "image1":"assets/images/shop/items/f8.png",
+        "image2":"assets/images/shop/items/b8.png",
+        "name":"Women Block Heels",
+        "price":"$16.00",
+        "rate":["mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star"]
+    },
+    {
+        "id":9,
+        "tag":"Sale",
+        "image1":"assets/images/shop/items/f9.png",
+        "image2":"assets/images/shop/items/b9.png",
+        "name":"Hoodie",
+        "price":"$16.00",
+        "rate":["mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star"]
+    },
+    {
+        "id":10,
+        "tag":"New",
+        "image1":"assets/images/shop/items/f10.png",
+        "image2":"assets/images/shop/items/b10.png",
+        "name":"Red Cap",
+        "price":"$16.00",
+        "rate":["mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star"]
+    },
+    {
+        "id":11,
+        "tag":"",
+        "image1":"assets/images/shop/items/f11.png",
+        "image2":"assets/images/shop/items/b11.png",
+        "name":"Branded T-Shirt",
+        "price":"$16.00",
+        "rate":["mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star"]
+    },
+    {
+        "id":12,
+        "tag":"",
+        "image1":"assets/images/shop/items/f12.png",
+        "image2":"assets/images/shop/items/b12.png",
+        "name":"Braned-T-Shirt",
+        "price":"$16.00",
+        "rate":["mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star"]
+    },
+    {
+        "id":13,
+        "tag":"",
+        "image1":"assets/images/shop/items/f13.png",
+        "image2":"assets/images/shop/items/b13.png",
+        "name":"Blue T-Shirt",
+        "price":"$16.00",
+        "rate":["mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star"]
+    },
+    {
+        "id":14,
+        "tag":"",
+        "image1":"assets/images/shop/items/f14.png",
+        "image2":"assets/images/shop/items/b14.png",
+        "name":"Green T-Shirt",
+        "price":"$16.00",
+        "rate":["mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star","mdi mdi-star"]
+    }
+]

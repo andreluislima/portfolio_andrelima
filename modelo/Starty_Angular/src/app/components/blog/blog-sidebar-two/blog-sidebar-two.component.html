@@ -1,0 +1,40 @@
+<div class="sidebar sticky-bar">
+    <div class="widget text-center">
+        <div class="rounded p-4 shadow bg-white">
+            <img [src]="'assets/images/client/03.jpg'" class="avatar avatar-medium rounded-circle shadow-lg" alt="">
+
+            <div class="mt-4">
+                <a [routerLink]="'/blog-author'" class="text-dark title h5">Christina Gonzalez</a>
+                <p class="text-muted">Blogger</p>
+
+                <ul class="list-unstyled align-items-center social-icon social mb-0">
+                    <li *ngFor="let item of social" class="list-inline-item" style="margin: 0 2px;"><a [routerLink]="[]" class="rounded"><i [ngClass]="item"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="widget mt-4 pt-2">
+        <div class="rounded p-4 shadow bg-white">
+            <h6 class="widget-title font-weight-bold pt-2 pb-2 shadow bg-light rounded text-center">Recent Post</h6>
+            <div class="mt-4">
+                <div *ngFor="let item of recentPost" class="d-flex align-items-center mt-3">
+                    <img [src]="item.image" class="avatar avatar-small rounded" style="width: auto;" alt="">
+                    <div class="flex-1 ms-3">
+                        <a [routerLink]="[]" class="d-block title text-dark">{{item.name}}</a>
+                        <span class="text-muted">{{item.date}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="widget mt-4 pt-2 text-center">
+        <div class="rounded p-4 shadow bg-white">
+            <h6 class="widget-title font-weight-bold pt-2 pb-2 shadow bg-light rounded">Tags Cloud</h6>
+            <div class="tagcloud mt-4">
+                <a *ngFor="let item of tag" [routerLink]="[]" class="rounded text-dark">{{item}}</a>
+            </div>
+        </div>
+    </div>
+</div>

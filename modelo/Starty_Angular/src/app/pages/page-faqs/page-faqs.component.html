@@ -1,0 +1,122 @@
+<app-navbar [navLight]="true" [navRight]="true"/>
+<section class="bg-half-80 d-table bg-primary bg-gradient w-100">
+    <div class="bg-overlay bg-gradient-overlay"></div>
+    <div class="container">
+        <div class="row mt-5 justify-content-center">
+            <div class="col-12">
+                <div class="title-heading text-center">
+                    <small class="text-white-50 mb-1 fw-medium text-uppercase mx-auto">Questions & Answers</small>
+                    <h5 class="heading fw-semibold mb-0 page-heading text-white title-dark">FAQs</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="position-middle-bottom">
+            <nav aria-label="breadcrumb" class="d-block">
+                <ul class="breadcrumb breadcrumb-muted mb-0 p-0">
+                    <li class="breadcrumb-item"><a [routerLink]="'/'">Starty</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">FAQs</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-5 col-12">
+                <div class="card section-title bg-white p-4 shadow rounded border-0">
+                    <ul class="nav nav-pills nav-justified flex-column bg-transparent mb-0" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link rounded shadow active" id="pills-buying-tab" data-bs-toggle="pill" href="#pills-buying" role="tab" aria-controls="pills-buying" aria-selected="false">
+                                <div class="text-start py-1 px-3">
+                                    <h6 class="mb-0">Buying Questions</h6>
+                                </div>
+                            </a>
+                            
+                        </li>
+                        
+                        <li class="nav-item mt-3">
+                            <a class="nav-link rounded shadow" id="pills-general-tab" data-bs-toggle="pill" href="#pills-general" role="tab" aria-controls="pills-general" aria-selected="false">
+                                <div class="text-start py-1 px-3">
+                                    <h6 class="mb-0">General Questions</h6>
+                                </div>
+                            </a>
+                            
+                        </li>
+                        
+                        <li class="nav-item mt-3">
+                            <a class="nav-link rounded shadow" id="pills-payment-tab" data-bs-toggle="pill" href="#pills-payment" role="tab" aria-controls="pills-payment" aria-selected="false">
+                                <div class="text-start py-1 px-3">
+                                    <h6 class="mb-0">Payments Questions</h6>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="nav-item mt-3">
+                            <a class="nav-link rounded shadow" id="pills-support-tab" data-bs-toggle="pill" href="#pills-support" role="tab" aria-controls="pills-support" aria-selected="false">
+                                <div class="text-start py-1 px-3">
+                                    <h6 class="mb-0">Support Questions</h6>
+                                </div>
+                            </a>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-8 col-md-7 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-buying" role="tabpanel" aria-labelledby="pills-buying-tab">
+                        <div class="section-title" id="tech">
+                            <h4>Buying Product</h4>
+                        </div>
+
+                        <app-faq-three/>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="pills-general" role="tabpanel" aria-labelledby="pills-general-tab">
+                        <div class="section-title" id="general">
+                            <h4>General Questions</h4>
+                        </div>
+
+                        <app-faq-three/>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-payment" role="tabpanel" aria-labelledby="pills-payment-tab">
+                        <div class="section-title" id="payment">
+                            <h4>Payments Questions</h4>
+                        </div>
+
+                        <app-faq-three/>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-support" role="tabpanel" aria-labelledby="pills-support-tab">
+                        <div class="section-title" id="support">
+                            <h4>Support Questions</h4>
+                        </div>
+
+                        <app-faq-three/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-100 mt-60">
+        <div class="row align-items-center">
+            <div class="col-12">
+                <div class="section-title text-center mb-4 pb-2">
+                    <h6 class="text-primary">Pricing Plan</h6>
+                    <h4 class="title fw-semibold mt-2 mb-3">Select a Plan <br> Now To Get More Profit</h4>
+                    <p class="text-muted para-desc mx-auto mb-0">Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!</p>
+                </div>
+            </div>
+        </div>
+
+        <app-pricing-five/>
+    </div>
+</section>
+
+<app-footer-five/>

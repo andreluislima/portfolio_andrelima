@@ -1,0 +1,202 @@
+<div class="cafe-css">
+    <app-navbar [navLight]="true" [navRight]="true"/>
+
+     <section class="bg-half-260 d-table w-100 overflow-hidden" [ngStyle]="{'background-image': 'url(' + bgImage[currentImageIndex] + ')'}" id="home">
+        <div class="bg-overlay bg-gradient-overlay"></div>
+        <div class="container">
+            <div class="row mt-5 justify-content-center">
+                <div class="col-12">
+                    <div class="title-heading text-center" style="transform: rotate(-15deg);">
+                        <span class="title fw-semibold text-white title-dark mb-3 d-block">The Coffee <br> Masters</span>
+                        <span class="text-white-50 fw-normal">Since 1996</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title text-center mb-4 pb-2">
+                        <h4 class="title mb-4">Welcome to Starty Cafe</h4>
+                        <p class="text-muted para-desc mx-auto">The coffee Starty is brewed by first roasting the green coffee beans over hot coals in a brazier. Once the beans are roasted each participant is given an opportunity to sample the aromatic smoke by wafting it towards them.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="row text-md-end text-center">
+                        <div *ngFor="let item of featureOne" class="col-12 mt-4 pt-2">
+                            <div class="card features feature-primary border-0">
+                                <div class="ms-md-auto me-md-0 mx-auto">
+                                    <img [src]="item.image" class="avatar avatar-small rounded-circle p-3 shadow-md bg-white title-bg-dark" alt="">
+                                </div>
+                                <div class="card-body p-0 mt-3">
+                                    <a [routerLink]="[]" (click)="$event.preventDefault()" class="title text-dark h5">{{item.title}}</a>
+                                    <p class="text-muted mb-0 mt-2">{{item.desc}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 order-md-0 order-2 d-md-none d-lg-block mt-4 pt-2">
+                    <img src="assets/images/cafe-services.png" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="row text-md-start text-center">
+                        <div *ngFor="let item of featureTwo" class="col-12 mt-4 pt-2">
+                            <div class="card features feature-primary border-0">
+                                <div class="me-md-auto ms-md-0 mx-auto">
+                                    <img [src]="item.image" class="avatar avatar-small rounded-circle p-3 shadow-md bg-white title-bg-dark" alt="">
+                                </div>
+                                <div class="card-body p-0 mt-3">
+                                    <a [routerLink]="[]" class="title text-dark h5">{{item.title}}</a>
+                                    <p class="text-muted mb-0 mt-2">{{item.desc}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="pt-sm-150 jarallax" data-jarallax='{"speed": 0.5}' style="background: url('assets/images/bg/cafe-cta01.jpg') top;">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-md-6 px-0">
+                    <div class="bg-white  bg-cta px-3 px-md-4 px-lg-5">
+                        <div class="section-title text-center">
+                            <img [src]="'assets/images/icon/cafe/coffee.svg'" class="avatar avatar-md-sm" alt="">
+                            <h4 class="title mt-2">Happy Hour</h4>
+                            <h6 class="text-primary">Starts at 3pm</h6>
+
+                            <p class="text-muted my-4 px-lg-4">The restaurant will open at 3pm for happy hour and dinner service starting at 5pm. We will continue to offer brunch on weekends from 10am-3pm with bottomless mimosas. We will also continue with our late night lounge on Friday and Saturdays until 2am.</p>
+                        
+                            <a href="tel:+152534-468-854" class="text-primary h6">+152 534-468-854</a>
+
+                            <div class="mt-4 pt-2">
+                                <a [routerLink]="[]" class="btn btn-font-sm btn-lg btn-primary text-uppercase mt-2">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title text-center mb-4 pb-2">
+                        <h4 class="title mb-4">Explore Our Menu</h4>
+                        <p class="text-muted mx-auto para-desc mb-0">Splash your dream color Bring your home to lively Colors. We make it a priority to offer flexible services to accomodate your needs</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4 pt-2">
+                <div *ngFor="let item of menu" class="col-lg-6 col-md-6">
+                    <div class="portfolio portfolio-primary d-flex align-items-center p-2 pt-3 pb-3">
+                        <img [src]="item.image" class="img-fluid shadow rounded-pill avatar avatar-md-md shadow-md" alt="img">
+                        <div class="flex-1 ms-4">
+                            <div class="d-flex justify-content-between border-bottom pb-2">
+                                <a [routerLink]="[]" class="text-dark title h6 mb-0 fw-semibold">{{item.name}}</a>
+                                <span class="float-end fw-semibold">{{item.price}}</span>
+                            </div>
+                            <p class="text-muted mb-0 mt-2">{{item.desc}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-100 mt-60">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title text-center mb-4 pb-2">
+                        <h4 class="title mb-4">Customers</h4>
+                        <p class="text-muted mx-auto para-desc mb-0">Splash your dream color Bring your home to lively Colors. We make it a priority to offer flexible services to accomodate your needs</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-4 pt-2">
+                <div class="col-lg-9">
+                    <div class="tiny-single-item">
+                        <div *ngFor="let item of clientData" class="tiny-slide px-md-5">
+                            <div class="card client-testi text-center">
+                                <img [src]="item.image" class="avatar avatar-small rounded-pill mx-auto" alt="">
+
+                                <div class="card-body pb-0 content">
+                                    <p class="h6 fw-normal text-muted fst-italic">{{item.desc}}</p>
+
+                                    <div class="name mt-4">
+                                        <small class="text-uppercase h6 d-block">{{item.name}}</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section class="bg-cta position-relative" style="background: url('/assets/images/bg/cafe01.jpg') center;">
+        <div class="bg-overlay bg-gradient-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center">                    
+                <div class="col-lg-6 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0 order-lg-1 order-2">
+                    <div class="section-title ms-lg-4 text-center text-lg-start">
+                        <h4 class="title text-white title-dark text-uppercase mb-4">Coffee at its the best</h4>
+                        <p class="text-white-50 mb-0">If you are Starty going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum Starty generators on the Internet tend to repeat predefined Starty chunks as necessary, making this the first true generator on the Internet.</p>
+                        <div class="mt-4">
+                            <a [routerLink]="[]" class="btn btn-font-sm btn-lg btn-light text-uppercase mt-2">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 col-12 order-lg-2 order-1">
+                    <img [src]="'assets/images/cafe/02.jpg'" class="img-fluid rounded" alt="">
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0 order-lg-2 order-1">
+                    <img [src]="'assets/images/cafe/03.jpg'" class="img-fluid rounded" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-md-6 col-12">
+                    <img [src]="'/assets/images/cafe/01.jpg'" class="img-fluid rounded shadow-md" alt="">
+                </div>
+
+                <div class="col-lg-7 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <div class="section-title ms-lg-5">
+                        <h5 class="fw-semibold mb-3">Jamie Hodge</h5>
+
+                        <p class="text-muted">Exercitation Starty photo booth stumptown tote bag Banksy, elit small batch freegan sed. Craft beer elit seitan exercitation, photo booth et 8-bit kale chips proident Starty chillwave deep v laborum. Aliquip veniam delectus, Marfa eiusmod.</p>
+                        
+                        <p class="text-muted mb-0">Aliquip veniam Starty delectus, Marfa eiusmod Pinterest in do umami Starty readymade swag. Meh synth Schlitz, tempor duis single-origin coffee ea next level ethnic fingerstache fanny pack nostrud. Photo booth anim Starty 8-bit hella, PBR 3 wolf moon beard Helvetica. </p>
+                        <img [src]="'/assets/images/cafe/sign.png'" class="avatar avatar-medium mt-3" style="height: auto;" alt="">
+
+                        <div class="mt-3">
+                            <small class="text-uppercase fw-medium">CEO & Founder Starty Coffee</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <app-cafe-footer/>
+</div>

@@ -1,0 +1,93 @@
+<app-navbar [navRight]="true"/>
+
+<section class="section bg-light">
+    <div class="container">
+        <div class="row mt-5 align-items-center">
+            <div class="col-lg-8 col-md-6">
+                <div class="title-heading text-md-start text-center">
+                    <h2 class="mb-0">Modern & Classic</h2>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-4 mt-sm-0">
+                <div class="text-md-end text-center">
+                    <nav aria-label="breadcrumb" class="d-inline-block">
+                        <ul class="breadcrumb mb-0 p-0">
+                            <li class="breadcrumb-item"><a [routerLink]="'/'">Starty</a></li>
+                            <li class="breadcrumb-item"><a [routerLink]="[]">Portfolio</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Single Post</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="tiny-single-item">
+                    <div class="tiny-slide">
+                        <img [src]="data?.image ? data?.image : 'assets/images/portfolio/single01.jpg'" class="w-100 object-fit-cover" alt="" style="height: 523px;">
+                    </div>
+                    
+                    <div class="tiny-slide">
+                        <img [src]="'assets/images/portfolio/single02.jpg'" class="img-fluid " alt="">
+                    </div>
+                    
+                    <div class="tiny-slide">
+                        <img [src]="'assets/images/portfolio/single03.jpg'" class="img-fluid " alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-100 mt-60">
+        <div class="row">
+            <div class="col-lg-8 col-md-6">
+                <div class="section-title me-md-4">
+                    <h4 class="title mb-4">Project Description</h4>
+
+                    <p class="text-muted">The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words. This ancient dummy text is also incomprehensible, but it imitates the rhythm of most European languages in Latin script. The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewer's attention from the layout.</p>
+                    <p class="text-muted mb-0">Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts. If the fill text is intended to illustrate the characteristics of different typefaces, it sometimes makes sense to select texts containing the various letters and symbols specific to the output language.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                <div class="section-title">
+                    <h4 class="title mb-4">Project Details</h4>
+                </div>
+
+                <dl class="row mb-0">
+                    <dt class="col-md-4 fw-medium col-5">Client :</dt>
+                    <dd class="col-md-8 col-7 text-muted">Calvin Carlo</dd>
+
+                    <dt class="col-md-4 fw-medium col-5">Category :</dt>
+                    <dd class="col-md-8 col-7 text-muted">Web Design</dd>
+
+                    <dt class="col-md-4 fw-medium col-5">Date :</dt>
+                    <dd class="col-md-8 col-7 text-muted">15th April 2021</dd>
+
+                    <dt class="col-md-4 fw-medium col-5">Website :</dt>
+                    <dd class="col-md-8 col-7 text-muted">www.yourdomain.com</dd>
+
+                    <dt class="col-md-4 fw-medium col-5">Location :</dt>
+                    <dd class="col-md-8 col-7 text-muted">3/2/64 Mongus Street, UK</dd>
+                </dl>
+            </div>
+
+            <div class="col-12">
+                <div class="mt-5 pt-5 border-top">
+                    <ul class="list-unstyled align-items-center social-icon social mb-0">
+                        <li class="list-inline-item me-3">Share :</li>
+                        <li *ngFor="let item of social" class="list-inline-item" style="margin: 0 2px;"><a [routerLink]="[]" class="rounded-pill"><i [ngClass]="item"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-footer-five/>

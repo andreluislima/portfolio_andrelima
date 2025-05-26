@@ -1,0 +1,1195 @@
+<app-navbar [navLight]="true" [navRight]="true"/>
+
+<section class="bg-half-170 d-table bg-primary bg-gradient w-100">
+    <div class="bg-overlay bg-gradient-overlay"></div>
+    <div class="container">
+        <div class="row mt-5 justify-content-center">
+            <div class="col-12">
+                <div class="title-heading text-center">
+                    <h5 class="heading fw-semibold mb-0 page-heading text-white title-dark">Components</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="position-middle-bottom">
+            <nav aria-label="breadcrumb" class="d-block">
+                <ul class="breadcrumb breadcrumb-muted mb-0 p-0">
+                    <li class="breadcrumb-item"><a [routerLink]="'/'">Starty</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Elements</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+ <section class="section">
+    <div class="container">
+        <div id="grid" class="column-2 gap-4" >   
+            <div class="mb-4" style="break-inside: avoid;" >
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Typography Heading </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-4 pb-2">Ex. <code class="text-danger">&lt;h1&gt; H1. Bootstrap heading &lt;/h1&gt;</code></h6>
+                        
+                        <h1>H1. Bootstrap heading</h1>
+                        <h2>H2. Bootstrap heading</h2>
+                        <h3>H3. Bootstrap heading</h3>
+                        <h4>H4. Bootstrap heading</h4>
+                        <h5>H5. Bootstrap heading</h5>
+                        <h6 class="mb-0">H6. Bootstrap heading</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Display Heading </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-4 pb-2">Ex. <code class="text-danger">&lt;p class="display-1"&gt; Display 1 &lt;/p&gt;</code></h6>
+                        
+                        <p *ngFor="let item of display" [ngClass]="item.style">{{item.name}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Background Color </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-2 pb-2">Ex. <code class="text-danger">&lt;div class="bg-primary"&gt; Starty Multipurpose Template &lt;/div&gt;</code></h6>
+                        
+                        <div *ngFor="let item of bgColor" class="d-inline-block me-1 mt-2" data-bs-toggle="tooltip" data-bs-placement="top" [title]="item">
+                            <p class="avatar avatar-small rounded mb-0" [ngClass]="item"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Soft Background Color </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-2 pb-2">Ex. <code class="text-danger">&lt;div class="bg-soft-primary"&gt; Starty Multipurpose Template &lt;/div&gt;</code></h6>
+                        
+                        <div *ngFor="let item of softBgColor" class="d-inline-block me-1 mt-2" data-bs-toggle="tooltip" data-bs-placement="top" [title]="item">
+                            <p class="avatar avatar-small bg-soft-primary rounded mb-0" [ngClass]="item"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Text Color </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-4 pb-2">Ex. <code class="text-danger">&lt;div class="text-primary"&gt; Starty Multipurpose Template &lt;/div&gt;</code></h6>
+
+                        <h6 *ngFor="let item of textColor" [class]="item.style">{{item.name}}</h6>
+                    </div>
+                </div>
+            </div>                            
+            
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0">Buttons</h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-2 pb-2">Ex. <code class="text-danger">&lt;a [routerLink]="[]" class="btn btn-primary"&gt; Primary &lt;/a&gt;</code></h6>
+                        
+                        <a *ngFor="let item of button" [routerLink]="[]" class="btn mt-2 me-2" [ngClass]="item.style">{{item.name}}</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0">Buttons Pill</h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-2 pb-2">Ex. <code class="text-danger">&lt;a [routerLink]="[]" class="btn btn-pills btn-primary"&gt; Primary &lt;/a&gt;</code></h6>
+
+                        <a *ngFor="let item of button" [routerLink]="[]" class="btn btn-pills mt-2 me-2" [ngClass]="item.style">{{item.name}}</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0">Buttons Soft</h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-2 pb-2">Ex. <code class="text-danger">&lt;a [routerLink]="[]" class="btn btn-soft-primary"&gt; Primary &lt;/a&gt;</code></h6>
+                        
+                        <a *ngFor="let item of softButton" [routerLink]="[]" class="btn mt-2 me-2" [ngClass]="item.style">{{item.name}}</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0">Buttons Pill Soft</h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-2 pb-2">Ex. <code class="text-danger">&lt;a [routerLink]="[]" class="btn btn-pills btn-soft-primary"&gt; Primary &lt;/a&gt;</code></h6>
+                        <a *ngFor="let item of softButton" [routerLink]="[]" class="btn btn-pills mt-2 me-2" [ngClass]="item.style">{{item.name}}</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0">Buttons Outline</h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-2 pb-2">Ex. <code class="text-danger">&lt;a [routerLink]="[]" class="btn btn-outline-primary"&gt; Primary &lt;/a&gt;</code></h6>
+
+                        <a *ngFor="let item of outLine" [routerLink]="[]" class="btn btn-outline-primary mt-2 me-2" [ngClass]="item.style">{{item.name}}</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0">Buttons Pill Outline</h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-2 pb-2">Ex. <code class="text-danger">&lt;a [routerLink]="[]" class="btn btn-outline-primary"&gt; Primary &lt;/a&gt;</code></h6>
+                        <a *ngFor="let item of outLine" [routerLink]="[]" class="btn btn-pills btn-outline-primary mt-2 me-2" [ngClass]="item.style">{{item.name}}</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0">Button Icons</h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-2 pb-2">Ex. <code class="text-danger">&lt;a [routerLink]="[]" class="btn btn-icon btn-primary"&gt;&lt;i data-feather="facebook" class="fea icon-sm"&gt;&lt;/i&gt;&lt;/a&gt;</code></h6>
+
+                        <a *ngFor="let item of iconBtn" [routerLink]="[]" class="btn btn-icon mt-2" [ngClass]="item.style" style="margin: 0 2px;"><i [attr.data-feather]="item.icon" class="icons"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0">Outline Button Icons</h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-2 pb-2">Ex. <code class="text-danger">&lt;a [routerLink]="[]" class="btn btn-icon btn-outline-primary"&gt;&lt;i data-feather="facebook" class="fea icon-sm"&gt;&lt;/i&gt;&lt;/a&gt;</code></h6>
+
+                        <a *ngFor="let item of outLineBtn" [routerLink]="[]" class="btn btn-icon mt-2" [ngClass]="item.style" style="margin: 0 2px;"><i [attr.data-feather]="item.icon" class="icons"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0">Button Pill Icons</h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-2 pb-2">Ex. <code class="text-danger">&lt;a [routerLink]="[]" class="btn btn-icon btn-pills btn-primary"&gt;&lt;i data-feather="facebook" class="fea icon-sm"&gt;&lt;/i&gt;&lt;/a&gt;</code></h6>
+
+                        <a *ngFor="let item of iconBtn" [routerLink]="[]" class="btn btn-icon btn-pills mt-2" [ngClass]="item.style" style="margin: 0 2px;"><i [attr.data-feather]="item.icon" class="icons"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0">Outline Button Pill Icons</h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-2 pb-2">Ex. <code class="text-danger">&lt;a [routerLink]="[]" class="btn btn-icon btn-pills btn-outline-primary"&gt;&lt;i data-feather="facebook" class="fea icon-sm"&gt;&lt;/i&gt;&lt;/a&gt;</code></h6>
+
+                        <a *ngFor="let item of outLineBtn" [routerLink]="[]" class="btn btn-icon btn-pills mt-2" [ngClass]="item.style" style="margin: 0 2px;"><i [attr.data-feather]="item.icon" class="icons"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0">Button Sizing</h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-2 pb-2">Ex. <code class="text-danger">&lt;a [routerLink]="[]" class="btn btn-primary btn-sm"&gt; Primary &lt;/a&gt;</code></h6>
+
+                        <a [routerLink]="[]" class="btn btn-sm btn-primary mt-2 me-2">Small</a>
+                        <a [routerLink]="[]" class="btn btn-sm btn-pills btn-primary mt-2 me-2">Small</a>
+                        <a [routerLink]="[]" class="btn btn-sm btn-outline-primary mt-2 me-2">Small</a>
+                        <a [routerLink]="[]" class="btn btn-sm btn-pills btn-outline-primary mt-2 me-2">Small</a>
+                        <a [routerLink]="[]" class="btn btn-icon btn-sm btn-primary mt-2 me-2"><i data-feather="facebook" class="icons"></i></a>
+                        <a [routerLink]="[]" class="btn btn-icon btn-sm btn-pills btn-primary mt-2 me-2"><i data-feather="facebook" class="icons"></i></a>
+                        <a [routerLink]="[]" class="btn btn-icon btn-sm btn-outline-primary mt-2 me-2"><i data-feather="facebook" class="icons"></i></a>
+                        <a [routerLink]="[]" class="btn btn-icon btn-sm btn-pills btn-outline-primary mt-2 me-2"><i data-feather="facebook" class="icons"></i></a>
+
+                        <h6 class="text-muted mb-2 mt-4 pb-2">Ex. <code class="text-danger">&lt;a [routerLink]="[]" class="btn btn-primary btn-lg"&gt; Primary &lt;/a&gt;</code></h6>
+
+                        <a [routerLink]="[]" class="btn btn-lg btn-primary mt-2 me-2">Large</a>
+                        <a [routerLink]="[]" class="btn btn-lg btn-pills btn-primary mt-2 me-2">Large</a>
+                        <a [routerLink]="[]" class="btn btn-lg btn-outline-primary mt-2 me-2">Large</a>
+                        <a [routerLink]="[]" class="btn btn-lg btn-pills btn-outline-primary mt-2 me-2">Large</a>
+                        <a [routerLink]="[]" class="btn btn-icon btn-lg btn-primary mt-2 me-2"><i data-feather="facebook" class="icons"></i></a>
+                        <a [routerLink]="[]" class="btn btn-icon btn-lg btn-pills btn-primary mt-2 me-2"><i data-feather="facebook" class="icons"></i></a>
+                        <a [routerLink]="[]" class="btn btn-icon btn-lg btn-outline-primary mt-2 me-2"><i data-feather="facebook" class="icons"></i></a>
+                        <a [routerLink]="[]" class="btn btn-icon btn-lg btn-pills btn-outline-primary mt-2 me-2"><i data-feather="facebook" class="icons"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Dropdown </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-2 pb-2">Ex. <br> 
+                            <code class="text-danger">
+                                &lt;div class="btn-group dropdown-primary"&gt;<br>&nbsp;&nbsp;
+                                &lt;button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                                Primary<br>&nbsp;&nbsp;
+                                &lt;/button&gt;<br>&nbsp;&nbsp;
+                                &lt;div class="dropdown-menu"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                                &lt;a class="dropdown-item" [routerLink]="[]"&gt;Home&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                                &lt;a class="dropdown-item" [routerLink]="[]"&gt;Services&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                                &lt;a class="dropdown-item" [routerLink]="[]"&gt;About us&lt;/a&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                                &lt;div class="dropdown-divider"&gt;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                                &lt;a class="dropdown-item" [routerLink]="[]"&gt;Contact us&lt;/a&gt;<br>&nbsp;&nbsp;
+                                &lt;/div&gt;<br>
+                                &lt;/div&gt;
+                            </code>
+                        </h6>
+
+                        <div class="btn-group dropdown-primary me-2 mt-2">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Primary
+                            </button>
+                            <div class="dropdown-menu">
+                                <a [routerLink]="[]" class="dropdown-item">Home</a>
+                                <a [routerLink]="[]" class="dropdown-item">Services</a>
+                                <a [routerLink]="[]" class="dropdown-item">About us</a>
+                                <div class="dropdown-divider"></div>
+                                <a [routerLink]="[]" class="dropdown-item">Contact us</a>
+                            </div>
+                        </div>
+
+                        <div class="btn-group dropdown-secondary me-2 mt-2">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Secondary
+                            </button>
+                            <div class="dropdown-menu">
+                                <a [routerLink]="[]" class="dropdown-item">Home</a>
+                                <a [routerLink]="[]" class="dropdown-item">Services</a>
+                                <a [routerLink]="[]" class="dropdown-item">About us</a>
+                                <div class="dropdown-divider"></div>
+                                <a [routerLink]="[]" class="dropdown-item">Contact us</a>
+                            </div>
+                        </div>
+
+                        <div class="btn-group dropdown-success me-2 mt-2">
+                            <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Success
+                            </button>
+                            <div class="dropdown-menu">
+                                <a [routerLink]="[]" class="dropdown-item">Home</a>
+                                <a [routerLink]="[]" class="dropdown-item">Services</a>
+                                <a [routerLink]="[]" class="dropdown-item">About us</a>
+                                <div class="dropdown-divider"></div>
+                                <a [routerLink]="[]" class="dropdown-item">Contact us</a>
+                            </div>
+                        </div>
+
+                        <div class="btn-group dropdown-warning me-2 mt-2">
+                            <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Warning
+                            </button>
+                            <div class="dropdown-menu">
+                                <a [routerLink]="[]" class="dropdown-item">Home</a>
+                                <a [routerLink]="[]" class="dropdown-item">Services</a>
+                                <a [routerLink]="[]" class="dropdown-item">About us</a>
+                                <div class="dropdown-divider"></div>
+                                <a [routerLink]="[]" class="dropdown-item">Contact us</a>
+                            </div>
+                        </div>
+
+                        <div class="btn-group dropdown-info me-2 mt-2">
+                            <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Info
+                            </button>
+                            <div class="dropdown-menu">
+                                <a [routerLink]="[]" class="dropdown-item">Home</a>
+                                <a [routerLink]="[]" class="dropdown-item">Services</a>
+                                <a [routerLink]="[]" class="dropdown-item">About us</a>
+                                <div class="dropdown-divider"></div>
+                                <a [routerLink]="[]" class="dropdown-item">Contact us</a>
+                            </div>
+                        </div>
+
+                        <div class="btn-group dropdown-danger me-2 mt-2">
+                            <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Danger
+                            </button>
+                            <div class="dropdown-menu">
+                                <a [routerLink]="[]" class="dropdown-item">Home</a>
+                                <a [routerLink]="[]" class="dropdown-item">Services</a>
+                                <a [routerLink]="[]" class="dropdown-item">About us</a>
+                                <div class="dropdown-divider"></div>
+                                <a [routerLink]="[]" class="dropdown-item">Contact us</a>
+                            </div>
+                        </div>
+
+                        <div class="btn-group dropdown-dark me-2 mt-2">
+                            <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dark
+                            </button>
+                            <div class="dropdown-menu">
+                                <a [routerLink]="[]" class="dropdown-item">Home</a>
+                                <a [routerLink]="[]" class="dropdown-item">Services</a>
+                                <a [routerLink]="[]" class="dropdown-item">About us</a>
+                                <div class="dropdown-divider"></div>
+                                <a [routerLink]="[]" class="dropdown-item">Contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Badges </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-2 pb-2">Ex. <code class="text-danger">&lt;span class="badge text-bg-primary"&gt; primary &lt;/span&gt;</code></h6>
+
+                        <span *ngFor="let item of badge" class="badge me-2 mt-2" [ngClass]="item.style">{{item.name}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Pill Badges </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-2 pb-2">Ex. <code class="text-danger">&lt;span class="badge rounded-pill text-bg-primary"&gt; primary &lt;/span&gt;</code></h6>
+
+                        <span *ngFor="let item of badge" class="badge rounded-pill me-2 mt-2" [ngClass]="item.style">{{item.name}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0">Soft Badges </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-2 pb-2">Ex. <code class="text-danger">&lt;span class="badge bg-soft-primary"&gt; primary &lt;/span&gt;</code></h6>
+
+                        <span *ngFor="let item of softBadges" class="badge me-2 mt-2" [ngClass]="item.style">{{item.name}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0">Soft Pill Badges </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-2 pb-2">Ex. <code class="text-danger">&lt;span class="badge rounded-pill bg-soft-primary"&gt; primary &lt;/span&gt;</code></h6>
+
+                        <span *ngFor="let item of softBadges" class="badge rounded-pill me-2 mt-2" [ngClass]="item.style">{{item.name}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Link Badges </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-2 pb-2">Ex. <code class="text-danger">&lt;a [routerLink]="[]" class="badge text-bg-primary"&gt; primary &lt;/a&gt;</code></h6>
+
+                        <a [routerLink]="[]" *ngFor="let item of badge" class="badge badge-link me-2 mt-2" [ngClass]="item.style">{{item.name}}</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Alert </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-4 pb-2">Ex. <code class="text-danger">&lt;div class="alert alert-primary" role="alert"&gt; A simple primary alert—check it out! &lt;/div&gt;</code></h6>
+
+                        <div *ngFor="let item of alert" class="alert alert-primary" [ngClass]="item.style" role="alert"> {{item.title}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Alert Links </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-4 pb-2">Ex. <code class="text-danger">&lt;div class="alert alert-primary" role="alert"&gt; A simple primary alert with &lt;a [routerLink]="[]" class="alert-link"&gt;&lt;/a&gt;. &lt;/div&gt;</code></h6>
+
+                        <div *ngFor="let item of linkAlert" class="alert" [ngClass]="item.style" role="alert">{{item.title}} <a [routerLink]="[]" class="alert-link">an link</a>.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Additional Content </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="alert alert-success mb-0" role="alert">
+                            <h4 class="alert-heading">Well done!</h4>
+                            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                            <p class="mb-0 border-top pt-3">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Dismissing Alert </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-4 pb-2">Ex. <br> 
+                            <code class="text-danger">
+                                &lt;div class="alert alert-success alert-dismissible fade show" role="alert"&gt; <br>&nbsp; 
+                                &lt;strong&gt;Well done!&lt;/strong&gt; You successfully read this important alert message. <br>&nbsp;    
+                                &lt;button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"&gt; &lt;/button&gt;<br>
+                                &lt;/div&gt; 
+                            </code>
+                        </h6>
+
+                        <div *ngFor="let item of closeAlert" class="alert alert-dismissible fade show" [ngClass]="item.style" role="alert">
+                            <strong>{{item.title1}}</strong> {{item.title2}}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Advanced Alert </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-4 pb-2">Ex. <br>
+                            <code class="text-danger">&lt;div class="alert alert-primary alert-pills" role="alert"&gt; <br>&nbsp;&nbsp;
+                                &lt;span class="badge rounded-pill bg-danger"&gt; New &lt;/span&gt; <br>&nbsp;&nbsp;
+                                &lt;span class="alert-content"&gt; A Modern primary alert—check it out! &lt;/span&gt; <br>
+                                &lt;/div&gt;
+                            </code>
+                        </h6>
+
+                        <div class="d-block">
+                            <div class="alert alert-primary alert-pills" role="alert">
+                                <span class="badge rounded-pill bg-info me-1">New</span>
+                                <span class="content"> A Modern primary alert—check it out! <i class="uil uil-angle-right-b"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="d-block">
+                            <div class="alert alert-danger alert-pills mb-0" role="alert">
+                                <span class="badge rounded-pill bg-success me-1"> New </span>
+                                <span class="content"> A Modern danger alert—check it out! <i class="uil uil-angle-right-b"></i> </span> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Advanced Outline Alert </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-4 pb-2">Ex. <br> 
+                            <code class="text-danger">
+                                &lt;div class="alert alert-outline-primary alert-pills" role="alert"&gt; <br>&nbsp;&nbsp;
+                                &lt;span class="badge rounded-pill bg-danger"&gt; New &lt;/span&gt; <br>&nbsp;&nbsp;
+                                &lt;span class="alert-content"&gt; A Modern primary alert—check it out! &lt;/span&gt; <br>
+                                &lt;/div&gt;
+                            </code>
+                        </h6>
+
+                        <div class="d-block">
+                            <div class="alert alert-outline-primary alert-pills" role="alert">
+                                <span class="badge rounded-pill bg-primary me-1">New</span>
+                                <span class="content"> A Modern primary alert—check it out! <i class="uil uil-angle-right-b"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="d-block">
+                            <div class="alert alert-outline-danger alert-pills mb-0" role="alert">
+                                <span class="badge rounded-pill bg-danger me-1"> New </span>
+                                <span class="content"> A Modern danger alert—check it out! <i class="uil uil-angle-right-b"></i> </span> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0">Accordions</h4>
+                    </div>
+
+                    <div class="p-4">
+                        <app-faq-three/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Cards </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted pb-2">Vertical Card<br> 
+                            <code class="text-danger">
+                                &lt;div class="card shadow rounded overflow-hidden&gt; <br>&nbsp;&nbsp;
+                                &lt;img src="images/blog/01.jpg" class="img-fluid" alt="&gt; <br>&nbsp;&nbsp;
+                                &lt;div class="card-body"&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                                &lt;h5 class="card-title"&gt;Multipurpose HTML5 Template: Starty&lt;/h5&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                                &lt;p class="text-muted mb-0"&gt;Due to its widespread use as filler text for layouts, non-readability is of great importance&lt;/p&gt; <br>&nbsp;&nbsp;
+                                &lt;/div&gt; <br>
+                                &lt;/div&gt;
+                            </code>
+                        </h6>
+
+                        <div class="row">
+                            <div *ngFor="let item of cards" class="col-lg-6 col-12 mt-4 pt-2">
+                                <div class="card shadow rounded overflow-hidden">
+                                    <img [src]="item.image" class="img-fluid" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{item.title}}</h5>
+                                        <p class="text-muted">{{item.desc}}</p>
+                                        <a [routerLink]="[]" class="text-primary">Read More <i class="uil uil-angle-right-b align-middle"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 pt-4 border-top">
+                            <h6 class="text-muted pb-2">Horizontal Card<br> 
+                                <code class="text-danger">
+                                    &lt;div class="card shadow rounded overflow-hidden&gt; <br>&nbsp;&nbsp;
+                                    &lt;img [src]="assets/images/blog/img01.jpg" class="img-fluid" alt="&gt; <br>&nbsp;&nbsp;
+                                    &lt;div class="card-body"&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;h5 class="card-title"&gt;Multipurpose HTML5 Template: Starty&lt;/h5&gt; <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &lt;p class="text-muted mb-0"&gt;Due to its widespread use as filler text for layouts, non-readability is of great importance&lt;/p&gt; <br>&nbsp;&nbsp;
+                                    &lt;/div&gt; <br>
+                                    &lt;/div&gt;
+                                </code>
+                            </h6>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 mt-4 pt-2">
+                                <div class="card shadow rounded overflow-hidden">
+                                    <div class="row g-0">
+                                        <div class="col-md-5">
+                                            <img [src]="'assets/images/blog/img01.jpg'" class="img-fluid" alt="...">
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Multipurpose HTML5 Template: Starty</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Forms </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <form>
+                            <div class="row">
+                                <div class="">
+                                    <div class="mb-3">
+                                        <label class="form-label">Your Name <span class="text-danger">*</span></label>
+                                        <input name="name" id="name" type="text" class="form-control" placeholder="First Name :">
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="mb-3">
+                                        <label class="form-label">Your Email <span class="text-danger">*</span></label>
+                                        <input name="email" id="email" type="email" class="form-control" placeholder="Your email :">
+                                    </div> 
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Subject</label>
+                                        <input name="subject" id="subject" class="form-control" placeholder="Your subject :">
+                                    </div>                                                                               
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label class="form-label">Comments</label>
+                                        <textarea name="comments" id="comments" rows="3" class="form-control" placeholder="Your Message :"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <input type="submit" id="submit" name="send" class="btn btn-primary" value="Send Message">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Checkboxes </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="form-check form-check-inline">
+                            <div class="mb-0">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" checked value="" id="flexCheckDefault1">
+                                    <label class="form-check-label" for="flexCheckDefault1">One</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <div class="mb-0">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                                    <label class="form-check-label" for="flexCheckDefault2">Two</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <div class="mb-0">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" disabled value="" id="flexCheckDefault3">
+                                    <label class="form-check-label" for="flexCheckDefault3">Disabled</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Radio Buttons </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">Yes</label>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">No</label>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <div class="form-check mb-0">
+                                <input class="form-check-input" checked type="radio" disabled name="flexRadioDefault" id="flexRadioDefault3">
+                                <label class="form-check-label" for="flexRadioDefault3">Disabled</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Switches Button </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                        </div>
+
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                        </div>
+
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDisabled" disabled>
+                            <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+                        </div>
+
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckCheckedDisabled" checked disabled>
+                            <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Form Select Box </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="mb-0">
+                            <select class="form-select form-control" aria-label="Default select example">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Subscribe Form </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="subcribe-form">
+                            <form>
+                                <input name="email" id="email2" type="email" class="form-control rounded-pill shadow" placeholder="Your email :" required>
+                                <button type="submit" class="btn btn-pills btn-primary">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Google Map </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39206.002432144705!2d-95.4973981212445!3d29.709510002925988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c16de81f3ca5%3A0xf43e0b60ae539ac9!2sGerald+D.+Hines+Waterwall+Park!5e0!3m2!1sen!2sin!4v1566305861440!5m2!1sen!2sin" style="border:0" class="rounded" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Breadcrumb </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-4 pb-2">Ex. <br> 
+                            <code class="text-danger">
+                                &lt;nav aria-label="breadcrumb" class="d-inline-block"&gt; 
+                            <br> &nbsp; &lt;ul class="breadcrumb bg-white rounded shadow mb-0"&gt; 
+                            <br> &nbsp; &nbsp; &lt;li class="breadcrumb-item"&gt;&lt;a [routerLink]="[]"&gt;Home&lt;/a&gt;&lt;/li&gt; 
+                            <br> &nbsp; &nbsp; &lt;li class="breadcrumb-item"&gt;&lt;a [routerLink]="[]"&gt;Pages&lt;/a&gt;&lt;/lt&gt; 
+                            <br> &nbsp; &nbsp; &lt;li class="breadcrumb-item active" aria-current="page"&gt;Elements&lt;/li&gt; 
+                            <br> &nbsp; &lt;/ul&gt; 
+                            <br> &lt;/div&gt;</code>
+                        </h6>
+
+                        <nav aria-label="breadcrumb" class="d-inline-block">
+                            <ul class="breadcrumb bg-white rounded shadow mb-0">
+                                <li class="breadcrumb-item"><a [routerLink]="'/'">Starty</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Elements</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Pagination </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-4 pb-2">Ex. <br>
+                            <code class="text-danger">
+                                &lt;ul class="pagination"&gt;<br>&nbsp;
+                                    &lt;li class="page-item"&gt;<br>&nbsp;&nbsp;
+                                        &lt;a class="page-link" [routerLink]="[]" aria-label="Previous"&gt;<br>&nbsp;&nbsp;&nbsp;
+                                            &lt;span aria-hidden="true"&gt;&lt;i class="mdi mdi-chevron-left mdi-18px"&gt;&lt;/i&gt;&lt;/span&gt;<br>&nbsp;&nbsp;
+                                        &lt;/a&gt;<br>&nbsp;
+                                    &lt;/li&gt;<br>&nbsp;
+                                    &lt;li class="page-item"&gt;&lt;a class="page-link" [routerLink]="[]"&gt;1&lt;/a&gt;&lt;/li&gt;<br>&nbsp;
+                                    &lt;li class="page-item"&gt;&lt;a class="page-link active" [routerLink]="[]"&gt;2&lt;/a&gt;&lt;/li&gt;<br>&nbsp;
+                                    &lt;li class="page-item"&gt;&lt;a class="page-link" [routerLink]="[]"&gt;3&lt;/a&gt;&lt;/li&gt;<br>&nbsp;
+                                    &lt;li class="page-item"&gt;<br>&nbsp;&nbsp;
+                                        &lt;a class="page-link" [routerLink]="[]" aria-label="Next"&gt;<br>&nbsp;&nbsp;&nbsp;
+                                            &lt;span aria-hidden="true"&gt;&lt;i class="mdi mdi-chevron-right mdi-18px"&gt;&lt;/i&gt;&lt;/span&gt;<br>&nbsp;&nbsp;
+                                        &lt;/a&gt;<br>&nbsp;
+                                    &lt;/li&gt;<br>
+                                &lt;/ul&gt;<br>
+                            </code>
+                        </h6>
+                        
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" [routerLink]="[]" aria-label="Previous">
+                                    <span aria-hidden="true"><i class="mdi mdi-chevron-left mdi-18px"></i></span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" [routerLink]="[]">1</a></li>
+                            <li class="page-item"><a class="page-link active" [routerLink]="[]">2</a></li>
+                            <li class="page-item"><a class="page-link" [routerLink]="[]">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" [routerLink]="[]" aria-label="Next">
+                                    <span aria-hidden="true"><i class="mdi mdi-chevron-right mdi-18px"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Default Avatars </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-4 pb-2">Ex. <code class="text-danger">&lt;img src="images/home/01.jpg" class="img-fluid avatar avatar-ex-sm rounded"&gt;</code></h6>
+                        
+                        <img *ngFor="let item of avatar" [src]="'/assets/images/client/05.jpg'" class="img-fluid avatar me-2 rounded" [ngClass]="item" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Circle Avatars </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-4 pb-2">Ex. <code class="text-danger">&lt;img src="images/home/01.jpg" class="img-fluid avatar avatar-ex-sm rounded-circle"&gt;</code></h6>
+                        <img *ngFor="let item of avatar" [src]="'assets/images/client/05.jpg'" class="img-fluid avatar me-2 rounded-circle" [ngClass]="item" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Nav Tabs </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <ul class="nav nav-pills nav-justified flex-column flex-sm-row rounded" id="pills-tab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link rounded active" id="pills-cloud-tab" data-bs-toggle="pill" href="#pills-cloud" role="tab" aria-controls="pills-cloud" aria-selected="false">
+                                            <div class="text-center py-2">
+                                                <h6 class="mb-0">Home</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link rounded" id="pills-smart-tab" data-bs-toggle="pill" href="#pills-smart" role="tab" aria-controls="pills-smart" aria-selected="false">
+                                            <div class="text-center py-2">
+                                                <h6 class="mb-0">About</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link rounded" id="pills-apps-tab" data-bs-toggle="pill" href="#pills-apps" role="tab" aria-controls="pills-apps" aria-selected="false">
+                                            <div class="text-center py-2">
+                                                <h6 class="mb-0">Service</h6>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row pt-2">
+                            <div class="col-12">
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-cloud" role="tabpanel" aria-labelledby="pills-cloud-tab">
+                                        <p class="text-muted mb-0">You can combine all the Starty templates into a single one, you can take a component from the Application theme and use it in the Website.</p>
+                                    </div>
+                                    
+                                    <div class="tab-pane fade" id="pills-smart" role="tabpanel" aria-labelledby="pills-smart-tab">
+                                        <p class="text-muted mb-0">You can combine all the Starty templates into a single one, you can take a component from the Application theme and use it in the Website.</p>                       
+                                    </div>
+        
+                                    <div class="tab-pane fade" id="pills-apps" role="tabpanel" aria-labelledby="pills-apps-tab">
+                                        <p class="text-muted mb-0">You can combine all the Starty templates into a single one, you can take a component from the Application theme and use it in the Website.</p>                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Progressbar </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-4 pb-2">Ex. <br> 
+                            <code class="text-danger">
+                                &lt;div class="progress-box"&gt;<br>&nbsp;&nbsp;
+                                &lt;h6 class="title text-muted"&gt; Progress&lt;/h6&gt;<br>&nbsp;&nbsp;
+                                &lt;div class="progress"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                                &lt;div class="progress-bar position-relative bg-primary" style="width:84%;"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &lt;div class="progress-value d-block text-muted h6"&gt;84%&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+                                &lt;/div&gt;<br>&nbsp;&nbsp;
+                                &lt;/div&gt;<br>
+                                &lt;/div&gt;
+                            </code>
+                        </h6>
+                        
+                        <div *ngFor="let item of progress" class="progress-box mt-4">
+                            <h6 class="title text-muted">{{item.title}}</h6>
+                            <div class="progress">
+                                <div class="progress-bar position-relative bg-primary" [ngStyle]="{'width':item.width}">
+                                    <div class="progress-value d-block text-muted h6">{{item.width}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Tooltip </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6 class="text-muted mb-2 pb-2">Ex. <code class="text-danger">&lt;a [routerLink]="[]"class="btn btn-primary me-2 mb-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Top Tooltip" alt=""&gt; Top Tooltip &lt;/a&gt;</code></h6>
+
+                        <a *ngFor="let item of tooltips" [routerLink]="[]" class="btn btn-primary me-2 mt-2" data-bs-toggle="tooltip" [attr.data-bs-placement]="item.placement" [title]="item.title">{{item.name}}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Modal </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <a [routerLink]="[]" data-bs-toggle="modal" data-bs-target="#LoginForm" class="btn btn-primary"> Click Here</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Table </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <div class="table-responsive bg-white shadow rounded">
+                            <table class="table mb-0 table-center">
+                                <thead>
+                                    <tr>
+                                    <th scope="col" class="border-bottom">#</th>
+                                    <th scope="col" class="border-bottom">First</th>
+                                    <th scope="col" class="border-bottom">Last</th>
+                                    <th scope="col" class="border-bottom">Handle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let item of table">
+                                        <th scope="row">{{item.number}}</th>
+                                        <td>{{item.first}}</td>
+                                        <td>{{item.last}}</td>
+                                        <td>{{item.handle}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Blockquotes </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <blockquote class="blockquote p-3 mb-0">
+                            <p class="text-muted mb-0 fst-italic">" There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. "</p>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mb-4" style="break-inside: avoid;">
+                <div class="component-wrapper rounded shadow">
+                    <div class="p-4 border-bottom">
+                        <h4 class="title mb-0"> Icons </h4>
+                    </div>
+
+                    <div class="p-4">
+                        <h6>Feather Icons</h6>
+                        <p class="text-muted">There are 280+ feather icons and you can get all icons info from here: <a href="https://feathericons.com/" target="_blank"><code class="text-primary">https://feathericons.com/</code></a></p>
+                        <h6 class="text-muted mb-4 pb-2">Ex. <code class="text-danger">&lt;i data-feather="mail" class="fea icon-sm"&gt; &lt;/i&gt;</code></h6>
+
+                        <i data-feather="user" class="fea icon-ex-md me-2"></i>
+                        <i data-feather="facebook" class="fea icon-ex-md me-2"></i>
+                        <i data-feather="map-pin" class="fea icon-ex-md me-2"></i>
+                        <i data-feather="linkedin" class="fea icon-ex-md me-2"></i>
+                        <i data-feather="camera" class="fea icon-ex-md me-2"></i>
+                        <i data-feather="mail" class="fea icon-ex-md me-2"></i>
+
+                        <h6 class="mt-4">Material Design Icons</h6>
+                        <p class="text-muted">There are 4400+ Material Design icons and you can get all icons info from here: <a href="https://materialdesignicons.com/" target="_blank"><code class="text-primary">https://materialdesignicons.com/</code></a></p>
+                        <h6 class="text-muted mb-4 pb-2">Ex. <code class="text-danger">&lt;i class="mdi mdi-home"&gt; &lt;/i&gt;</code></h6>
+
+                        <i class="mdi mdi-home h4 me-2"></i>
+                        <i class="mdi mdi-facebook h4 me-2"></i>
+                        <i class="mdi mdi-chevron-tight h4 me-2"></i>
+                        <i class="mdi mdi-camera-image h4 me-2"></i>
+                        <i class="mdi mdi-car-light-high h4 me-2"></i>
+                        <i class="mdi mdi-silverware-fork-knife h4 me-2"></i>
+
+                        <h6 class="mt-4">Iconscout (Unicons) Icons</h6>
+                        <p class="text-muted">There are 1100+ Iconscout (Unicons) Icons and you can get all icons info from here: <a href="https://iconscout.com/unicons" target="_blank"><code class="text-primary">https://www.flaticon.com/packs/basic-icon</code></a></p>
+                        <h6 class="text-muted mb-4 pb-2">Ex. <code class="text-danger"><br>&lt;span class="h3 text-primary me-2"&gt;<br>&nbsp; &lt;i class="uil uil-0-plus"&gt;&lt;/i&gt;<br>&lt;/span&gt;</code></h6>
+
+                        <span class="h3 text-primary me-2"><i class="uil uil-0-plus"></i></span>
+                        <span class="h3 text-primary me-2"><i class="uil uil-android"></i></span>
+                        <span class="h3 text-primary me-2"><i class="uil uil-bitcoin"></i></span>
+                        <span class="h3 text-primary me-2"><i class="uil uil-calendar-alt"></i></span>
+                        <span class="h3 text-primary"><i class="uil uil-chart-pie-alt"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-footer-six/>
+
+
+<div class="modal fade" id="LoginForm" tabindex="-1" aria-labelledby="LoginForm-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded shadow border-0">
+            <div class="modal-header border-bottom">
+                <h5 class="modal-title" id="LoginForm-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="bg-white p-3 rounded box-shadow">
+                    <p class="text-muted mb-0">Dummy text is also used to demonstrate the appearance of different typefaces and layouts, and in general the content of dummy text is nonsensical. Due to its widespread use as filler text for layouts, non-readability is of great importance: human perception is tuned to recognize certain patterns and repetitions in texts. If the distribution of letters and 'words' is random, the reader will not be distracted from making a neutral judgement on the visual impact and readability of the typefaces (typography), or the distribution of text on the page (layout or type area). For this reason, dummy text usually consists of a more or less random series of words or syllables. This prevents repetitive patterns from impairing the overall visual impression and facilitates the comparison of different typefaces. Furthermore, it is advantageous when the dummy text is relatively realistic so that the layout impression of the final publication is not compromised.</p>                                                        
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>

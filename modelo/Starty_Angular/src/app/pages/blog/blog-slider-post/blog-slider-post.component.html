@@ -1,0 +1,90 @@
+<app-navbar [navLight]="true" [navRight]="true"/>
+
+<section class="bg-half-170 d-table w-100" style="background: url('/assets/images/bg/blog01.jpg') center;">
+    <div class="bg-overlay bg-gradient-overlay-2"></div>
+    <div class="container">
+        <div class="row mt-5 justify-content-center">
+            <div class="col-12">
+                <div class="title-heading text-center">
+                    <span class="badge bg-primary">Technology</span>
+                    <h5 class="heading fw-semibold mb-0 sub-heading text-white title-dark mt-4">The Morning After: Uber sets <br> its sights on Postmates</h5>
+                    
+                    <ul class="list-inline text-center mb-0">
+                        <li class="list-inline-item mx-4 mt-4">
+                            <span class="text-white-50 d-block">Author</span>
+                            <a [routerLink]="[]" class="text-white title-dark">Christina Gonzalez</a>
+                        </li>
+
+                        <li class="list-inline-item mx-4 mt-4">
+                            <span class="text-white-50 d-block">Date</span>
+                            <span class="text-white title-dark">19th June 2024</span>
+                        </li>
+
+                        <li class="list-inline-item mx-4 mt-4">
+                            <span class="text-white-50 d-block">Read Time</span>
+                            <span class="text-white title-dark">8 min read</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="position-relative">
+    <div class="shape overflow-hidden text-white">
+        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+        </svg>
+    </div>
+</div>
+
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-7">
+                <div class="home-slider card border-0 shadow rounded overflow-hidden">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img [src]="'/assets/images/blog/slide01.jpg'" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img [src]="'/assets/images/blog/slide02.jpg'" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img [src]="'/assets/images/blog/slide03.jpg'" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <p class="text-muted">The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century. Lorem Ipsum is composed in a pseudo-Latin language which more or less corresponds to 'proper' Latin. It contains a series of real Latin words. This ancient dummy text is also incomprehensible, but it imitates the rhythm of most European languages in Latin script. The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewer's attention from the layout.</p>
+                        <p class="text-muted">Thus, Lorem Ipsum has only limited suitability as a visual filler for German texts. If the fill text is intended to illustrate the characteristics of different typefaces, it sometimes makes sense to select texts containing the various letters and symbols specific to the output language.</p>
+                    
+                        <blockquote class="text-center mx-auto blockquote"><i class="mdi mdi-format-quote-open mdi-48px text-muted opacity-2 d-block"></i> The man who comes back through the door in the wall will never be quite the same as the man who went out. <small class="d-block text-muted mt-2">- Fronter Template</small></blockquote>
+                    
+                        <p class="text-muted">There is now an abundance of readable dummy texts. These are usually used when a text is required purely to fill a space. These alternatives to the classic Lorem Ipsum texts are often amusing and tell short, funny or nonsensical stories.</p>
+                    
+                        <a [routerLink]="[]" class="badge badge-link bg-primary">Minimal</a>
+                        <a [routerLink]="[]" class="badge badge-link bg-primary mx-1">Interior</a>
+                        <a [routerLink]="[]" class="badge badge-link bg-primary">Furniture</a>
+                    </div>
+                </div>
+
+               <app-blog-comments/>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                <app-blog-sidebar [search]="true"/>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<app-footer-five/>
