@@ -1,7 +1,7 @@
 @use "../../styles/variables.scss" as *;
 
 .nav-bar{
-    // border: 1px dashed blue; 
+    border: 1px dashed blue; 
     width: 1320px;
     height: 72px;
     display: flex;
@@ -12,9 +12,13 @@
         
     .card{
         border:none;
-
+        border: 1px dashed blue;
+        display: flex;
+        flex-direction: row;
         .nav{
+            //  border: 1px dashed blue;
             .nav-link{
+                // border: 1px dashed blue;
                 color: $fourth-color;
                 font-weight: 600;
             }

@@ -28,5 +28,10 @@ export class MenubarBasicDemo implements OnInit {
             }
         ]
     }
+
+    menuOpen = false;
+    toggleMenu(){
+        this.menuOpen = !this.menuOpen;
+    }
 }
 
