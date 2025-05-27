@@ -4,29 +4,21 @@
 }
 
 .container{
-    // border: 3px solid red;
+    border: 3px solid red;
     max-width: 100%; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-
+ 
     .header{
         // border: 1px dashed blue;
         width: 100%; 
         display: flex;
         align-items: center;
         flex-direction: column;
+        margin-bottom: 60px;
         
     }
     .main{
-        // border: 3px dashed red;
-        width: 100%;
+        border: 3px dashed red;
         // height: 707px; 
     }
 
-    .footer{
-        // border: 1px dashed blue;
-        width: 100%;
-    }
 }
