@@ -1,105 +1,46 @@
 <div class="main">
-    <div class="content">
-        <div class="area-resume">
-            <div class="title">
-                <h1 class="title">{{title}}</h1>
+      <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        
+        <div class="col-lg-6">
+          <div class="card shadow-sm">
+            <div class="p-3" style="width: 100%;height: 250px;background-color: gray;"> 
+              <h2>Subtitle</h2>
+              <span>laslaksalskalskakls</span>
+              <span>laskalksalskaslaçlsçlawslqw</span>
             </div>
-
-            <div class="section-history">
-                <div class="sub-title">
-                    <h2>{{subtitle[0] | titlecase }}</h2>
-                    <!-- <button class="btn btn-primary">{{btn | titlecase}}</button> -->
-                </div>
-
-                <div class="card mb-4" *ngFor="let exp of experience">
-                    <div class="information">
-                        <div class="year">{{exp.period}}</div>
-                        <div class="function">{{exp.role}}</div>
-                        <div class="company">{{exp.company}}</div>
-                        <div class="city">{{exp.city}}</div>
-                    </div>
-                    <div class="description">
-                        <p>{{exp.description}}</p>
-                    </div>
-                </div>
-
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-body-secondary">9 mins</small>
+              </div>
             </div>
-
-            <div class="section-education">
-                <div class="sub-title">
-                    <h2>{{subtitle[1] | titlecase }}</h2>
-                </div>
-
-                <div class="card mb-4" *ngFor="let edu of education">
-                    <div class="information">
-                        <div class="year">
-                            <span class="date-start">{{edu.start}}</span> - 
-                            <span class="date-end">{{edu.end}}</span>
-                        </div>                
-                    </div>
-
-                    <div class="description">
-                        <div class="course">
-                            <span class="fw-bold">{{edu.course}}</span>
-                            <span>
-                                <p>{{edu.degree}}</p>
-                            </span>
-                        </div>
-                        <div class="company">
-                            <span class="fw-bold">{{edu.instituition}}</span>
-                            <span>
-                                <p>{{edu.city}}</p>
-                            </span>
-                        </div>   
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="section-skills">
-                <div class="sub-title">
-                    <h2>{{subtitle[2] | titlecase }}</h2>
-                </div>
-
-                <div class="card">
-             
-                    <div class="skills" *ngFor="let lang of languages">
-                        <div class="skill">
-                            <p>{{lang.name}}</p>
-                            <p>{{lang.level}}</p>
-                        </div>                
-                    </div>
-
-                </div>
-
-                 <div class="sub-title">
-                        <h2>{{subtitle[3] | titlecase }}</h2>
-                </div>
-                <div class="card">
-                    <div class="skills">
-                        <div class="skill">
-                            <span>2018</span>
-                        </div>                
-                    </div>
-
-                </div>
-
-                <div class="sub-title">
-                        <h2>{{subtitle[4] | titlecase }}</h2>
-                </div>
-                <div class="card">
-                    <div class="skills">
-                        <div class="skill">
-                            <span>2018</span>
-                        </div>                
-                    </div>
-
-                </div>
-            </div>
-
-
+          </div>
         </div>
+        
+        <div class="col-lg-6">
+          <div class="card shadow-sm">
+            <div class="p-3" style="width: 100%;height: 250px;background-color: gray;"> 
+              <h2>Subtitle</h2>
+              <span>laslaksalskalskakls</span>
+              <span>laskalksalskaslaçlsçlawslqw</span>
+            </div>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-body-secondary">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      
+      
     </div>
+  </div>
 </div>
 
