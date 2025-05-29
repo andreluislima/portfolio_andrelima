@@ -40,11 +40,32 @@
       }
     }
   }
+
+  .section-skills{
+    // background-color: red;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid $five-color;
+
+    .card-information{
+      background-color: red;
+      border: none;
+      background-color: transparent;
+
+      .card-skill{
+        border-right: 4px solid $second-color;
+        border-left: 4px solid $second-color;
+        border-radius: 8px;
+        background-color: red;
+        margin-right: 10px;
+      }
+    }
+  }
 }
 
     @media (min-width: 576px)and (max-width: 1024px){
       .section-experience {
-        // background-color: blue;
+        background-color: blue;
         padding: 0px !important;
       }
       .card{
