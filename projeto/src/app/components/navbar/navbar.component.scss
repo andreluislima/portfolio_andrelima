@@ -1,3 +1,36 @@
 @use "../../styles/variables.scss" as *;
 
- 
+.navbar{
+    // border: 2px solid red;
+    background-color: #fff;
+
+    ul{
+        background-color: $five-color;
+        padding: 20px;
+        li{
+
+           a{
+                color: $fourth-color;
+                text-decoration: none;
+                font-weight: 600;
+                padding: 20px;
+                transition: border 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+
+           } 
+
+           a:hover{
+            // background-color: red;
+            border-bottom: 2px solid $second-color;
+            box-shadow: 0 0 3px $second-color; // opcional
+
+           }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+
+    .navbar{
+        background-color: $second-color;
+    }
+}
