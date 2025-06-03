@@ -20,17 +20,28 @@
             
 
             &-title{
-              border: 2px solid;
+            //   border: 2px solid;
+                width: 50%;
+                background: linear-gradient(90deg, rgb(4, 0, 255), orange, rgb(230, 230, 230));
+                -webkit-background-clip: text; /* Para navegadores baseados em WebKit */
+                -webkit-text-fill-color: transparent; /* Torna o texto transparente para mostrar o fundo */
             }
 
             &-description{
-                border: 2px solid;
+                // border: 2px solid;
+                width: 50%;
+                color: #6c757d;
+
+                .pre-desc{
+                    font-weight: 600;
+                }
+
             }
 
             &-social-media{
                 display: flex;
                 justify-content: center;
-                border: 2px solid;
+                // border: 2px solid;
                 img{
                     width: 40px;
                 }
@@ -56,6 +67,7 @@
         .hero-social-media{
             display: flex;
             justify-content: center;
+
             img{
                 width:40px;
             }

@@ -12,5 +12,6 @@ export class IndexComponent {
 
   skills = ["design", "development", "marketing"]
   title = "Design. Desenvolvimento. Resultados."
+  buttons = ['resume', 'projects']
 
 }
