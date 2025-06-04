@@ -1,13 +1,20 @@
-<div class="container-fluid">
-  <div class="header">
-     <app-navbar></app-navbar>
-  </div>
+<div class="container-fluid d-flex flex-column min-vh-100 p-0">
+  
+  <!-- Cabeçalho -->
+  <header class="header w-100 mb-5">
+    <app-navbar></app-navbar>
+  </header>
 
-  <main class="main">
-    <router-outlet></router-outlet>
+  <!-- Conteúdo principal -->
+  <main class="main flex-fill py-4">
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
   </main>
 
-  <!-- <app-footer></app-footer> -->
-  
+  <!-- Rodapé (se necessário) -->
+  <!-- <footer class="footer mt-auto">
+    <app-footer></app-footer>
+  </footer> -->
+
 </div>
-  
