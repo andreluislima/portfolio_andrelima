@@ -1,14 +1,15 @@
 import { Component} from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
 export class MenubarBasicDemo {
    
-     navPages=['Home', 'Resume', 'Projects', 'Contact']
+     navPages=['home', 'resume', 'project', 'contact']
 }
 

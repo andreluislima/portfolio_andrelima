@@ -8,7 +8,7 @@
         <img src="assets/Logo1.svg" class="mx-5 mt-3" style="width: 80px;"  alt="">
         <ul class="navbar-nav mx-auto mb-2 mb-md-0">
           <li class="nav-item mx-5" *ngFor="let page of navPages">
-            <a aria-current="page" href="#">{{page}}</a>
+            <a [routerLink]="['/', page.toLowerCase()]">{{page}}</a>
           </li>
            
         </ul>
