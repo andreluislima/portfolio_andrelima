@@ -5,7 +5,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
-        <img src="assets/Logo1.svg" class="mx-5 mt-3" style="width: 80px;"  alt="">
+       <a [routerLink]="['/home']"><img src="assets/Logo1.svg" class="mx-5 mt-3" style="width: 80px;"  alt=""></a>
         <ul class="navbar-nav mx-auto mb-2 mb-md-0">
           <li class="nav-item mx-5" *ngFor="let page of navPages">
             <a [routerLink]="['/', page.toLowerCase()]">{{page}}</a>
