@@ -80,16 +80,105 @@
   
 }
 
-@media (min-width: 370px) and (max-width: 768px){
+@media (min-width: 320px) and (max-width: 990px){
     .row{
-        border: 4px solid green;
+        display: flex;
+        justify-content: center;
+        // background-color: red;
+        
+    }
 
-        .col-lg-4{
-            border: 4px solid red;
-            padding: 20px;
+    .area-presentation{
+        border: 4px solid green;
+        display: flex;
+        flex-direction: row;
+
+        .presentation-pill{
+            border: 4px solid blue;
+            display: flex;
+            justify-content: space-between;
+
+            .col-lg-3{
+                width: 33%;
+                // border: 4px solid red;
+            }
+        }
+
+        .presentation-title{
+
+            .title{
+            text-align: center;
+            // border: 4px solid red;
+            }
+        
+        }
+
+        .presentation-btn{
+           
+            .col-lg-3{
+            // border: 1px solid red;
+            width: 30%;
+            border-radius: 5px;
+            }
+        }
+    }
+
+    img{
+        // border: 1px solid red;
+        width: 60%;
+    }
+
+
+}
+
+@media (min-width: 320px) and (max-width: 767px){
+        .row{
+        display: flex;
+        justify-content: center;
+        // background-color: red;
+        
+    }
+
+    .area-presentation{
+        border: 4px solid green;
+        display: flex;
+        flex-direction: row;
+
+        .presentation-pill{
+            border: 4px solid blue;
             display: flex;
             flex-direction: column;
             align-items: center;
+            gap: 20px;
+            margin-top: 10px;
+
+            .col-lg-3{
+                // width: 3%;
+                // border: 4px solid red;
+            }
         }
+
+        .presentation-title{
+
+            .title{
+            text-align: center;
+            font-size: 1.9rem !important;
+            // border: 4px solid red;
+            }
+        
+        }
+
+        .presentation-btn{        
+            .col-lg-3{
+            // border: 1px solid red;
+            width: 50%;
+            border-radius: 5px;
+            }
+        }
+    }
+
+    img{
+        // border: 1px solid red;
+        width: 90%;
     }
 }

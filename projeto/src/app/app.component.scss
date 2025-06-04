@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-.container{
+.container-fluid{
     border: 3px solid red;
     max-width: 100%; 
     margin-top: 125px;
@@ -13,4 +13,17 @@
         // height: 707px; 
     }
 
+}
+
+@media (min-width: 320px) and (max-width: 990px){
+    .container-fluid{
+        border: 3px solid red;
+        // max-width: 100%; 
+        margin-top: 50px;
+ 
+    .main{
+        border: 3px dashed rgb(0, 81, 255);
+        // height: 707px; 
+    }
+}
 }
