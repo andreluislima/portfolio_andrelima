@@ -1,32 +1,15 @@
-import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { AvatarModule } from 'primeng/avatar';
+import { Component} from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
-  imports: [AvatarModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.scss'
 })
-export class MenubarBasicDemo implements OnInit {
-    items: MenuItem[] | undefined;
-
-    ngOnInit() {
-        this.items = [
-            {
-                label: 'Home',
-            },
-            {
-                label: 'Resume',
-            },
-                      {
-                label: 'Projects',
-            },
-            
-            {
-                label: 'Contact',
-            }
-        ]
-    }
+export class MenubarBasicDemo {
+   
+     navPages=['home', 'resume', 'project', 'contact']
 }
 

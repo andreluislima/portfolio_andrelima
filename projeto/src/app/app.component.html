@@ -1,15 +1,17 @@
-<div class="container">
-  <div class="header">
-     <app-navbar></app-navbar>
-  </div>
-
-  <div class="main">
-    <!-- <app-index></app-index> -->
-     <router-outlet></router-outlet>
-  </div>
-
-  <div class="footer">
-    <app-footer></app-footer>
-  </div>
-</div>
+<div class="container-fluid d-flex flex-column min-vh-100 p-0">
   
+  <header class="header w-100">
+    <app-navbar></app-navbar>
+  </header>
+
+  <main class="main flex-fill py-4">
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+
+   <footer class="footer mt-auto">
+   <app-footer></app-footer>
+  </footer>
+
+</div>

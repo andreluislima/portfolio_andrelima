@@ -1,0 +1,30 @@
+.section-projects{
+    // border: 2px solid blue;
+
+    .projects{
+        border: 2px solid;
+
+        .card-project{
+            p{  
+            // border: 2px solid red;
+            text-align: justify;
+        }
+        }
+    }
+}
+
+@media (min-width: 320px)and (max-width: 767px){
+
+
+    .card-project{
+        // border: 3px solid blue;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+
+ 
+        img{
+            height: 300px;
+        }
+    }
+}

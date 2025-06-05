@@ -1,55 +1,81 @@
 @use "../../styles/variables.scss" as *;
 
-.hero-section{
-    // border: 2px solid;
-    height: 350px;
+.hero-section {
+//   border: 2px solid;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  background-color: $five-color;
+
+  .hero {
     display: flex;
-    justify-content: center;
-    background-color: $five-color;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 
-    .hero{
-        // border: 2px solid red;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
-        width: 50%;
-        height: 100%;
-        text-align: center;
-
-        &-title{
-            // border: 2px solid blue;
-            width: 50%;
-            background: linear-gradient(90deg, rgb(4, 0, 255), orange, rgb(230, 230, 230));
-            -webkit-background-clip: text; /* Para navegadores baseados em WebKit */
-            -webkit-text-fill-color: transparent; /* Torna o texto transparente para mostrar o fundo */
-        }
-
-        &-description{
-            // border: 2px solid green;
-            width: 50%;
-            color: #6c757d;
-
-            .pre-desc{
-                font-weight: 600;
-            }
-            .description{
-                
-            }
-        }
-
-        &-social-media{
-            // border: 2px solid;
-            width: 50%;
-
-            .social-media-btn{
-                 span{
-                    img{
-                        
-                        width: 40px;
-                    }
-                 }
-            }
-        }
+    &-title {
+      width: 50%;
+      background: linear-gradient(90deg, rgb(4, 0, 255), orange, rgb(230, 230, 230));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
+
+    &-description {
+      width: 50%;
+      color: #6c757d;
+
+      .pre-desc {
+        font-weight: 600;
+      }
+    }
+
+    &-social-media {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+
+      img {
+        width: 40px;
+      }
+    }
+  }
+}
+
+/* Responsivo: tablets e desktops médios */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .hero-section {
+    .hero-area {
+      .col-lg-6 {
+        width: 80% !important; // use com cautela para sobrescrever Bootstrap
+        background-color: blue;
+      }
+
+      .hero-social-media {
+        justify-content: center;
+
+        img {
+          width: 40px;
+        }
+      }
+    }
+  }
+}
+
+/* Responsivo: celulares */
+@media (min-width: 320px) and (max-width: 768px) {
+  .hero-section {
+    .hero {
+      &-title,
+      &-description {
+        width: 90%; // reduzido para caber bem no mobile
+      }
+
+      &-social-media img {
+        width: 35px;
+      }
+    }
+  }
 }

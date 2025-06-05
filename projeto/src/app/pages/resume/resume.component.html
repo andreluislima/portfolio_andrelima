@@ -1,105 +1,136 @@
 <div class="main">
-    <div class="content">
-        <div class="area-resume">
-            <div class="title">
-                <h1 class="title">{{title}}</h1>
+  <div class="album py-5 bg-body-tertiary">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 p-3 rounded-4 section-experience"  style="background-color: #fff;">
+        <div class="col-lg-12">
+          <h2>Experience</h2>
+
+          <div class="card shadow-sm">
+            <div class="row p-3"> <!-- ESSENCIAL para grid funcionar -->
+
+              <div class="col-md-4 col-12 p-4 card-time-line">
+                <h6>Subtitle</h6>
+                <p class="fw-bold">titulo</p>
+                <address class="mb-0">titulo</address>
+                <address>titulo</address>
+              </div>
+
+              <div class="col-md-8 col-12 card-information">
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural lead-in to additional content.
+                    This content is a little bit longer.
+                  </p>
+                </div>
+              </div>
+
             </div>
-
-            <div class="section-history">
-                <div class="sub-title">
-                    <h2>{{subtitle[0] | titlecase }}</h2>
-                    <!-- <button class="btn btn-primary">{{btn | titlecase}}</button> -->
-                </div>
-
-                <div class="card mb-4" *ngFor="let exp of experience">
-                    <div class="information">
-                        <div class="year">{{exp.period}}</div>
-                        <div class="function">{{exp.role}}</div>
-                        <div class="company">{{exp.company}}</div>
-                        <div class="city">{{exp.city}}</div>
-                    </div>
-                    <div class="description">
-                        <p>{{exp.description}}</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="section-education">
-                <div class="sub-title">
-                    <h2>{{subtitle[1] | titlecase }}</h2>
-                </div>
-
-                <div class="card mb-4" *ngFor="let edu of education">
-                    <div class="information">
-                        <div class="year">
-                            <span class="date-start">{{edu.start}}</span> - 
-                            <span class="date-end">{{edu.end}}</span>
-                        </div>                
-                    </div>
-
-                    <div class="description">
-                        <div class="course">
-                            <span class="fw-bold">{{edu.course}}</span>
-                            <span>
-                                <p>{{edu.degree}}</p>
-                            </span>
-                        </div>
-                        <div class="company">
-                            <span class="fw-bold">{{edu.instituition}}</span>
-                            <span>
-                                <p>{{edu.city}}</p>
-                            </span>
-                        </div>   
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="section-skills">
-                <div class="sub-title">
-                    <h2>{{subtitle[2] | titlecase }}</h2>
-                </div>
-
-                <div class="card">
-             
-                    <div class="skills" *ngFor="let lang of languages">
-                        <div class="skill">
-                            <p>{{lang.name}}</p>
-                            <p>{{lang.level}}</p>
-                        </div>                
-                    </div>
-
-                </div>
-
-                 <div class="sub-title">
-                        <h2>{{subtitle[3] | titlecase }}</h2>
-                </div>
-                <div class="card">
-                    <div class="skills">
-                        <div class="skill">
-                            <span>2018</span>
-                        </div>                
-                    </div>
-
-                </div>
-
-                <div class="sub-title">
-                        <h2>{{subtitle[4] | titlecase }}</h2>
-                </div>
-                <div class="card">
-                    <div class="skills">
-                        <div class="skill">
-                            <span>2018</span>
-                        </div>                
-                    </div>
-
-                </div>
-            </div>
-
+          </div>
 
         </div>
-    </div>
-</div>
+      </div>
 
+       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 p-3 section-experience" style="background-color: #fff;">
+        <div class="col-lg-12">
+          <h2>Education</h2>
+
+          <div class="card shadow-sm">
+            <div class="row p-3"> <!-- ESSENCIAL para grid funcionar -->
+
+              <div class="col-md-4 col-12 p-4 card-time-line">
+                <h6>Subtitle</h6>
+                <p class="fw-bold">titulo</p>
+                <address class="mb-0">titulo</address>
+                <address>titulo</address>
+              </div>
+
+              <div class="col-md-8 col-12 card-information">
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural lead-in to additional content.
+                    This content is a little bit longer.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div> 
+
+     <div class="container" >
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 p- mt-3 rounded-4 section-skills" style="background-color: #fff;">
+        <div class="col-lg-12 w-100 mb-3">
+          <h2>Languages</h2>
+
+          <div class="card shadow-sm card-information">
+            <div class="row p-3"> 
+
+            <div class="col-md-3 mb-4 col-12 p-2 card-skill">
+            <h6>Subtitle</h6>
+            <span class="fw-bold">titulo</span>
+            </div>
+
+            <div class="col-md-3 mb-4 col-12 p-2 card-skill">
+            <h6>Subtitle</h6>
+            <span class="fw-bold">titulo</span>
+            </div>
+             
+            <div class="col-md-3 mb-4 col-12 p-2 card-skill">
+            <h6>Subtitle</h6>
+            <span class="fw-bold">titulo</span>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+        <div class="col-lg-12 w-100">
+          <h2>Programing Languages</h2>
+
+          <div class="card shadow-sm card-information">
+            <div class="row p-3"> 
+
+              <div class="col-md-3 mb-4 col-12 p-2 card-skill">
+                <span class="fw-bold">Subtitle</span>
+              </div>
+
+              <div class="col-md-3 mb-4 col-12 p-2 card-skill">
+                <span class="fw-bold">Subtitle</span>
+              </div>
+
+              
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-12 w-100 mb-3">
+          <h2>Professional Skills</h2>
+
+          <div class="card shadow-sm card-information">
+            <div class="row p-3"> 
+
+              <div class="col-md-2 col-12 p-2 card-skill">
+                <span class="fw-bold">Subtitle</span>
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+       
+
+    </div>
+
+
+  </div>
+</div>

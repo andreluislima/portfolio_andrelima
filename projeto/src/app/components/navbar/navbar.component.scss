@@ -1,29 +1,30 @@
 @use "../../styles/variables.scss" as *;
 
-.nav-bar{
-    // border: 1px dashed blue; 
-    width: 1320px;
-    height: 72px;
-    display: flex;
-    align-items: center;
-    flex-direction:row-reverse;
-    justify-content: space-between;
+.navbar{
+    // border: 2px solid red;
+    background-color: #fff;
 
-        
-    .card{
-        border:none;
+    ul{
 
-        .nav{
-            .nav-link{
+        li{
+
+           a{
                 color: $fourth-color;
+                text-decoration: none;
                 font-weight: 600;
-            }
+                padding: 20px;
+                transition: border 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+
+           } 
+
+           a:hover{
+            // background-color: red;
+            border-bottom: 2px solid $second-color;
+            box-shadow: 0 0 3px $second-color; // opcional
+
+           }
         }
     }
-    .nav{
-        // background-color: red;
-    }
-
-
 }
 
+ 
