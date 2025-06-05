@@ -5,8 +5,7 @@
     background-color: #fff;
 
     ul{
-        background-color: $five-color;
-        padding: 20px;
+
         li{
 
            a{
@@ -28,9 +27,4 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 767px){
-
-    .navbar{
-        background-color: $second-color;
-    }
-}
+ 
