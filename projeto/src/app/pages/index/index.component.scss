@@ -1,0 +1,19 @@
+.main{
+
+    .area-presentation{
+        .badge {
+                background: linear-gradient(45deg, rgb(4, 0, 255), rgb(230, 230, 230));
+                width: 100px;
+                padding: 8px;
+                }
+        
+        .box-image{
+            img{
+                border-top-left-radius: 30px;
+                border-bottom-right-radius:30px;
+
+            }
+        }
+    }
+    
+}

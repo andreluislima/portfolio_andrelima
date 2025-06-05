@@ -1,22 +1,21 @@
     <footer class="footer">
-    <div class="row">
-      <p class="col-md-4 mb-0 text-body-secondary">&copy; 2023 Company, Inc</p>
-    </div>
+      <div class="row">
+        <p class="col-md-4 mb-0 text-body-secondary">&copy; {{currentYear}} , {{nome}}</p>
+      </div>
 
-    <div class="row">
-      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center  link-body-emphasis text-decoration-none">
-          <img src="../../../assets/Logo1.svg" width="70px"  alt="">
-      </a>
-    </div>
+      <div class="row">
+        <a href="/" class="col-md-4 link-body-emphasis text-decoration-none">
+            <img src="../../../assets/Logo1.svg" width="50"  alt="">
+        </a>
+      </div>
 
-    <div class="row">
-        <ul class="nav col-md-4">
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-      </ul>
-    </div>
-    
+      <div class="row">
+          <ul class="nav col-md-4">
+          <li class="nav-item" *ngFor="let link of footer">
+            <a [routerLink]="['/', link.toLowerCase()]" class="nav-link px-2 text-body-secondary">{{link}}</a>
+          </li>
+          
+        </ul>
+      </div>
 
   </footer>
