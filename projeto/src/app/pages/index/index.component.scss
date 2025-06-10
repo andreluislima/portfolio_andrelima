@@ -1,11 +1,21 @@
 .main{
 
     .area-presentation{
+
         .badge {
-                background: linear-gradient(45deg, rgb(4, 0, 255), rgb(230, 230, 230));
-                width: 100px;
-                padding: 8px;
-                }
+            background: linear-gradient(45deg, rgb(4, 0, 255), rgb(230, 230, 230));
+            width: 100px;
+            padding: 8px;
+        }
+
+        .title{
+            // font-size: 55px;
+            // font-size: 3.3rem;
+            font-weight: bold;
+            background: linear-gradient(90deg, rgb(4, 0, 255), orange, rgb(230, 230, 230));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
         
         .box-image{
             img{
@@ -15,5 +25,7 @@
             }
         }
     }
+
+
     
 }
