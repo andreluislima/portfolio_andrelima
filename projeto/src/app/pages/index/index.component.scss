@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../../../assets/banner_index_2.png");
+    background-image: url("../../../assets/banner_index_3.svg");
     // background-color: red;
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,14 +12,18 @@
     // height: 100vh; // ou um valor fixo desejado
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
+    
   }
 
   .area-presentation {
     // background-color: blue;
+    flex: 1 1 300px;
     width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 2rem;
     color: white;
 
@@ -55,4 +59,6 @@
         50% { border-color: transparent }
       }
   }
+
+
 }
