@@ -1,31 +1,58 @@
-.main{
+.main {
+  .section-presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../../assets/banner_index_2.png");
+    // background-color: red;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    // height: 100vh; // ou um valor fixo desejado
+    margin: 0;
+    padding: 0;
+  }
 
-    .area-presentation{
+  .area-presentation {
+    // background-color: blue;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    color: white;
 
-        .badge {
-            background: linear-gradient(45deg, rgb(4, 0, 255), rgb(230, 230, 230));
-            width: 100px;
-            padding: 8px;
-        }
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    text-wrap: balance; // melhora visual em navegadores modernos
 
-        .title{
-            // font-size: 55px;
-            // font-size: 3.3rem;
-            font-weight: bold;
-            background: linear-gradient(90deg, rgb(4, 0, 255), orange, rgb(230, 230, 230));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        
-        .box-image{
-            img{
-                border-top-left-radius: 30px;
-                border-bottom-right-radius:30px;
-
-            }
-        }
+    .title{
+        color: #000;
     }
 
+     .typewriter {
+          overflow: hidden;
+          border-right: 3px solid orange;
+          white-space: nowrap;
+          margin: 0 auto;
+          letter-spacing: 2px;
+          animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+          font-family: monospace;
+          font-size: 2rem;
+          width: fit-content;
+          
+        }
 
-    
+        @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+      @keyframes blink {
+        50% { border-color: transparent }
+      }
+  }
 }

@@ -1,34 +1,15 @@
-<main class="flex-shrink-0 main">
-    <section class="py-5">
-        <div class="container px-5 pb-5">
-            <div class="row gx-5 align-items-center area-presentation">
-                <div class="col-xxl-5">
-                        <div class="text-center text-xxl-start">
+<main class="main">
+  <section class="section-presentation">
+    <div class="area-presentation">
+      <h1 class="display fw-bolder mb-5">
+        <!-- <span class="text-gradient d-inline title typewriter" id="typewriter">{{ title }}</span> -->
+           <span class="text-gradient d-inline title typewriter" [innerHTML]="title"></span>
 
-                        <div class="badge rounded-pill bg-gradient-primary-to-secondary text-white mb-4" *ngFor="let skill of skills">
-                            <div class="text-uppercase">{{skill}}</div>
-                        </div>
-                        <h1 class="display fw-bolder mb-5"><span class="text-gradient d-inline title">{{title}}</span></h1>
-
-                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                            <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="resume.html">Resume</a>
-                            <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">Projects</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-7 box-image">
-                        <div class="d-flex justify-content-center mt-5 mt-xxl-0">
-                        <div class="profile bg-gradient-primary-to-secondary">
-                                
-                            <img class="profile-img img-fluid" width="100%" height="auto" src="assets/perfil03.svg" alt="..." />                              
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      </h1>
+      <a class="btn btn-warning fw-bold px-4 py-2" href="#projects">PROJECTS</a>
+    </div>
+    <div class="area-presentation">
+     <img src="assets/foto_perfil.png" width="400" alt="">
+     </div>
+  </section>
 </main>
-<app-hero-section>
-
- 
