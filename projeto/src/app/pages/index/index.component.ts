@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeroSectionComponent } from '../../components/hero-section/hero-section.component';
+import { HeroSectionComponent } from "../../components/hero-section/hero-section.component";
+import { SocialMediasComponent } from "../../components/social-medias/social-medias.component";
 
 @Component({
   selector: 'app-index',
-  imports: [CommonModule,HeroSectionComponent],
+  imports: [CommonModule, HeroSectionComponent, SocialMediasComponent],
   templateUrl: './index.component.html',
   styleUrl: './index.component.scss'
 })

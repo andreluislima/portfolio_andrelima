@@ -13,13 +13,24 @@
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
+    // border-bottom: 2px solid #00569F;
     
   }
 
+  .box-title{
+      background: rgba(255, 255, 255, 0.027);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+    -webkit-backdrop-filter: blur(10px);
+
+  }
+
+
   .area-presentation {
     // background-color: blue;
+    // border: 2px solid red;
     flex: 1 1 300px;
-    width: 30%;
+    // width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,6 +43,7 @@
     overflow-wrap: break-word;
     word-break: break-word;
     text-wrap: balance; // melhora visual em navegadores modernos
+
 
     .title{
         color: #000;
