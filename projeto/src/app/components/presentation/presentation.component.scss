@@ -1,0 +1,82 @@
+@use "../../styles/variables.scss" as *;
+
+.hero-section {
+  border: 2px solid;
+  display: flex;
+  justify-content: center;
+  background-color: $five-color;
+
+  .hero {
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;       // MOBILE FIRST: empilhado 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+
+    .col-md-6,
+    .col-md-4 {
+      width: 100%;         // Mobile: cada coluna ocupa 100%         
+    }
+
+
+    .about-me {
+      border: 2px solid red;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column; 
+      padding: 30px;      // Mobile: coluna
+      text-align: start;
+
+      p{
+        
+        font-size: 1.2rem;
+
+      }
+    }
+
+    .skills {
+      border: 2px solid blue;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 40px;
+
+      span {
+        border: 2px solid;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+// A PARTIR DE 769px PRA CIMA -> Layout lado a lado
+@media (min-width: 769px) {
+  .hero-section {
+    .hero {
+      flex-direction: row;            
+      align-items: flex-start;
+      justify-content: space-evenly;
+
+      .col-md-6,
+      .col-md-4 {
+        width: 50%;                 
+      }
+
+      // .about-me {
+      //   flex-direction: column;      
+      // }
+
+      // .skills {
+      //   justify-content: space-around;
+      // }
+    }
+  }
+}

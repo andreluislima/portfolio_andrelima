@@ -1,0 +1,24 @@
+<div class="hero-section container-fluid" >
+    <div class="row hero ">
+        <div class="col-6 col-md-6 about-me">
+
+            <div class="col-md-12">
+                <h2>Get to Know me</h2>
+            </div>
+             <div class="col-md-12">
+                  <p class="mt-4" [innerHTML]="aboutMe"></p> 
+             </div>
+
+            
+        </div>
+        <div class="col-6 col-md-4">
+          <div class="col-md-12">
+                <h2>My Skills</h2>
+          </div>
+         <div class="col-md-12 skills" >
+          <span  *ngFor="let skill of skills">{{skill}}</span>
+         </div>
+ 
+        
+     </div>
+</div>

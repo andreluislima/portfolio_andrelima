@@ -1,11 +1,10 @@
 @use "../../styles/variables.scss" as *;
 
 .hero-section {
-//   border: 2px solid;
-  height: 350px;
   display: flex;
   justify-content: center;
   background-color: $five-color;
+  padding: 50px;
 
   .hero {
     display: flex;
@@ -26,7 +25,9 @@
     &-description {
       width: 50%;
       color: #6c757d;
-
+      // text-align: start;
+      font-size: 1.1rem;
+ 
       .pre-desc {
         font-weight: 600;
       }
