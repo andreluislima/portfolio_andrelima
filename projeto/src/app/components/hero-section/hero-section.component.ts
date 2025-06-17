@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { SocialMediasComponent } from "../social-medias/social-medias.component";
+import { PresentationComponent } from "../presentation/presentation.component";
 
 @Component({
   selector: 'app-hero-section',
-  imports: [SocialMediasComponent],
+  imports: [SocialMediasComponent, PresentationComponent],
   templateUrl: './hero-section.component.html',
   styleUrl: './hero-section.component.scss'
 })

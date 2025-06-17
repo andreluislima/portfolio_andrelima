@@ -1,13 +1,13 @@
 @use "../../styles/variables.scss" as *;
 
 .hero-section {
-  border: 2px solid;
+  // border: 2px solid;
   display: flex;
   justify-content: center;
   background-color: $five-color;
 
   .hero {
-    border: 2px solid;
+    // border: 2px solid;
     display: flex;
     flex-direction: column;       // MOBILE FIRST: empilhado 
     align-items: center;
@@ -23,7 +23,7 @@
 
 
     .about-me {
-      border: 2px solid red;
+      // border: 2px solid red;
       display: flex;
       align-items: center;
       flex-wrap: wrap;
@@ -32,27 +32,48 @@
       text-align: start;
 
       p{
-        
         font-size: 1.2rem;
-
       }
     }
 
     .skills {
-      border: 2px solid blue;
+      // border: 2px solid blue;
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
       padding: 20px;
-      gap: 40px;
+      gap: 20px;
+      // width: 100%;
 
       span {
-        border: 2px solid;
+        border-bottom: 2px solid $second-color;
+        background-color: rgba(211, 211, 211, 0.247);
         border-radius: 10px;
         padding: 10px;
         display: flex;
         align-items: center;
+
       }
+
+      .skill {
+        // border: 1px solid $second-color;
+        padding: 10px 20px;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 10px;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      }
+        
+      .skill:hover{
+        transform: scale(1.05);
+        background:linear-gradient(45deg, $second-color, #00c6ff) ;
+        color: #fff;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+        border-color: transparent;
+      }
+
+
     }
   }
 }
@@ -61,22 +82,30 @@
 @media (min-width: 769px) {
   .hero-section {
     .hero {
+      // border: 2px solid;
       flex-direction: row;            
       align-items: flex-start;
-      justify-content: space-evenly;
+      justify-content: center;
 
       .col-md-6,
       .col-md-4 {
-        width: 50%;                 
+        // border: 2px solid red;
+        width: 50%;       
+        display: flex;
+        justify-content: center;    
+        flex-direction: column;     
+        align-items: center; 
       }
 
       // .about-me {
       //   flex-direction: column;      
       // }
 
-      // .skills {
-      //   justify-content: space-around;
-      // }
+      .skills {
+        justify-content: space-around;
+        // border: 2px solid;
+        width: 80%;
+      }
     }
   }
 }
