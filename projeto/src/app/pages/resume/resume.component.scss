@@ -8,45 +8,6 @@
   align-items: center;
   // background-color: $five-color;
 
-  .album{
-    // background-color: ;
-    // border: 2px solid red;
-  }
-
-  .container {
-    // border: 2px solid red;
-    .section-experience {
-      // border: 2px solid red;
-
-      .card {
-        border: none;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        
-        .card-time-line {
-          background-color: gray;
-          // border: 2px solid red;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-evenly;
-          // padding: 25px;
-          border-radius: 5px;
-          border-left: 3px solid $second-color;
-
-        }
-
-        .card-information {
-          border: 2px solid red;
-          display: flex;
-          align-items: center;
-
-          .card-body {
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
-
   .section-skills{
     // background-color: red;
     background-color: $five-color;
