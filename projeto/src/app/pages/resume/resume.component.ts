@@ -14,7 +14,7 @@ export class ResumeComponent implements OnInit{
   subtitle=["experience", "education","languages", "Programming Languages", "professional skills"]
   btn="dowload resume"
 
-  experiences = [
+  experience = [
     {
       "function":"Desenvolvedor Full Stack",
       "employer":"Ilha Service",
@@ -41,7 +41,7 @@ export class ResumeComponent implements OnInit{
   ]
 
 
-  educations = [
+  education = [
     {
       "course":"Curso de Programação Full Stack",
       "school":"Step computer academy",
@@ -71,9 +71,41 @@ export class ResumeComponent implements OnInit{
 
   ]
 
-  experience = resume.experience;
-  education = resume.education;
-  languages = resume.languages;
+  language = [
+    {
+      "name":"English",
+      "level":"Intermediary"
+    },
+    {
+      "name":"Italian",
+      "level":"Advanced"
+    },
+    {
+      "name":"Spanish",
+      "level":"Basic"
+    },
+
+  ]
+
+  programmingLanguages = ["HTML", "SCSS", "JavaScript", "Java", "Python"]
+  professionalSkills = [
+    "Desenvolvimento Full Stack",
+    "Java (Spring Boot)",
+    "Angular",
+    "TypeScript",
+    "JavaScript",
+    "PostgreSQL",
+    "Git e Controle de Versão",
+    "Integração de APIs REST",
+    "Versionamento Semântico (Semantic Release)",
+    "Figma (Prototipação e Design UI/UX)",
+    "Metodologias Ágeis (Scrum)",
+    "Boas práticas de Clean Code",
+    "SQL e Modelagem de Banco de Dados",
+    "Documentação Técnica",
+    "Deploy em Cloud (AWS / DigitalOcean / Netlify)"
+  ]
+ 
 
   constructor(){}
 

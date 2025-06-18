@@ -9,8 +9,7 @@
   // background-color: $five-color;
 
   .section-skills{
-    // background-color: red;
-    background-color: $five-color;
+     background-color: $five-color;
 
     display: flex;
     flex-direction: column;
@@ -24,11 +23,17 @@
       // height: 0px;
 
       .card-skill{
-        border-right: 4px solid $second-color;
-        border-left: 4px solid $second-color;
-        border-radius: 8px;
-        // background-color: red;
+        border-bottom: 2px solid $second-color;
+        border-left: 2px solid $second-color;
+        background-color: rgba(211, 211, 211, 0.247);
+        border-radius: 10px;
+        padding: 10px;
         margin-right: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
       }
     }
   }
