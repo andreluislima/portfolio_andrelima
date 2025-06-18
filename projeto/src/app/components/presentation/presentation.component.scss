@@ -23,18 +23,22 @@
 
 
     .about-me {
-      // border: 2px solid red;
+      border-radius: 10px;
       display: flex;
       align-items: center;
       flex-wrap: wrap;
       flex-direction: column; 
       padding: 30px;      // Mobile: coluna
       text-align: start;
+      box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+
 
       p{
         font-size: 1.2rem;
       }
     }
+
+ 
 
     .skills {
       // border: 2px solid blue;
@@ -43,6 +47,7 @@
       flex-wrap: wrap;
       padding: 20px;
       gap: 20px;
+      
       // width: 100%;
 
       span {

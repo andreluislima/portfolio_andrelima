@@ -3,8 +3,7 @@
 .navbar{
     // border: 2px solid red;
     background-color: #d9d9d9;
-
-
+    padding: 0;
     ul{
 
         li{
@@ -13,19 +12,14 @@
                 color: $fourth-color;
                 text-decoration: none;
                 font-weight: 600;
-                font-size: 1.3rem;
+                font-size: 1.2rem;
                 color: #000;
                 text-transform: capitalize;
-                padding: 10px;
-                transition: border 0.1s ease, background-color 0.1s ease, box-shadow 0.1s ease;
-
+                // padding: 10px;
            } 
 
            a:hover{
-            // background-color: red;
-            border-bottom: 2px solid $second-color;
-            // box-shadow: 0 0 3px $second-color; // opcional
-
+            color:#fff;
            }
         }
     }

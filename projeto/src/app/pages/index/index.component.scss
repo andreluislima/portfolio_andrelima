@@ -22,6 +22,7 @@
       backdrop-filter: blur(10px);
       border-radius: 10px;
     -webkit-backdrop-filter: blur(10px);
+    // border: 2px solid red;
 
   }
 
@@ -47,6 +48,8 @@
 
     .title{
         color: #000;
+        width: 500px;
+
     }
 
      .typewriter {
