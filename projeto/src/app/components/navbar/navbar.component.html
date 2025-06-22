@@ -7,7 +7,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder " >
                 <li class="nav-item" *ngFor="let page of navPages">
-                  <a class="nav-link" [routerLink]="['/', page.toLowerCase()]">{{page}}</a>
+                  <a class="nav-link" 
+                    [routerLink]="['/', page.toLowerCase()]"
+                    routerLinkActive="active-link"
+                    [routerLinkActiveOptions]="{exact:true}"
+                  >{{page}}</a>
                 </li>
             </ul>
         </div>
