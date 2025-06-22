@@ -10,7 +10,7 @@ import { resume } from '../../../data/resume';
 })
 export class ResumeComponent implements OnInit{
 
-  title="Resume"
+  title_session="Resume"
   subtitle=["experience", "education","languages", "Programming Languages", "professional skills"]
   btn="dowload resume"
 

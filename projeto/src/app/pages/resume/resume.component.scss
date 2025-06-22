@@ -8,6 +8,21 @@
   align-items: center;
   // background-color: $five-color;
 
+    .title-session{
+        text-transform: uppercase;
+        background: linear-gradient(90deg, orange, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+    }
+
+  .subtitle{
+    background: linear-gradient(90deg, rgb(4, 0, 255), orange, rgb(230, 230, 230));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: capitalize;
+  }
+
   .section-skills{
      background-color: $five-color;
 

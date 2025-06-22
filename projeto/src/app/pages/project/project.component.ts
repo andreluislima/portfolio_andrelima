@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class ProjectComponent {
 
-  title = "Projects"
+  title_session = "Projects"
 
   projects = [
     {

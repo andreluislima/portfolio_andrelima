@@ -2,12 +2,16 @@
 
 .container{
 
-    h2{
+    .title-session{
         text-transform: uppercase;
+        background: linear-gradient(90deg, orange, blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
     }
 
     .card-content-text{
-        border: 2px solid;
+        border-left: 3px dotted rgba(255, 166, 0, 0.863);
         
     }
 }
