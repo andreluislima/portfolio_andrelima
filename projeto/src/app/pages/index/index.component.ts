@@ -2,10 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeroSectionComponent } from "../../components/hero-section/hero-section.component";
 import { PresentationComponent } from "../../components/presentation/presentation.component";
+import { RouterModule } from '@angular/router';
+
 
 @Component({
   selector: 'app-index',
-  imports: [CommonModule, HeroSectionComponent, PresentationComponent],
+  imports: [CommonModule, HeroSectionComponent, PresentationComponent,RouterModule],
   templateUrl: './index.component.html',
   styleUrl: './index.component.scss'
 })

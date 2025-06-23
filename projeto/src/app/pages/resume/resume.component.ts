@@ -97,13 +97,13 @@ export class ResumeComponent implements OnInit{
     "PostgreSQL",
     "Git e Controle de Versão",
     "Integração de APIs REST",
-    "Versionamento Semântico (Semantic Release)",
-    "Figma (Prototipação e Design UI/UX)",
+    "Versionamento Semântico",
+    "Figma",
     "Metodologias Ágeis (Scrum)",
     "Boas práticas de Clean Code",
     "SQL e Modelagem de Banco de Dados",
     "Documentação Técnica",
-    "Deploy em Cloud (AWS / DigitalOcean / Netlify)"
+    "Deploy em Cloud (AWS / Netlify)"
   ]
  
 
