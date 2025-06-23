@@ -68,10 +68,16 @@
 /* Responsivo: celulares */
 @media (min-width: 320px) and (max-width: 768px) {
   .hero-section {
+    border: 2px solid red;
     .hero {
+      border: 2px solid;
+      // width: 300%;
+      // width: 300px;
       &-title,
       &-description {
-        width: 90%; // reduzido para caber bem no mobile
+        border: 2px solid red;
+        // width: 300px; // reduzido para caber bem no mobile
+        width: 100%;
       }
 
       &-social-media img {

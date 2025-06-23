@@ -4,7 +4,7 @@ import { PresentationComponent } from "../presentation/presentation.component";
 
 @Component({
   selector: 'app-hero-section',
-  imports: [SocialMediasComponent, PresentationComponent],
+  imports: [SocialMediasComponent],
   templateUrl: './hero-section.component.html',
   styleUrl: './hero-section.component.scss'
 })
