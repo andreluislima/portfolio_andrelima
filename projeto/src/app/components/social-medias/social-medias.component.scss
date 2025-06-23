@@ -1,0 +1,39 @@
+@use "../../styles/variables.scss" as *;
+
+
+.hero-social-media {
+    // border: 2px solid; 
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+
+    img {
+      width: 40px;
+    }
+  }
+
+/* Responsivo: tablets e desktops médios */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .hero-section {
+     
+  .hero-social-media {
+    justify-content: center;
+
+    img {
+      width: 40px;
+    }
+  }
+    
+  }
+}
+
+/* Responsivo: celulares */
+@media (min-width: 320px) and (max-width: 768px) {
+  .hero-section {
+      &-social-media img {
+        width: 35px;
+      }
+    }
+  
+}

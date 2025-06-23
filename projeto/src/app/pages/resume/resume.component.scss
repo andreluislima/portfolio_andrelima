@@ -1,63 +1,54 @@
 @use "../../styles/variables.scss" as *;
 
 .main {
-  border: 2px solid;
+  // border: 2px solid;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $five-color;
+  // background-color: $five-color;
 
-  .container {
-    .section-experience {
-      // border: 2px solid red;
-
-      .card {
-        border: none;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        
-        .card-time-line {
-          background-color: gray;
-          // border: 2px solid red;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-evenly;
-          // padding: 25px;
-          border-radius: 5px;
-          border-left: 3px solid $second-color;
-
-        }
-
-        .card-information {
-          border: 2px solid red;
-          display: flex;
-          align-items: center;
-
-          .card-body {
-            width: 100%;
-          }
-        }
-      }
+    .title-session{
+        text-transform: uppercase;
+        background: linear-gradient(90deg, rgb(4, 0, 255), orange, rgb(230, 230, 230));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
     }
+
+  .subtitle{
+    background: linear-gradient(90deg, rgb(4, 0, 255), orange, rgb(230, 230, 230));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: capitalize;
   }
 
   .section-skills{
-    // background-color: red;
+     background-color: $five-color;
+
     display: flex;
     flex-direction: column;
     border: 2px solid $five-color;
 
     .card-information{
-      background-color: red;
+      // background-color: red;
       border: none;
-      background-color: transparent;
+      background-color: #fff;
+      padding: 20px;
+      // height: 0px;
 
       .card-skill{
-        border-right: 4px solid $second-color;
-        border-left: 4px solid $second-color;
-        border-radius: 8px;
-        background-color: red;
+        border-bottom: 2px solid $second-color;
+        border-left: 2px solid $second-color;
+        background-color: rgba(211, 211, 211, 0.247);
+        border-radius: 10px;
+        padding: 10px;
         margin-right: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
       }
     }
   }

@@ -1,25 +1,25 @@
 <div class="main">
-  <div class="album py-5 bg-body-tertiary">
+  <div class="album py-5">
     <div class="container">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 p-3 rounded-4 section-experience"  style="background-color: #fff;">
-        <div class="col-lg-12">
-          <h2>Experience</h2>
+      <h2 class="mx-3 mb-5 title-session" style="text-align: center;">{{title_session}}</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 p-3 rounded-4 section-skills">
+        <div class="col-lg-10">
+          <h2 class="mb-4 subtitle">{{subtitle[0]}}</h2>
 
-          <div class="card shadow-sm">
+          <div class="card shadow-sm mb-3" *ngFor="let exp of experience">
             <div class="row p-3"> <!-- ESSENCIAL para grid funcionar -->
 
-              <div class="col-md-4 col-12 p-4 card-time-line">
-                <h6>Subtitle</h6>
-                <p class="fw-bold">titulo</p>
-                <address class="mb-0">titulo</address>
-                <address>titulo</address>
+              <div class="col-md-3 col-12 p-4 card-time-line">
+                <span class="">{{exp.dateStart}}</span> - <span>{{exp.dateEnd}}</span>
+                <h6>{{exp.function}}</h6>
+                <hr>
+                <span class="fst-italic">{{exp.employer}}</span>, <p>{{exp.city}}</p>
               </div>
 
-              <div class="col-md-8 col-12 card-information">
+              <div class="col-md-7 col-12 card-information">
                 <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural lead-in to additional content.
-                    This content is a little bit longer.
+                  <p class="card-text" [innerHTML]="exp.description">
+                     <!-- {{exp.description}} -->
                   </p>
                 </div>
               </div>
@@ -30,26 +30,22 @@
         </div>
       </div>
 
-       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 p-3 section-experience" style="background-color: #fff;">
-        <div class="col-lg-12">
-          <h2>Education</h2>
+       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 p-3  section-skills">
+        <div class="col-lg-10">
+          <h2 class="mb-4 subtitle">{{subtitle[1]}}</h2>
 
-          <div class="card shadow-sm">
+          <div class="card shadow-sm  mb-4" *ngFor="let edu of education">
             <div class="row p-3"> <!-- ESSENCIAL para grid funcionar -->
 
-              <div class="col-md-4 col-12 p-4 card-time-line">
-                <h6>Subtitle</h6>
-                <p class="fw-bold">titulo</p>
-                <address class="mb-0">titulo</address>
-                <address>titulo</address>
+              <div class="col-md-2 col-12 p-4 card-time-line" style="display: flex; align-items: center;">
+                <span class="fw-bold">{{edu.dateStart}}</span> - <span class="fw-bold">{{edu.dateEnd}}</span>
               </div>
 
-              <div class="col-md-8 col-12 card-information">
+              <div class="col-md-6 col-12 card-information">
                 <div class="card-body">
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural lead-in to additional content.
-                    This content is a little bit longer.
-                  </p>
+                  <h6>{{edu.course}}</h6>
+                  <!-- <hr> -->
+                  <span class="fst-italic">{{edu.school}}</span>, <span>{{edu.location}}</span>
                 </div>
               </div>
 
@@ -61,27 +57,17 @@
 
     </div> 
 
-     <div class="container" >
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 p- mt-3 rounded-4 section-skills" style="background-color: #fff;">
-        <div class="col-lg-12 w-100 mb-3">
-          <h2>Languages</h2>
+     <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 p-4 mt-3 rounded-4 section-skills">
+        <div class="col-lg-12 mb-3">
+          <h2 class="mb-4 subtitle">{{subtitle[2]}}</h2>
 
           <div class="card shadow-sm card-information">
             <div class="row p-3"> 
 
-            <div class="col-md-3 mb-4 col-12 p-2 card-skill">
-            <h6>Subtitle</h6>
-            <span class="fw-bold">titulo</span>
-            </div>
-
-            <div class="col-md-3 mb-4 col-12 p-2 card-skill">
-            <h6>Subtitle</h6>
-            <span class="fw-bold">titulo</span>
-            </div>
-             
-            <div class="col-md-3 mb-4 col-12 p-2 card-skill">
-            <h6>Subtitle</h6>
-            <span class="fw-bold">titulo</span>
+            <div class="col-md-2 mb-4 col-12 p-2 card-skill" *ngFor="let lang of language">
+            <h6>{{lang.name}}</h6>
+            <span class="">{{lang.level}}</span>
             </div>
 
           </div>
@@ -89,21 +75,15 @@
         </div>
       </div>
 
-        <div class="col-lg-12 w-100">
-          <h2>Programing Languages</h2>
+        <div class="col-lg-12 w-100 mb-3">
+          <h2 class="mb-4 subtitle">{{subtitle[3]}}</h2>
 
           <div class="card shadow-sm card-information">
             <div class="row p-3"> 
 
-              <div class="col-md-3 mb-4 col-12 p-2 card-skill">
-                <span class="fw-bold">Subtitle</span>
+              <div class="col-md-2 mb-4 col-12 p-2 card-skill" *ngFor="let langPro of programmingLanguages">
+                <span class="">{{langPro}}</span>
               </div>
-
-              <div class="col-md-3 mb-4 col-12 p-2 card-skill">
-                <span class="fw-bold">Subtitle</span>
-              </div>
-
-              
 
             </div>
 
@@ -112,15 +92,14 @@
         </div>
 
         <div class="col-lg-12 w-100 mb-3">
-          <h2>Professional Skills</h2>
+          <h2 class="mb-4 subtitle">{{subtitle[4]}}</h2>
 
           <div class="card shadow-sm card-information">
             <div class="row p-3"> 
 
-              <div class="col-md-2 col-12 p-2 card-skill">
-                <span class="fw-bold">Subtitle</span>
+              <div class="col-md-2 col-12 p-2 card-skill" *ngFor="let skill of professionalSkills">
+                <span class="">{{skill}}</span>
               </div>
-
 
             </div>
 

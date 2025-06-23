@@ -1,19 +1,80 @@
-.main{
-
-    .area-presentation{
-        .badge {
-                background: linear-gradient(45deg, rgb(4, 0, 255), rgb(230, 230, 230));
-                width: 100px;
-                padding: 8px;
-                }
-        
-        .box-image{
-            img{
-                border-top-left-radius: 30px;
-                border-bottom-right-radius:30px;
-
-            }
-        }
-    }
+.main {
+  .section-presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../../assets/banner_index_3.svg");
+    // background-color: red;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    // height: 100vh; // ou um valor fixo desejado
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    // border-bottom: 2px solid #00569F;
     
+  }
+
+  .box-title{
+      background: rgba(255, 255, 255, 0.027);
+      backdrop-filter: blur(10px);
+      border-radius: 10px;
+    -webkit-backdrop-filter: blur(10px);
+    // border: 2px solid red;
+
+  }
+
+
+  .area-presentation {
+    // background-color: blue;
+    // border: 2px solid red;
+    flex: 1 1 300px;
+    // width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    text-wrap: balance; // melhora visual em navegadores modernos
+
+
+    .title{
+        color: #000;
+        width: 500px;
+
+    }
+
+     .typewriter {
+          overflow: hidden;
+          border-right: 3px solid orange;
+          white-space: nowrap;
+          margin: 0 auto;
+          letter-spacing: 2px;
+          animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+          font-family: monospace;
+          font-size: 2rem;
+          width: fit-content;
+          
+        }
+
+        @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+      @keyframes blink {
+        50% { border-color: transparent }
+      }
+  }
+
+
 }
+

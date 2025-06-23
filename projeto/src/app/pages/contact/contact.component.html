@@ -1,1 +1,57 @@
-<p>contact works!</p>
+<main class="flex-shrink-0 main mt-5">
+    <section class="py-4">
+        <div class="container px-5">
+            <div class="rounded-4 py-3 px-4 px-md-5 box-contact" >
+                <div class="text-center mb-5">
+                    <div class="feature text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+                    <h2 class="fw-bolder title-session">{{title_session}}</h2>
+                    <p class="lead fw-normal text-muted mb-0">Let's work together!</p>
+                </div>
+
+                <div class="row gx-5 justify-content-center" >
+                    <div class="col-lg-8 col-xl-6 mb-4">
+
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label for="name">Full name</label>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label for="email">Email address</label>
+                            </div>
+                            <!-- Phone number input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <label for="phone">Phone number</label>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                                          
+                            <!-- Submit Button-->
+                            <div class="d-grid"><button class="btn btn-lg" id="submitButton" type="submit">Submit</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+
+    </section>
+    
+    <section class="box-whatsapp">
+        <a
+                class="btn-whatsapp"
+                href="https://api.whatsapp.com/send?phone=5521988798592&text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20projetos."
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+            <img src="assets/icons/icons8-whatsapp-96.svg" alt="WhatsApp" width="40" />
+            </a>
+    </section>
+</main>
