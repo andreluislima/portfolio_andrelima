@@ -13,4 +13,13 @@
         border-left: 3px solid $second-color;
         
     }
+
+    .badge {
+        background: linear-gradient(45deg, rgb(4, 0, 255));
+    }
+
+    a{
+        text-decoration: none;
+    }
+
 }
