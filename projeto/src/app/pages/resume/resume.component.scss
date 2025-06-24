@@ -8,6 +8,14 @@
   align-items: center;
   // background-color: $five-color;
 
+  h2{
+    // border: 2px solid;
+    font-size: 2rem;
+  }
+  h3{
+    font-size: 1.8rem;
+  }
+
     .title-session{
         text-transform: uppercase;
         background: linear-gradient(90deg, rgb(4, 0, 255), orange, rgb(230, 230, 230));

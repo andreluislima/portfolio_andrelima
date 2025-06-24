@@ -1,7 +1,6 @@
 @use "../../styles/variables.scss" as *;
 
 .main{
-    // border: 2px solid;
 
     .box-contact{
         background-color:$five-color;
@@ -49,12 +48,14 @@
 }
 }
 .container{
+
     .title-session{
         text-transform: uppercase;
         background: linear-gradient(90deg, orange, blue);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-align: center;
+
     }
 }
 
