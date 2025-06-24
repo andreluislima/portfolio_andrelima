@@ -9,6 +9,10 @@
         text-align: center;
     }
 
+    h2{
+        font-size: 2rem;
+    }
+
     .card-content-text{
         border-left: 3px solid $second-color;
         
@@ -18,8 +22,13 @@
         background: linear-gradient(45deg, rgb(4, 0, 255));
     }
 
+ 
+
     a{
         text-decoration: none;
+        // border: 2px solid;
+        display: flex;
+        align-items: center;
     }
 
 }

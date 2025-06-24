@@ -6,10 +6,10 @@
         <div class="col-lg-10">
           <h3 class="mb-4 subtitle p-1">{{subtitle[0]}}</h3>
 
-          <div class="card shadow-sm mb-3" *ngFor="let exp of experience">
+          <div class="card shadow-sm mb-3 experience" *ngFor="let exp of experience">
             <div class="row p-3"> <!-- ESSENCIAL para grid funcionar -->
 
-              <div class="col-md-3 col-12 p-4 card-time-line">
+              <div class="col-md-3 col-12 ps-4 card-time-line">
                 <span class="">{{exp.dateStart}}</span> - <span>{{exp.dateEnd}}</span>
                 <h6>{{exp.function}}</h6>
                 <hr>
@@ -34,7 +34,7 @@
         <div class="col-lg-10">
           <h3 class="mb-4 subtitle p-1">{{subtitle[1]}}</h3>
 
-          <div class="card shadow-sm  mb-4" *ngFor="let edu of education">
+          <div class="card shadow-sm  mb-4 education" *ngFor="let edu of education">
             <div class="row p-3"> <!-- ESSENCIAL para grid funcionar -->
 
               <div class="col-md-2 col-12 p-4 card-time-line" style="display: flex; align-items: center;">
@@ -63,12 +63,11 @@
           <h3 class="mb-4 subtitle p-1">{{subtitle[2]}}</h3>
 
           <div class="card shadow-sm card-information">
-            <div class="row p-3"> 
-
-            <div class="col-md-2 mb-4 col-12 p-2 card-skill" *ngFor="let lang of language">
-            <h6>{{lang.name}}</h6>
-            <span class="">{{lang.level}}</span>
-            </div>
+            <div class="row p-4"> 
+              <div class="col-md-2 mb-2 col-12 card-skill" *ngFor="let lang of language">
+                <h6>{{lang.name}}</h6>
+                <span class="">{{lang.level}}</span>
+              </div>
 
           </div>
 
@@ -79,9 +78,9 @@
           <h3 class="mb-4 p-1 subtitle">{{subtitle[3]}}</h3>
 
           <div class="card shadow-sm card-information">
-            <div class="row p-3"> 
+            <div class="row p-4"> 
 
-              <div class="col-md-2 mb-4 col-12 p-2 card-skill" *ngFor="let langPro of programmingLanguages">
+              <div class="col-md-2 mb-2 col-12 p-2 card-skill" *ngFor="let langPro of programmingLanguages">
                 <span class="">{{langPro}}</span>
               </div>
 
