@@ -35,4 +35,9 @@ export class IndexComponent {
   }
 
 
+  // inicio da criacao do filtro de skills
+  projectsFilters(skill:string){
+    
+  }
+
 }
