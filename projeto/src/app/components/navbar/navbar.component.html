@@ -11,6 +11,7 @@
                     [routerLink]="['/', page.toLowerCase()]"
                     routerLinkActive="active-link"
                     [routerLinkActiveOptions]="{exact:true}"
+                    (click)="closeNavBar()"
                   >{{page}}</a>
                 </li>
             </ul>
