@@ -8,6 +8,14 @@
   align-items: center;
   // background-color: $five-color;
 
+  h2{
+    // border: 2px solid;
+    font-size: 2rem;
+  }
+  h3{
+    font-size: 1.8rem;
+  }
+
     .title-session{
         text-transform: uppercase;
         background: linear-gradient(90deg, rgb(4, 0, 255), orange, rgb(230, 230, 230));
@@ -23,9 +31,16 @@
     text-transform: capitalize;
   }
 
-  .section-skills{
-     background-color: $five-color;
+  
+  // Boa ideia
+    .experience,.education{
+      // border: 2px solid;
+      background-image: url(../../../assets/banner_index.png);
+    }
+ 
 
+  .section-skills{
+    background-color: $five-color;
     display: flex;
     flex-direction: column;
     border: 2px solid $five-color;
@@ -34,12 +49,14 @@
       // background-color: red;
       border: none;
       background-color: #fff;
-      padding: 20px;
+      padding: 5px;
+      // border: 2px solid;
       // height: 0px;
 
       .card-skill{
         border-bottom: 2px solid $second-color;
         border-left: 2px solid $second-color;
+        background-color: #fff;
         background-color: rgba(211, 211, 211, 0.247);
         border-radius: 10px;
         padding: 10px;
@@ -49,19 +66,21 @@
         flex-direction: column;
         justify-content: center;
         margin-bottom: 20px;
+        // border: 2px solid;
       }
     }
   }
 }
 
-    @media (min-width: 576px)and (max-width: 1024px){
-      .section-experience {
-        background-color: blue;
-        padding: 0px !important;
-      }
-      .card{
-        // background-color: red;
-        width: 510px;
-         
-      }
-    }
+
+@media (min-width: 576px)and (max-width: 1024px){
+  .section-experience {
+    background-color: blue;
+    padding: 0px !important;
+  }
+  .card{
+    // background-color: red;
+    width: 510px;
+      
+  }
+}
