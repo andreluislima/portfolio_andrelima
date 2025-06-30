@@ -10,8 +10,8 @@ import net.api.mail.dto.MensagemDTO;
 import net.api.mail.service.EmailServiceInterface;
 
 @RestController
-@RequestMapping("/enviarEmail")
-@CrossOrigin(origins = "*")
+@RequestMapping("/enviar-email")
+@CrossOrigin(origins = "http://localhost:4200")
 public class EmailController {
 
 	private EmailServiceInterface emailServiceInterface;

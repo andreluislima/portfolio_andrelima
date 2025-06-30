@@ -5,6 +5,8 @@ import Lara from '@primeng/themes/lara';
 import { routes } from './app.routes';
 import { provideRouter } from '@angular/router';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { provideHttpClient, withFetch } from '@angular/common/http';
+
 
 export const appConfig: ApplicationConfig = {
     providers: [
@@ -20,6 +22,8 @@ export const appConfig: ApplicationConfig = {
             }
         }),
         provideRouter(routes),
+        provideHttpClient(withFetch()),
+
         { provide: LocationStrategy, useClass: HashLocationStrategy }
     ]
 };

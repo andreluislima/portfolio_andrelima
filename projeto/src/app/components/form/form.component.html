@@ -1,72 +1,88 @@
-<div>
-    <form id="contactForm" #form="ngForm" data-sb-form-api-token="API_TOKEN" (ngSubmit)="submitForm()">
-    <!-- Name input-->
-    <div class="form-floating mb-3">
-        <input class="form-control" id="name" type="text" placeholder="Name" 
-            name="nome"
-            [(ngModel)]="nome"
-            required
-            #nomeInput="ngModel"
-        />
+<form class="form" id="contactForm" #form="ngForm" data-sb-form-api-token="API_TOKEN" (ngSubmit)="submitForm()">
 
-        <div 
-            style="color:red"
-            class="mx-2"
-            *ngIf="nomeInput.invalid && nomeInput.touched">
-            Name is required!
-        </div>
+  <!-- Name input -->
+  <div class="form-floating mb-3">
+    <input 
+      class="form-control" 
+      id="name" 
+      type="text" 
+      placeholder="Enter your name..." 
+      name="nome" 
+      [(ngModel)]="mensagem.nome" 
+      required 
+      #nomeInput="ngModel"
+    />
+    <label for="name">Full name</label>
+    <div *ngIf="nomeInput.invalid && nomeInput.touched" class="text-danger mx-2 mt-1 small">
+      Name is required!
     </div>
+  </div>
 
-
-    <!-- Email address input-->
-    <div class="form-floating mb-3">
-        <input class="form-control" id="email" type="email"  
-            name="email"
-            [(ngModel)] = email
-            required
-            #emailInput="ngModel"
-        />
-
-        <div 
-            style="color:red"
-            class="mx-2"
-            *ngIf="nomeInput.invalid && nomeInput.touched">
-            Email is required!
-        </div>
+  <!-- Email input -->
+  <div class="form-floating mb-3">
+    <input 
+      class="form-control" 
+      id="email" 
+      type="email" 
+      placeholder="name@example.com" 
+      name="email" 
+      [(ngModel)]="mensagem.email" 
+      required 
+      #emailInput="ngModel"
+    />
+    <label for="email">Email address</label>
+    <div *ngIf="emailInput.invalid && emailInput.touched" class="text-danger mx-2 mt-1 small">
+      Valid email is required!
     </div>
+  </div>
 
-    <!-- Phone number input-->
-    <div class="form-floating mb-3">
-        <input class="form-control" id="phone" type="tel" 
-            name="phone"
-            [(ngModel)]="phone"
-            #phoneInput="ngModel"
-        />
-         
+  <!-- Phone input -->
+  <div class="form-floating mb-3">
+    <input 
+      class="form-control" 
+      id="phone" 
+      type="tel" 
+      placeholder="(123) 456-7890" 
+      name="phone" 
+      [(ngModel)]="mensagem.phone"
+      mask="(00)0000-0000"
+      required 
+      #phoneInput="ngModel"
+    />
+    <label for="phone">Phone number</label>
+    <div *ngIf="phoneInput.invalid && phoneInput.touched" class="text-danger mx-2 mt-1 small">
+      Phone number is required!
     </div>
+  </div>
 
-    <!-- Message input-->
-    <div class="form-floating mb-3">
-        <textarea 
-            class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem"
-            name="message"
-            [(ngModel)]="message"
-            required
-            #messageInput="ngModel"
-            >
-        </textarea>
-        <div 
-            style="color:red"
-            class="mx-2"
-            *ngIf="nomeInput.invalid && nomeInput.touched">
-            Message is required!
-        </div>
+  <!-- Message input -->
+  <div class="form-floating mb-3">
+    <textarea 
+      class="form-control" 
+      id="message" 
+      placeholder="Enter your message here..." 
+      style="height: 10rem"
+      name="message" 
+      [(ngModel)]="mensagem.message" 
+      required 
+      #messageInput="ngModel"
+    ></textarea>
+    <label for="message">Message</label>
+    <div *ngIf="messageInput.invalid && messageInput.touched" class="text-danger mx-2 mt-1 small">
+      Message is required!
     </div>
-                    
-    <!-- Submit Button-->
-    <div class="d-grid"><button class="btn btn-lg" id="submitButton" type="submit"
-        [disabled]="form.invalid"    
-    >Submit</button></div>
-    
+  </div>
+
+  <!-- Submit button -->
+  <div class="d-grid">
+    <button 
+      class="btn btn-lg" 
+      id="submitButton" 
+      type="submit"
+      [disabled]="form.invalid"
+    >
+      Submit
+    </button>
+  </div>
+
 </form>
-</div>
