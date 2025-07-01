@@ -1,5 +1,10 @@
 package net.api.mail.controller;
 
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -14,11 +19,15 @@ import net.api.mail.service.EmailServiceInterface;
 @CrossOrigin(origins = "http://localhost:4200")
 public class EmailController {
 
+	@Autowired
 	private EmailServiceInterface emailServiceInterface;
 	
 	@PostMapping
-	public String enviarMensagem(@RequestBody MensagemDTO mensagem) {
+	public ResponseEntity<Map<String, String>> enviarMensagem(@RequestBody MensagemDTO mensagem) {
 		emailServiceInterface.enviarEmail(mensagem);
-		return "Mensagem enviada com sucesso";
+		Map<String, String> response = new HashMap<>();
+		response.put("mensagem", "Mensagem enviada com sucesso");
+		return ResponseEntity.ok(response);
 	}
+
 }

@@ -1,16 +1,23 @@
 package net.api.mail.dto;
 
 public class MensagemDTO {
-	private String nome;
-	private String email;
-	private String telefone;
-	private String mensagem;
 	
-	public String getNome() {
-		return nome;
+	private String name;
+	private String phone;
+	private String email;
+	private String message;
+	
+	public String getName() {
+		return name;
 	}
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 	public String getEmail() {
 		return email;
@@ -18,18 +25,14 @@ public class MensagemDTO {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getTelefone() {
-		return telefone;
+	public String getMessage() {
+		return message;
 	}
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
+	public void setMessage(String message) {
+		this.message = message;
 	}
-	public String getMensagem() {
-		return mensagem;
-	}
-	public void setMensagem(String mensagem) {
-		this.mensagem = mensagem;
-	}
+	
+	 
 	
 	
 }

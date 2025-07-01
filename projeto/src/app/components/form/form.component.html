@@ -8,7 +8,7 @@
       type="text" 
       placeholder="Enter your name..." 
       name="nome" 
-      [(ngModel)]="mensagem.nome" 
+      [(ngModel)]="mensagem.name" 
       required 
       #nomeInput="ngModel"
     />
@@ -45,14 +45,10 @@
       placeholder="(123) 456-7890" 
       name="phone" 
       [(ngModel)]="mensagem.phone"
-      mask="(00)0000-0000"
-      required 
+      mask="(00)0000-00000"
       #phoneInput="ngModel"
     />
     <label for="phone">Phone number</label>
-    <div *ngIf="phoneInput.invalid && phoneInput.touched" class="text-danger mx-2 mt-1 small">
-      Phone number is required!
-    </div>
   </div>
 
   <!-- Message input -->

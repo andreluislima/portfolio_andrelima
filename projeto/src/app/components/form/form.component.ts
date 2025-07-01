@@ -18,7 +18,7 @@ import { HttpClient } from '@angular/common/http';
 export class FormComponent {
 
   mensagem = {
-    nome: "",
+    name: "",
     phone:  "",
     email: "",
     message: ""
@@ -27,11 +27,13 @@ export class FormComponent {
   constructor(private http:HttpClient){}
 
   submitForm(){
-    this.http.post('http://localhost:3000/enviar-email', this.mensagem)
+
+    this.http.post<{mensagem:string}>('http://localhost:8080/enviar-email', this.mensagem)
     .subscribe({
-      next:res => alert('Mensagem enviada com sucesso!'),
-      error:err => alert('Erro ao enviar a mensagem')
-    })
+      next:res => alert(res.mensagem),
+      error:err => alert(err + 'Erro ao enviar a mensagem')
+     })
+
 
   }
 
