@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-presentation',
@@ -10,8 +11,7 @@ import { CommonModule } from '@angular/common';
 export class PresentationComponent {
 
   skills = [
-    "HTML", "SCSS", "JavaScript", "Java", "Python", "PostgreSQL", "Angular", "React", "GIT", "SEO", "Docker",
-    "Responsive Design"
+    "HTML", "SCSS", "Bootstrap", "JavaScript", "Java", "Python", "PostgreSQL", "Angular", "React",
   ]
 
   aboutMe = `
@@ -27,6 +27,12 @@ export class PresentationComponent {
   </p>
 
   If you're looking for someone to deliver a well-buit website with good usability and user experience, i'm here to help.`
+
+  constructor(private router:Router){}
+
+  filterBySkill(skill:string){
+    this.router.navigate(['/project'], {queryParams:{skill}})
+  }
 
    // description: string = `My Name is André Lima and I Web Developer specialized in creating modern, fast and responsive websites focused on helping businesses improve their online presence.<br>
   // I have serveral years of experience in web development, working on both public sector, aways aiming to deliver solutions that are functional, secure and visually appealing. <br>

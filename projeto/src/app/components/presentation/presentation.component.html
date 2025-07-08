@@ -15,7 +15,13 @@
                 <h2>My Skills</h2>
           </div>
          <div class="col-md-12 skills mt-4" >
-          <span  *ngFor="let skill of skills" class="skill">{{skill}}</span>
+          <span  
+            *ngFor="let skill of skills"
+            class="skill"
+            (click) = "filterBySkill(skill)"
+            >
+                
+            {{skill}}</span>
          </div>
         
      </div>

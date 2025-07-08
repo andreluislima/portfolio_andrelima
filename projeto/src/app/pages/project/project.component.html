@@ -5,7 +5,11 @@
         <h2>{{title_session}}</h2>
     </div>
     <div class="row mb-2">
-        <div class="col-md-12" *ngFor="let pro of projects">
+        <div *ngIf="filteredProjects.length === 0" class="text-center my-5">
+            <h4>Nenhum projeto encontrado com essa tecnologia 😕</h4>
+        </div>
+        
+        <div class="col-md-12" *ngFor="let pro of filteredProjects">
             <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                 <div class="col p-4 d-flex flex-column position-static card-content-text"              
                 >
