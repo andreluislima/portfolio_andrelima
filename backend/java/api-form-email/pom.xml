@@ -11,7 +11,7 @@
 	<groupId>net.sys.gest</groupId>
 	<artifactId>api-form-email</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
 	<name>api-form-email</name>
 	<description>API para envio de email</description>
 	 

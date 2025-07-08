@@ -14,12 +14,16 @@ public class Cors {
 	@Bean
 	public CorsConfigurationSource corsConfigurationSource() {
 	    CorsConfiguration configuration = new CorsConfiguration();
+	    
 	    configuration.setAllowedOrigins(List.of(
 	    		"http://localhost:4200",
 	    		"https://andreluislima.github.io" 
 	    ));
 	    configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
 	    configuration.setAllowedHeaders(List.of("*"));
+	    configuration.setAllowCredentials(true);
+	    
+	    configuration.setExposedHeaders(List.of("Access-Control-Allow-Origin"));
 
 	    UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 	    source.registerCorsConfiguration("/**", configuration);
