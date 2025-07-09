@@ -1,0 +1,84 @@
+<form class="form" id="contactForm" #form="ngForm" data-sb-form-api-token="API_TOKEN" (ngSubmit)="submitForm()">
+
+  <!-- Name input -->
+  <div class="form-floating mb-3">
+    <input 
+      class="form-control" 
+      id="name" 
+      type="text" 
+      placeholder="Enter your name..." 
+      name="nome" 
+      [(ngModel)]="mensagem.name" 
+      required 
+      #nomeInput="ngModel"
+    />
+    <label for="name">Full name</label>
+    <div *ngIf="nomeInput.invalid && nomeInput.touched" class="text-danger mx-2 mt-1 small">
+      Name is required!
+    </div>
+  </div>
+
+  <!-- Email input -->
+  <div class="form-floating mb-3">
+    <input 
+      class="form-control" 
+      id="email" 
+      type="email" 
+      placeholder="name@example.com" 
+      name="email" 
+      [(ngModel)]="mensagem.email" 
+      required 
+      #emailInput="ngModel"
+    />
+    <label for="email">Email address</label>
+    <div *ngIf="emailInput.invalid && emailInput.touched" class="text-danger mx-2 mt-1 small">
+      Valid email is required!
+    </div>
+  </div>
+
+  <!-- Phone input -->
+  <div class="form-floating mb-3">
+    <input 
+      class="form-control" 
+      id="phone" 
+      type="tel" 
+      placeholder="(123) 456-7890" 
+      name="phone" 
+      [(ngModel)]="mensagem.phone"
+      mask="(00)0000-00000"
+      #phoneInput="ngModel"
+    />
+    <label for="phone">Phone number</label>
+  </div>
+
+  <!-- Message input -->
+  <div class="form-floating mb-3">
+    <textarea 
+      class="form-control" 
+      id="message" 
+      placeholder="Enter your message here..." 
+      style="height: 10rem"
+      name="message" 
+      [(ngModel)]="mensagem.message" 
+      required 
+      #messageInput="ngModel"
+    ></textarea>
+    <label for="message">Message</label>
+    <div *ngIf="messageInput.invalid && messageInput.touched" class="text-danger mx-2 mt-1 small">
+      Message is required!
+    </div>
+  </div>
+
+  <!-- Submit button -->
+  <div class="d-grid">
+    <button 
+      class="btn btn-lg" 
+      id="submitButton" 
+      type="submit"
+      [disabled]="form.invalid"
+    >
+      Submit
+    </button>
+  </div>
+
+</form>
