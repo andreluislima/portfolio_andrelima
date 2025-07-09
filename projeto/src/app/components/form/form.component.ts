@@ -27,28 +27,17 @@ export class FormComponent {
   
   constructor(private http:HttpClient){}
 
-<<<<<<< HEAD
   // LocalHost -> http://localhost:8080/enviar-email
   // Render -> https://api-email-sender.onrender.com/enviar-email
 
   submitForm(){
 
     this.http.post<{mensagem:string}>('https://api-email-sender.onrender.com/enviar-email', this.mensagem)
-=======
-  // Local host: http://localhost:8080/enviar-email
-  // Render: https://api-email-sender.onrender.com
-
-  // Teste 
-  submitForm(){
-
-    this.http.post<{mensagem:string}>('https://api-email-sender.onrender.com', this.mensagem)
->>>>>>> 3c436aacfaf9d3ddfc64ae652c784540e63fe035
     .subscribe({
       next:res => alert(res.mensagem),
       error:err => alert(err + 'Erro ao enviar a mensagem')
      })
-
-
   }
-
+  
 }
+
