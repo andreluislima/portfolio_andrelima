@@ -24,6 +24,7 @@ export class FormComponent {
     message: ""
   };
 
+  
   constructor(private http:HttpClient){}
 
   submitForm(){
