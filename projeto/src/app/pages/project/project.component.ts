@@ -28,7 +28,7 @@ export class ProjectComponent {
       "title": "Portfólio Profissional",
       "date": "06/2025",
       "description": "Criação de um site pessoal com foco em apresentação profissional. O objetivo foi destacar minhas principais habilidades como desenvolvedor Full Stack, exibir projetos realizados e facilitar o contato com recrutadores e clientes. O layout foi pensado para ser moderno, responsivo e de fácil navegação, proporcionando uma boa experiência ao usuário.",
-      "stacks":["HTML5", "CSS3", "JavaScript"],
+      "stacks":["HTML5", "CSS3", "JavaScript", "Bootstrap"],
       "link_projeto": "https://portifolioandrelima.netlify.app/",
       "img":"assets/projects/portifolio.png"
     }

@@ -28,6 +28,8 @@ export class FormComponent {
 
   // Local host: http://localhost:8080/enviar-email
   // Render: https://api-email-sender.onrender.com
+
+  // Teste 
   submitForm(){
 
     this.http.post<{mensagem:string}>('https://api-email-sender.onrender.com', this.mensagem)
