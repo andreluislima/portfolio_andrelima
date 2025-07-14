@@ -12,7 +12,7 @@ export class FooterComponent {
 
   footer = ['home', 'resume', 'project', 'contact'];
 
-  nome = "Lima Desenvolvimentos";
+  nome = "Lima Dev Solutions";
   currentYear: number = new Date().getFullYear();
 
 }

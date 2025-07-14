@@ -22,7 +22,7 @@ export class ResumeComponent implements OnInit{
       "client": "INT (Instituto Nacional de Tecnologia",
       "dateStart":"2022",
       "dateEnd":"Atualmente",
-      "description":`Responsável técnico pelo sistema principal da instituição.<br>
+      "description":`Atuo como desenvolvedor no sistema principal da instituição, em colaboração direta com o desenvolvedor sênior.<br>
                     <strong>Destaque</strong>: Implantação do Git e sistema de versionamento automatizado.
                     Desenvolvimento com Java, Angular, TypeScript, PostgreSQL e Figma.`
     },
