@@ -13,7 +13,7 @@ import { RouterModule } from '@angular/router';
 })
 export class IndexComponent {
   skills = ["design", "development", "marketing"]
-  buttons = ['resume', 'projects']
+  buttons = ['resume', 'projetos']
 
   title='';
   private fullText = "Olá!\n Eu sou Andre Lima\n Desenvolvedor Web";
@@ -34,6 +34,10 @@ export class IndexComponent {
 
   }
 
+  // inicio da criacao do filtro de skills
+  projectsFilters(skill:string){
+    
+  }
 
   title_btn = 'Projetos'
 
