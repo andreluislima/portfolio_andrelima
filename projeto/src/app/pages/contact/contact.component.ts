@@ -9,5 +9,5 @@ import { FormComponent } from "../../components/form/form.component";
 })
 export class ContactComponent {
 
-  title_session = "Contact"
+  title_session = "Contato"
 }

@@ -10,23 +10,26 @@ import { Router } from '@angular/router';
 })
 export class PresentationComponent {
 
+  title_know_me = "Conheça-me Melhor"
+
+  title_skill = "Minhas Habilidades"
+
   skills = [
     "HTML", "SCSS", "Bootstrap", "JavaScript", "Java", "Python", "PostgreSQL", "Angular", "React",
   ]
 
   aboutMe = `
-  <p> I'm a <strong>Full Stack Developer</strong> with passion for developing web applications.</p>
+  <p>Sou um Desenvolvedor Full Stack com paixão por desenvolver aplicações web.</p>
   
   <p>
-    I have serveral years of experience in web development, working on both public sector, aways aiming to deliver solutions that are functional, secure and visually appealing. 
+    Tenho vários anos de experiência em desenvolvimento web, atuando no setor público, sempre com o objetivo de entregar soluções funcionais, seguras e visualmente atrativas.
   </p>  
   
   <p>
-    Check out some of my work in the Projects section. 
-    I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.
+    Confira alguns dos meus trabalhos na seção <strong>Projetos</strong>.  
   </p>
 
-  If you're looking for someone to deliver a well-buit website with good usability and user experience, i'm here to help.`
+  Se você está procurando alguém para entregar um site bem construído, com boa usabilidade e experiência do usuário, estou aqui para ajudar.`
 
   constructor(private router:Router){}
 

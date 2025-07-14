@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ProjectComponent {
 
-  title_session = "Projects"
+  title_session = "Projetos"
 
   projects = [
     {
