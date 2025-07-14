@@ -34,7 +34,7 @@ export class PresentationComponent {
   constructor(private router:Router){}
 
   filterBySkill(skill:string){
-    this.router.navigate(['/project'], {queryParams:{skill}})
+    this.router.navigate(['/projetos'], {queryParams:{skill}})
   }
 
    // description: string = `My Name is André Lima and I Web Developer specialized in creating modern, fast and responsive websites focused on helping businesses improve their online presence.<br>
