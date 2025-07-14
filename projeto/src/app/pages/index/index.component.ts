@@ -16,7 +16,7 @@ export class IndexComponent {
   buttons = ['resume', 'projects']
 
   title='';
-  private fullText = "Hi there!\n I,m Andre Lima\n Web Developer";
+  private fullText = "Olá!\n Eu sou Andre Lima\n Desenvolvedor Web";
   private i = 0
 
   ngOnInit(){
