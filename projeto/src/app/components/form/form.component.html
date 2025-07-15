@@ -14,7 +14,7 @@
     />
     <label for="name">Nome</label>
     <div *ngIf="nomeInput.invalid && nomeInput.touched" class="text-danger mx-2 mt-1 small">
-      Name is required!
+      O nome é obrigatório!
     </div>
   </div>
 
@@ -32,7 +32,7 @@
     />
     <label for="email">E-mail</label>
     <div *ngIf="emailInput.invalid && emailInput.touched" class="text-danger mx-2 mt-1 small">
-      Valid email is required!
+      O e-mail é obrigatório!
     </div>
   </div>
 
@@ -65,12 +65,12 @@
     ></textarea>
     <label for="message">Mensagem</label>
     <div *ngIf="messageInput.invalid && messageInput.touched" class="text-danger mx-2 mt-1 small">
-      Message is required!
+      A Mensagem é obrigatória!
     </div>
   </div>
 
   <!-- Submit button -->
-  <div class="d-grid">
+  <div class="d-grid mb-4">
     <button 
       class="btn btn-lg" 
       id="submitButton" 

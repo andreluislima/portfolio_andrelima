@@ -5,6 +5,13 @@
     .box-contact{
         background-color:$five-color;
         margin-top: 7%;
+        margin: 7% auto;              // Centraliza
+        padding: 1.5rem;
+        border-radius: 12px;
+
+        width: 90vw;           // ocupa quase toda a largura da tela
+        max-width: 800px;      // permite expandir mais em telas grandes
+        box-sizing: border-box;
     }
 
     h2{
@@ -31,7 +38,20 @@
 }
 
 @media(min-width:320px) and (max-width:768px){
-    .box-contact{
-        width: 90vw;
-    }
+    .container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .box-contact {
+    width: 95vw;
+    max-width: none;
+  }
+
+  input,
+    textarea,
+    button {
+    width: 100%;
+    box-sizing: border-box;
+}
 }
