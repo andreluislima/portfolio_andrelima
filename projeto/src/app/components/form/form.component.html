@@ -11,30 +11,41 @@
       [(ngModel)]="mensagem.name" 
       required 
       #nomeInput="ngModel"
+      minlength="2"
     />
-    <label for="name">Nome</label>
     <div *ngIf="nomeInput.invalid && nomeInput.touched" class="text-danger mx-2 mt-1 small">
-      O nome é obrigatório!
+      <div *ngIf="nomeInput.errors?.['required']">  O nome é obrigatório! </div>
+      <div *ngIf="nomeInput.errors?.['minlength']">  O nome deve ter ao menos 2 letras.</div>
     </div>
+
+    <label for="name">Nome</label>
+    
   </div>
 
   <!-- Email input -->
   <div class="form-floating mb-3">
-    <input 
-      class="form-control" 
-      id="email" 
-      type="email" 
-      placeholder="name@example.com" 
-      name="email" 
-      [(ngModel)]="mensagem.email" 
-      required 
-      #emailInput="ngModel"
-    />
-    <label for="email">E-mail</label>
-    <div *ngIf="emailInput.invalid && emailInput.touched" class="text-danger mx-2 mt-1 small">
+  <input 
+    class="form-control" 
+    id="email" 
+    type="email" 
+    placeholder="name@example.com" 
+    name="email" 
+    [(ngModel)]="mensagem.email" 
+    required 
+    #emailInput="ngModel"
+    pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+  />
+  <label for="email">E-mail</label>
+
+  <div *ngIf="emailInput.invalid && emailInput.touched" class="text-danger mx-2 mt-1 small">
+    <div *ngIf="emailInput.errors?.['required']">
       O e-mail é obrigatório!
     </div>
+    <div *ngIf="emailInput.errors?.['pattern']">
+      Formato de e-mail inválido!
+    </div>
   </div>
+</div>
 
   <!-- Phone input -->
   <div class="form-floating mb-3">

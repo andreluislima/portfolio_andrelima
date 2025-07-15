@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
+import { WhatsappComponent } from "../../components/whatsapp/whatsapp.component";
 
 @Component({
   selector: 'app-project',
-  imports: [CommonModule],
+  imports: [CommonModule, WhatsappComponent],
   templateUrl: './project.component.html',
   styleUrl: './project.component.scss'
 })

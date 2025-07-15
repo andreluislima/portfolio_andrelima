@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { resume } from '../../../data/resume';
+import { WhatsappComponent } from "../../components/whatsapp/whatsapp.component";
 
 @Component({
   selector: 'app-resume',
-  imports: [CommonModule],
+  imports: [CommonModule, WhatsappComponent],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.scss'
 })
