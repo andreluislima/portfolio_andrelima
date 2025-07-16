@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule} from '@angular/forms';
+import { FormsModule, NgForm} from '@angular/forms';
 import { NgxMaskDirective, provideNgxMask} from 'ngx-mask';
 import { HttpClient } from '@angular/common/http';
 
@@ -30,15 +30,29 @@ export class FormComponent {
   // LocalHost -> http://localhost:8080/enviar-email
   // Render -> https://api-email-sender.onrender.com/enviar-email
 
-  submitForm(){
 
-    this.http.post<{mensagem:string}>('http://localhost:8080/enviar-email', this.mensagem)
-    .subscribe({
-      next:res => alert(res.mensagem),
-      error:err => alert(err + 'Erro ao enviar a mensagem')
-     })
-
-
+ submitForm(form: NgForm) {
+    this.http.post<{ mensagem: string }>('https://api-email-sender.onrender.com/enviar-email', this.mensagem)
+      .subscribe({
+        next: res => {
+          alert(res.mensagem);
+          form.reset();  
+        },
+        error: err => alert('Erro ao enviar a mensagem: ' + err.message)
+      });
   }
-
 }
+
+
+// Antigo
+//   submitForm(form: NgForm){
+
+//     this.http.post<{mensagem:string}>('https://api-email-sender.onrender.com/enviar-email', this.mensagem)
+//     .subscribe({
+//       next:res => alert(res.mensagem),
+//       error:err => alert(err + 'Erro ao enviar a mensagem')
+//      })
+
+//   }
+
+// }
