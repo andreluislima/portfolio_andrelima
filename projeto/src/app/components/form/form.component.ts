@@ -32,22 +32,28 @@ export class FormComponent {
   // LocalHost -> http://localhost:8080/enviar-email
   // Render -> https://api-email-sender.onrender.com/enviar-email
 
-   submitForm(form: NgForm) {
-    this.http.post<{ mensagem: string }>('http://localhost:8080/enviar-email', this.mensagem).subscribe({
-      next: ()=> this.snackBar.open('Mensagem Enviada com sucesso!', 'Fechar',{
-        duration:3000,
-        horizontalPosition:'center',
-        verticalPosition:'top',
-        panelClass:['snackbar-success']
-      }),
-      error:() => this.snackBar.open('Erro ao enviar a mensagem.', 'Fechar',{
-        duration:3000,
-        horizontalPosition:'center',
-        verticalPosition:'top',
-        panelClass:['snackbar-error']
-      })
-    });
-  }
+  submitForm(form: NgForm) {
+  this.http.post<{ mensagem: string }>('https://api-email-sender.onrender.com/enviar-email', this.mensagem).subscribe({
+    next: () => {
+      this.snackBar.open('Mensagem enviada com sucesso!', 'Fechar', {
+        duration: 3000,
+        horizontalPosition: 'center',
+        verticalPosition: 'top',
+        panelClass: ['snackbar-success'],
+      });
+      form.reset(); // <- aqui é o local correto
+    },
+    error: () => {
+      this.snackBar.open('Erro ao enviar a mensagem.', 'Fechar', {
+        duration: 3000,
+        horizontalPosition: 'center',
+        verticalPosition: 'top',
+        panelClass: ['snackbar-error']
+      });
+    }
+  });
+}
+
 }
 
 
