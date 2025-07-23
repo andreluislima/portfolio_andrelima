@@ -74,16 +74,16 @@ export class ResumeComponent implements OnInit{
 
   language = [
     {
-      "name":"English",
-      "level":"Intermediary"
+      "name":"Inglês",
+      "level":"Intermediário"
     },
     {
-      "name":"Italian",
-      "level":"Advanced"
+      "name":"Italiano",
+      "level":"Avançado"
     },
     {
-      "name":"Spanish",
-      "level":"Basic"
+      "name":"Espanhol",
+      "level":"Basico"
     },
 
   ]
@@ -104,7 +104,7 @@ export class ResumeComponent implements OnInit{
     "Boas práticas de Clean Code",
     "SQL e Modelagem de Banco de Dados",
     "Documentação Técnica",
-    "Deploy em Cloud (AWS / Netlify)"
+    "Deploy em Cloud (Render / Netlify)"
   ]
  
 
