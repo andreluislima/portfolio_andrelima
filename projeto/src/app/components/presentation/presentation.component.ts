@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class PresentationComponent {
 
-  title_know_me = "Conheça-me Melhor"
+  title_know_me = "Me Conheça Melhor"
 
   title_skill = "Minhas Habilidades"
 
@@ -19,10 +19,10 @@ export class PresentationComponent {
   ]
 
   aboutMe = `
-  <p>Sou um Desenvolvedor Full Stack com paixão por desenvolver aplicações web.</p>
+  <p>Sou Desenvolvedor Full Stack com paixão por desenvolver aplicações web.</p>
   
   <p>
-    Tenho vários anos de experiência em desenvolvimento web, atuando no setor público, sempre com o objetivo de entregar soluções funcionais, seguras e visualmente atrativas.
+    Tenho 3 anos de experiência em desenvolvimento web, atuando no setor público, sempre com o objetivo de entregar soluções funcionais, seguras e visualmente atrativas.
   </p>  
   
   <p>
