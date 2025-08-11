@@ -591,7 +591,7 @@ var require_base_component = __commonJS({
       typeof exports === "object" && typeof module !== "undefined" ? module.exports = factory(require_data(), require_event_handler(), require_config(), require_util()) : typeof define === "function" && define.amd ? define(["./dom/data", "./dom/event-handler", "./util/config", "./util/index"], factory) : (global = typeof globalThis !== "undefined" ? globalThis : global || self, global.BaseComponent = factory(global.Data, global.EventHandler, global.Config, global.Index));
     })(exports, function(Data, EventHandler, Config, index_js) {
       "use strict";
-      const VERSION = "5.3.6";
+      const VERSION = "5.3.7";
       class BaseComponent extends Config {
         constructor(element, config) {
           super();
@@ -946,56 +946,56 @@ export default require_collapse();
 
 bootstrap/js/dist/dom/data.js:
   (*!
-    * Bootstrap data.js v5.3.6 (https://getbootstrap.com/)
+    * Bootstrap data.js v5.3.7 (https://getbootstrap.com/)
     * Copyright 2011-2025 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
     *)
 
 bootstrap/js/dist/util/index.js:
   (*!
-    * Bootstrap index.js v5.3.6 (https://getbootstrap.com/)
+    * Bootstrap index.js v5.3.7 (https://getbootstrap.com/)
     * Copyright 2011-2025 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
     *)
 
 bootstrap/js/dist/dom/event-handler.js:
   (*!
-    * Bootstrap event-handler.js v5.3.6 (https://getbootstrap.com/)
+    * Bootstrap event-handler.js v5.3.7 (https://getbootstrap.com/)
     * Copyright 2011-2025 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
     *)
 
 bootstrap/js/dist/dom/manipulator.js:
   (*!
-    * Bootstrap manipulator.js v5.3.6 (https://getbootstrap.com/)
+    * Bootstrap manipulator.js v5.3.7 (https://getbootstrap.com/)
     * Copyright 2011-2025 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
     *)
 
 bootstrap/js/dist/util/config.js:
   (*!
-    * Bootstrap config.js v5.3.6 (https://getbootstrap.com/)
+    * Bootstrap config.js v5.3.7 (https://getbootstrap.com/)
     * Copyright 2011-2025 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
     *)
 
 bootstrap/js/dist/base-component.js:
   (*!
-    * Bootstrap base-component.js v5.3.6 (https://getbootstrap.com/)
+    * Bootstrap base-component.js v5.3.7 (https://getbootstrap.com/)
     * Copyright 2011-2025 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
     *)
 
 bootstrap/js/dist/dom/selector-engine.js:
   (*!
-    * Bootstrap selector-engine.js v5.3.6 (https://getbootstrap.com/)
+    * Bootstrap selector-engine.js v5.3.7 (https://getbootstrap.com/)
     * Copyright 2011-2025 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
     *)
 
 bootstrap/js/dist/collapse.js:
   (*!
-    * Bootstrap collapse.js v5.3.6 (https://getbootstrap.com/)
+    * Bootstrap collapse.js v5.3.7 (https://getbootstrap.com/)
     * Copyright 2011-2025 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
     * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
     *)
