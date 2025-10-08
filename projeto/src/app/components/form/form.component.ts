@@ -55,8 +55,6 @@ export class FormComponent {
 }
 
 }
-
-
 // Antigo 2
 //  submitForm(form: NgForm) {
 //     this.http.post<{ mensagem: string }>('https://api-email-sender.onrender.com/enviar-email', this.mensagem)
@@ -83,3 +81,10 @@ export class FormComponent {
 //   }
 
 // }
+    this.http.post<{mensagem:string}>('https://api-email-sender.onrender.com/enviar-email', this.mensagem)
+    .subscribe({
+      next:res => alert(res.mensagem),
+      error:err => alert(err + 'Erro ao enviar a mensagem')
+     })
+  }
+
