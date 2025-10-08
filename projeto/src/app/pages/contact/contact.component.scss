@@ -5,41 +5,19 @@
     .box-contact{
         background-color:$five-color;
         margin-top: 7%;
+        margin: 7% auto;              // Centraliza
+        padding: 1.5rem;
+        border-radius: 12px;
+
+        width: 90vw;           // ocupa quase toda a largura da tela
+        max-width: 700px;      // permite expandir mais em telas grandes
+        box-sizing: border-box;
     }
 
     h2{
         font-size: 2rem;
     }
 
-
-
-    .box-whatsapp{
-        // border: 2px solid;
-        display: flex;
-        flex-direction: row-reverse;
-
-        .btn-whatsapp {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25d366;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 50px;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-
-        img {
-            margin-right: 10px;
-        }
-
-        &:hover {
-            background-color: #1ebea5;
-        }
-    }
-}
 }
 .container{
 
@@ -60,7 +38,20 @@
 }
 
 @media(min-width:320px) and (max-width:768px){
-    .box-contact{
-        width: 90vw;
-    }
+    .container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .box-contact {
+    width: 95vw;
+    max-width: none;
+  }
+
+  input,
+    textarea,
+    button {
+    width: 100%;
+    box-sizing: border-box;
+}
 }

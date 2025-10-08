@@ -6,7 +6,7 @@
     </div>
     <div class="row mb-2">
         <div *ngIf="filteredProjects.length === 0" class="text-center my-5">
-            <h4>Nenhum projeto encontrado com essa tecnologia 😕</h4>
+            <img class="banner" src="assets/desenv.png" alt="">
         </div>
         
         <div class="col-md-12" *ngFor="let pro of filteredProjects">
@@ -15,7 +15,7 @@
                 >
                     <h3 class="mb-0">{{pro.title}}</h3>
                     <div class="mb-1 mt-3 mb-3">
-                        <span class="fw-bold">Date: </span>
+                        <span class="fw-bold">Data: </span>
                         <span>{{pro.date}}</span>
                     </div>
                     
@@ -25,7 +25,7 @@
                     </div>
 
                     <div>
-                        <span class="fw-bold">Stacks: </span>
+                        <span class="fw-bold">Teconologias: </span>
                         <!-- <span>{{pro.stacks}}</span> -->
                          <div class="badge rounded-pill bg-gradient-primary-to-secondary text-white mb-4 mx-1" *ngFor="let skill of pro.stacks">
                             <span>{{skill}}</span>
@@ -51,3 +51,4 @@
 </div>
 <!-- <app-hero-section></app-hero-section> -->
 </main>
+<app-whatsapp></app-whatsapp>

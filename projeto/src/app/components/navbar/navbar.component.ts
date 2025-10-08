@@ -12,7 +12,7 @@ import Collapse from 'bootstrap/js/dist/collapse';
 })
 export class MenubarBasicDemo {
    
-     navPages=['home', 'resume', 'project', 'contact']
+     navPages=['home', 'resume', 'projetos', 'contato']
 
     closeNavBar() {
       const navBar = document.getElementById('navbarSupportedContent');
