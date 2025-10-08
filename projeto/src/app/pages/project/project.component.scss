@@ -31,4 +31,16 @@
         align-items: center;
     }
 
+    img{
+        max-width: 800px;
+        border-radius: 8px;
+        box-shadow: 2px 5px 4px rgb(196, 195, 195);
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    img{
+        width: 100%;
+    }
 }

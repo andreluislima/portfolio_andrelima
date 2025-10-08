@@ -1,17 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { resume } from '../../../data/resume';
+import { WhatsappComponent } from "../../components/whatsapp/whatsapp.component";
 
 @Component({
   selector: 'app-resume',
-  imports: [CommonModule],
+  imports: [CommonModule, WhatsappComponent],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.scss'
 })
 export class ResumeComponent implements OnInit{
 
   title_session="Resume"
-  subtitle=["experience", "education","languages", "Programming Languages", "professional skills"]
+  subtitle=["experiencia", "educação","Idiomas", "Linguagens de Programação", "habilidades profissionais"]
   btn="dowload resume"
 
   experience = [
@@ -73,16 +74,16 @@ export class ResumeComponent implements OnInit{
 
   language = [
     {
-      "name":"English",
-      "level":"Intermediary"
+      "name":"Inglês",
+      "level":"Intermediário"
     },
     {
-      "name":"Italian",
-      "level":"Advanced"
+      "name":"Italiano",
+      "level":"Avançado"
     },
     {
-      "name":"Spanish",
-      "level":"Basic"
+      "name":"Espanhol",
+      "level":"Basico"
     },
 
   ]
@@ -103,7 +104,7 @@ export class ResumeComponent implements OnInit{
     "Boas práticas de Clean Code",
     "SQL e Modelagem de Banco de Dados",
     "Documentação Técnica",
-    "Deploy em Cloud (AWS / Netlify)"
+    "Deploy em Cloud (Render / Netlify)"
   ]
  
 

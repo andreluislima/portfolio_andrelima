@@ -9,8 +9,8 @@ import { PresentationComponent } from "../presentation/presentation.component";
   styleUrl: './hero-section.component.scss'
 })
 export class HeroSectionComponent {
-  title="About Me"
-  description: string = `Full stack developer specialized in creating fast, responsive, and SEO-friendly websites for businesses seeking a stronger online presence.`
+  title="Sobre Mim"
+  description: string = `Desenvolvedor Full Stack com experiência na criação de sites rápidos, responsivos e visualmente atrativos, focando na performance e na entrega de interfaces modernas e funcionais.`
 
   // description: string = `My Name is André Lima and I Web Developer specialized in creating modern, fast and responsive websites focused on helping businesses improve their online presence.<br>
   // I have serveral years of experience in web development, working on both public sector, aways aiming to deliver solutions that are functional, secure and visually appealing. <br>

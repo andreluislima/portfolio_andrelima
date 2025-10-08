@@ -10,7 +10,7 @@ import { RouterLink } from '@angular/router';
 })
 export class FooterComponent {
 
-  footer = ['home', 'resume', 'project', 'contact'];
+  footer = ['home', 'resume', 'projetos', 'contato'];
 
   nome = "Lima Dev Solutions";
   currentYear: number = new Date().getFullYear();

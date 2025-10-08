@@ -3,20 +3,21 @@ import { CommonModule } from '@angular/common';
 import { HeroSectionComponent } from "../../components/hero-section/hero-section.component";
 import { PresentationComponent } from "../../components/presentation/presentation.component";
 import { RouterModule } from '@angular/router';
+import { WhatsappComponent } from "../../components/whatsapp/whatsapp.component";
 
 
 @Component({
   selector: 'app-index',
-  imports: [CommonModule, HeroSectionComponent, PresentationComponent,RouterModule],
+  imports: [CommonModule, HeroSectionComponent, PresentationComponent, RouterModule, WhatsappComponent],
   templateUrl: './index.component.html',
   styleUrl: './index.component.scss'
 })
 export class IndexComponent {
   skills = ["design", "development", "marketing"]
-  buttons = ['resume', 'projects']
+  buttons = ['resume', 'projetos']
 
   title='';
-  private fullText = "Hi there!\n I,m Andre Lima\n Web Developer";
+  private fullText = "Olá!\n Eu sou Andre Lima\n Desenvolvedor Web";
   private i = 0
 
   ngOnInit(){
@@ -34,10 +35,11 @@ export class IndexComponent {
 
   }
 
-
   // inicio da criacao do filtro de skills
   projectsFilters(skill:string){
     
   }
+
+  title_btn = 'Projetos'
 
 }
